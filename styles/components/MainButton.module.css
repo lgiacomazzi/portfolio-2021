@@ -1,5 +1,5 @@
 .mainButtonContainer {
-  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .mainButton {
@@ -11,7 +11,7 @@
   align-items: center;
 
   padding-right: 16px;
-  padding-left: 16px;
+  padding-left: 22px;
 
   height: 48px;
 

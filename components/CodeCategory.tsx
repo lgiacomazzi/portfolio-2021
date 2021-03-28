@@ -12,8 +12,24 @@ export default function CodeCategory({ children, category }) {
       <div className={styles.return}>
         <span className="code code-purple">{"return "}</span>
         <span className="code">{"("}</span>
-        <h2 className={styles.h2}>{category}</h2>
-        {children}
+        <div className={styles.jsx}>
+          <span className="code">{"<"}</span>
+          <span className="code code-blue">{"h2"}</span>
+          <span className="code">{">"}</span>
+          <h2 className={styles.h2}>{category}</h2>
+          <span className="code">{"<"}</span>
+          <span className="code code-blue">{"/h2"}</span>
+          <span className="code">{">"}</span>
+          <br />
+          <span className="code">{"<"}</span>
+          <span className="code code-blue">{"p"}</span>
+          <span className="code">{">"}</span>
+          <div className={styles.h2}>{children}</div>
+          <span className="code">{"<"}</span>
+          <span className="code code-blue">{"/p"}</span>
+          <span className="code">{">"}</span>
+        </div>
+        <span className="code">{")"}</span>
       </div>
       <span className="code">{"}"}</span>
     </div>

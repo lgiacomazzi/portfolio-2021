@@ -7,21 +7,29 @@ import CodeCategory from "../components/CodeCategory";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Head>
         <title>Luciano Giacomazzi</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
-      <main>
+      <div className="container">
         <Profile />
         <Manifesto />
         <MainButton>Portfólio</MainButton>
         <CodeCategory category="branding">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum
-          sagittis cras commodo velit. Id ultricies purus duis magna.
+          Design de marcas com propósito. Criação de identidade visual com
+          logos, paleta de cores, tipografia e personalidade de marca.
         </CodeCategory>
-      </main>
+        <CodeCategory category="ux design">
+          Design de experiências com foco no usuário. Pesquisa, imersão, fluxos,
+          criação de interfaces e protótipos.
+        </CodeCategory>
+        <CodeCategory category="front-end">
+          Desenvolvimento de websites seguindo as melhores práticas de UX e
+          utilizando bibliotecas Javascript.
+        </CodeCategory>
+      </div>
 
       <footer>
         <div className="backgroundImage">

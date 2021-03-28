@@ -1,9 +1,14 @@
 .category {
-  padding: 24px;
+  margin-bottom: 24px;
 }
 
 .return {
   padding-left: 16px;
+}
+
+.jsx {
+  padding-left: 16px;
+  max-width: 400px;
 }
 
 .h2 {
