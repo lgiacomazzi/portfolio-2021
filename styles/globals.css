@@ -63,12 +63,14 @@ h1 {
   font-family: "Gustavo";
   font-size: 23px;
   font-weight: normal;
+  line-height: 150%;
 }
 
 h2 {
   font-family: "Gustavo";
   font-size: 28px;
   font-weight: bold;
+  line-height: 1.5em;
 }
 
 h3 {
@@ -109,7 +111,6 @@ h4 {
   font-family: "IBM Plex Mono";
   font-size: 12px;
   font-weight: 600;
-  text-transform: capitalize;
 
   color: var(--white);
   opacity: 0.7;
