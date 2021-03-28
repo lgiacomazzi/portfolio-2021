@@ -87,6 +87,19 @@ h3 {
   text-transform: capitalize;
 }
 
+.backgroundImage {
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundImage > img {
+  width: 1500px !important;
+  height: 1500px !important;
+}
+
 .layerBlur {
-  filter: blur(10px);
+  filter: blur(6px);
 }

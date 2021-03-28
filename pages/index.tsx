@@ -14,13 +14,13 @@ export default function Home() {
       </main>
 
       <footer>
-        <Image
-          className="layerBlur"
-          src="/svg/group.svg"
-          alt="Picture of the author"
-          layout="fill"
-          objectFit="cover"
-        />
+        <div className="backgroundImage">
+          <img
+            className="layerBlur"
+            src="/svg/group.svg"
+            alt="Picture of the author"
+          />
+        </div>
       </footer>
     </div>
   );
