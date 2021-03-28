@@ -1,0 +1,19 @@
+.profile {
+  padding: 24px;
+}
+
+.profileContent {
+  margin-top: 8px;
+  margin-bottom: 8px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.profileImage {
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+  margin-top: 2px;
+}

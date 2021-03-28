@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Profile from "../components/Profile";
 
 export default function Home() {
   return (
@@ -10,7 +10,8 @@ export default function Home() {
       </Head>
 
       <main>
-        <h1>luciano giacomazzi</h1>
+        <Profile />
+        <Manifesto />
       </main>
 
       <footer>

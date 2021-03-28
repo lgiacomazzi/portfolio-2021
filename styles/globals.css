@@ -17,6 +17,7 @@
 
 :root {
   --white: #ffffff;
+  --light: #b6cace;
   --dark: #09131a;
 
   --code-purple: #a642e0;
@@ -76,6 +77,13 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-family: "Gustavo";
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5em;
+}
+
 .lead {
   font-family: "Gustavo";
   font-size: 13px;
@@ -86,6 +94,8 @@ h3 {
   font-family: "Gustavo";
   font-size: 14px;
   font-weight: normal;
+  line-height: 1.3em;
+  color: var(--light);
 }
 
 .button {
@@ -100,6 +110,9 @@ h3 {
   font-size: 12px;
   font-weight: 600;
   text-transform: capitalize;
+
+  color: var(--white);
+  opacity: 0.7;
 }
 
 .backgroundImage {
@@ -117,4 +130,24 @@ h3 {
 
 .layerBlur {
   filter: blur(4px);
+}
+
+.code-purple {
+  color: var(--code-purple);
+  opacity: 0.7;
+}
+
+.code-blue {
+  color: var(--code-blue);
+  opacity: 0.7;
+}
+
+.code-green {
+  color: var(--code-green);
+  opacity: 0.7;
+}
+
+.code-orange {
+  color: var(--code-orange);
+  opacity: 0.7;
 }
