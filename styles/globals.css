@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;700&display=swap");
+
+:root {
+  --white: #ffffff;
+  --dark: #09131a;
+
+  --code-purple: #a642e0;
+  --code-blue: #66e3ff;
+  --code-green: #57ffab;
+  --code-orange: #f6d98d;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: "Gustavo", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  line-height: 160%;
+
+  color: var(--white);
+  background-color: var(--dark);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+h1 {
+  font-family: "Gustavo";
+  font-size: 23px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Gustavo";
+  font-size: 28px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: "Gustavo";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.lead {
+  font-family: "Gustavo";
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.comment {
+  font-family: "Gustavo";
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.button {
+  font-family: "Gustavo";
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.code {
+  font-family: "IBM Plex Mono";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.layerBlur {
+  filter: blur(10px);
+}
