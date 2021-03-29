@@ -28,3 +28,5 @@ const indexContent = [
 
 writeFileSync(`src/components/Icon/index.js`, indexContent);
 console.log("Icon component file created! ✅");
+
+export {};
