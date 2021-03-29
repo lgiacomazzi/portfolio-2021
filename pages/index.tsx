@@ -2,13 +2,11 @@ import Head from "next/head";
 import Profile from "../components/Profile";
 import Manifesto from "../components/Manifesto";
 import MainButton from "../components/MainButton";
-import Background from "../components/Background";
 import CodeCategory from "../components/CodeCategory";
 
 export default function Home() {
   return (
     <div>
-      <Background />
       <Head>
         <title>Luciano Giacomazzi</title>
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -18,6 +16,7 @@ export default function Home() {
         <Profile />
         <Manifesto />
         <MainButton>Portfólio</MainButton>
+        {/* <Button class="blue">Contato</Button> */}
       </div>
 
       <CodeCategory category="branding">
