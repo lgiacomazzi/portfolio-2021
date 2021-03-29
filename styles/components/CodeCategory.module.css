@@ -16,11 +16,32 @@
 }
 
 .projectCards {
+  padding: 16px;
+
   display: flex;
   flex-direction: row;
 
-  width: 100vw;
-
+  scroll-snap-type: x;
   overflow-x: scroll;
-  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-overflow-style: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.projectCards::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .projectCards {
+    overflow: auto;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

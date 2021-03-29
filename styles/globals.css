@@ -15,6 +15,11 @@
   font-display: swap;
 }
 
+:root {
+  --cursor: url("/svg/cursor.svg") 4 1, auto;
+  --pointer: url("/svg/pointer.svg") 4 1, auto;
+}
+
 html,
 body {
   padding: 0;
@@ -28,7 +33,9 @@ body {
   line-height: 160%;
 
   color: var(--white);
+  /* background-image: url("/svg/bk-1.svg"); */
   background-color: var(--dark);
+  cursor: none;
 }
 
 a {
@@ -37,6 +44,7 @@ a {
 }
 
 * {
+  cursor: var(--cursor);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -46,6 +54,18 @@ a {
   -moz-user-select: none; /* Old versions of Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none;
+}
+
+:focus {
+  outline: none;
+}
+
+button {
+  cursor: var(--pointer);
+}
+
+img {
+  -webkit-user-drag: none;
 }
 
 h1 {
@@ -106,9 +126,9 @@ h4 {
 }
 
 .container {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: auto;
-  padding: 24px;
+  padding: 48px;
 }
 
 .backgroundImage {
@@ -168,6 +188,12 @@ h4 {
 
   .comment {
     font-size: 4vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 24px;
   }
 }
 

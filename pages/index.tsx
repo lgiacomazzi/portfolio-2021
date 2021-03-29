@@ -16,19 +16,20 @@ export default function Home() {
         <Profile />
         <Manifesto />
         <MainButton>Portfólio</MainButton>
-        <CodeCategory category="branding">
-          Design de marcas com propósito. Criação de identidade visual com
-          logos, paleta de cores, tipografia e personalidade de marca.
-        </CodeCategory>
-        <CodeCategory category="ux design">
-          Design de experiências com foco no usuário. Pesquisa, imersão, fluxos,
-          criação de interfaces e protótipos.
-        </CodeCategory>
-        <CodeCategory category="front-end">
-          Desenvolvimento de websites seguindo as melhores práticas de UX e
-          utilizando bibliotecas Javascript.
-        </CodeCategory>
       </div>
+
+      <CodeCategory category="branding">
+        Design de marcas com propósito. Criação de identidade visual com logos,
+        paleta de cores, tipografia e personalidade de marca.
+      </CodeCategory>
+      <CodeCategory category="ux design">
+        Design de experiências com foco no usuário. Pesquisa, imersão, fluxos,
+        criação de interfaces e protótipos.
+      </CodeCategory>
+      <CodeCategory category="front-end">
+        Desenvolvimento de websites seguindo as melhores práticas de UX e
+        utilizando bibliotecas Javascript.
+      </CodeCategory>
 
       <footer>
         <div className="backgroundImage">
