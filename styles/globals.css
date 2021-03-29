@@ -34,7 +34,7 @@ body {
 
   color: var(--white);
   /* background-image: url("/svg/bk-1.svg"); */
-  background-color: var(--dark);
+  background: var(--dark);
   cursor: none;
 }
 

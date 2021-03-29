@@ -36,6 +36,11 @@
   display: none;
 }
 
+.projectCards::after {
+  content: "";
+  width: 50vw;
+}
+
 @media (min-width: 1200px) {
   .projectCards {
     overflow: auto;
