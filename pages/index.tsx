@@ -2,7 +2,6 @@ import Head from "next/head";
 import Profile from "../components/Profile";
 import Manifesto from "../components/Manifesto";
 import MainButton from "../components/MainButton";
-
 import CodeCategory from "../components/CodeCategory";
 
 export default function Home() {

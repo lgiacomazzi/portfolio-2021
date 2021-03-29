@@ -12,5 +12,15 @@
 }
 
 .h2 {
-  padding-left: 32px;
+  padding-left: 16px;
+}
+
+.projectCards {
+  display: flex;
+  flex-direction: row;
+
+  width: 100vw;
+
+  overflow-x: scroll;
+  scroll-behavior: smooth;
 }

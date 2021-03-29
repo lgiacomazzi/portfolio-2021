@@ -1,4 +1,5 @@
 import styles from "../styles/components/CodeCategory.module.css";
+import ProjectCard from "../components/ProjectCard";
 
 export default function CodeCategory({ children, category }) {
   return (
@@ -32,6 +33,15 @@ export default function CodeCategory({ children, category }) {
         <span className="code">{")"}</span>
       </div>
       <span className="code">{"}"}</span>
+      <br />
+      <span className="code">{"["}</span>
+      <div className={styles.projectCards}>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+      </div>
+      <span className="code">{"]"}</span>
     </div>
   );
 }

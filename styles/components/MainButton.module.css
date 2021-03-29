@@ -5,6 +5,7 @@
 .mainButton {
   margin-top: 8px;
   margin-bottom: 8px;
+  margin-left: 24px;
 
   display: flex;
   flex-direction: row;

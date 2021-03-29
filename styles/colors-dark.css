@@ -1,0 +1,13 @@
+:root {
+  --white: #ffffff;
+  --light: #b6cace;
+  --dark: #09131a;
+
+  --code-purple: #a642e0;
+  --code-blue: #66e3ff;
+  --code-green: #57ffab;
+  --code-orange: #f6d98d;
+
+  --glass-dark: rgba(0, 0, 0, 0.45);
+  --glass-white: rgba(255, 255, 255, 0.1);
+}
