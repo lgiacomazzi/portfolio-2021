@@ -1,8 +1,10 @@
 import styles from "../styles/components/Manifesto.module.css";
 import CodeSnippet from "../components/CodeSnippet";
-import { motion } from "framer-motion";
+import { motion, useViewportScroll } from "framer-motion";
 
 export default function Manifesto() {
+  const { scrollYProgress } = useViewportScroll();
+
   return (
     <div className={styles.manifesto}>
       <CodeSnippet>

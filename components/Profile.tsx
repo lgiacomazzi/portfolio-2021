@@ -8,7 +8,7 @@ export default function Profile() {
         <div className={styles.profileContent}>
           <img
             className={styles.profileImage}
-            src="/images/profile-1.png"
+            src="https://avatars.githubusercontent.com/u/40430577?v=4"
             alt="Luciano Giacomazzi Profile Picture"
           />
           <div>
