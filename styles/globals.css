@@ -16,8 +16,8 @@
 }
 
 :root {
-  --cursor: url("/svg/cursor.svg") 4 1, auto;
-  --pointer: url("/svg/pointer.svg") 4 1, auto;
+  /* --cursor: url("/svg/cursor.svg") 4 1, auto; */
+  /* --pointer: url("/svg/pointer.svg") 4 1, auto; */
 }
 
 html,
