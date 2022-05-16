@@ -1,8 +1,7 @@
 import Head from "next/head";
-import Profile from "../components/Profile";
+import Header from "../components/Header"
 import Manifesto from "../components/Manifesto";
-import MainButton from "../components/MainButton";
-import CodeCategory from "../components/CodeCategory";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -11,35 +10,25 @@ export default function Home() {
         <title>Luciano Giacomazzi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
+      <Header />
+
+      <Manifesto />
 
       <div className="container">
-        <Profile />
-        <Manifesto />
-        <MainButton>Portfólio</MainButton>
-        {/* <Button class="blue">Contato</Button> */}
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
+        <ProjectCard></ProjectCard>
       </div>
 
-      <CodeCategory category="branding">
-        Design de marcas com propósito. Criação de identidade visual com logos,
-        paleta de cores, tipografia e personalidade de marca.
-      </CodeCategory>
-      <CodeCategory category="ux design">
-        Design de experiências com foco no usuário. Pesquisa, imersão, fluxos,
-        criação de interfaces e protótipos.
-      </CodeCategory>
-      <CodeCategory category="front-end">
-        Desenvolvimento de websites seguindo as melhores práticas de UX e
-        utilizando bibliotecas Javascript.
-      </CodeCategory>
-
       <footer>
-        <div className="backgroundImage">
+        {/* <div className="backgroundImage">
           <img
             className="layerBlur"
             src="/svg/group.svg"
             alt="Picture of the author"
           />
-        </div>
+        </div> */}
       </footer>
     </div>
   );

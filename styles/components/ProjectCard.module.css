@@ -1,39 +1,28 @@
 .projectCard {
-  margin: 16px;
-
-  height: 50vh;
-  width: 70vw;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
-  background: linear-gradient(
-    215.54deg,
-    #8efe52 -51.53%,
-    #91e1f3 -3.4%,
-    #b566ff 53.85%,
-    #f2994a 107.78%
-  );
+  padding: 40px;
 
-  border-radius: 12px;
+  background: var(--ui-background);
+  border-radius: var(--border-radius);
+
   overflow: hidden;
   scroll-snap-align: center;
+
+  cursor: pointer;
+}
+
+.projectCard + .projectCard {
+  margin-top: 40px
 }
 
 .projectDetails {
-  width: 100%;
-  padding: 8px 16px 16px 24px;
-
-  background: var(--glass-dark);
-  backdrop-filter: blur(10px);
-
-  border-radius: 0px 0px 12px 12px;
-  position: absolute;
-  bottom: 0;
-}
-
-.projectHeroImage {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .projectHeroImage img {

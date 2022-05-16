@@ -1,4 +1,3 @@
-import "../styles/colors-dark.css";
 import "../styles/globals.css";
 
 import { AnimateSharedLayout } from "framer-motion";
