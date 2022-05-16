@@ -11,9 +11,9 @@ export default function Manifesto() {
         </motion.h1>
 
         <div className={styles.manifestoActions}>
-          <Button type="secondary">Portfólio</Button>
-          <Button type="secondary">Sobre mim</Button>
-          <Button type="secondary">Contato</Button>
+          <Button>Portfólio</Button>
+          <Button>Sobre mim</Button>
+          <Button>Contato</Button>
         </div>
       </div>
     </section>

@@ -1,10 +1,9 @@
 import styles from "../styles/components/Button.module.css";
 import { motion } from "framer-motion";
 
-export default function MainButton({ children, type, href, onClick }) {
+export default function MainButton({ children }) {
   return (
         <motion.button
-          type="button"
           className={styles.Button}
         >
           {children}
