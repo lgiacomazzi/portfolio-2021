@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-// import "../styles/grid.css";
+import "../styles/grid.css";
 import "../styles/colors.css";
 import "../styles/bootstrap.css";
 import { AnimateSharedLayout } from "framer-motion";

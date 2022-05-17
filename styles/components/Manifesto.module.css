@@ -21,8 +21,7 @@
 }
 
 @media (max-width: 700px) {
-  .manifesto {
-    padding-left: 16px;
-    padding-right: 16px;
+  .manifesto h1 {
+    font-size: 28px;
   }
 }

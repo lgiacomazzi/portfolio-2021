@@ -20,14 +20,14 @@ export default function Home() {
         <ProjectCard href="voltbras"></ProjectCard>
       </div>
 
-      <footer>
-        {/* <div className="backgroundImage">
+      <footer className="bk-dark">
+        <div className="backgroundImage">
           <img
             className="layerBlur"
             src="/svg/group.svg"
             alt="Picture of the author"
           />
-        </div> */}
+        </div>
       </footer>
     </div>
   );

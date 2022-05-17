@@ -7,6 +7,7 @@
   
     --ui-background: #FCFCFD;
     --ui-background-light: #F4F4F6;
+    --ui-background-contrast: #17181C;
   
     --ui-border: #F1EFEF;
   
@@ -16,6 +17,14 @@
     --box-shadow-focus: 0px 0px 0px 4px rgba(35, 123, 255, 0.16);
 }
 
+.text-secondary {
+  color: var(--text-secondary);
+}
+
 .bk-white {
   background-color: var(--ui-background);
+}
+
+.bk-dark {
+  background-color: var(--ui-background-contrast);
 }

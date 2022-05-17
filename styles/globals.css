@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/fonts/SpaceGrotesk.ttf");
+  src: url("/fonts/SpaceGrotesk.ttf") format('truetype');
+  font-weight: 1 999;
 }
 
 
@@ -14,14 +15,14 @@ body {
   padding: 0;
   margin: 0;
 
-  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Space Grotesk", -apple-system, Helvetica Neue, sans-serif;
 
   font-size: 16px;
-  font-variation-settings: "wght" 400;
+  font-weight: 400;
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
   color: var(--text-primary);
   background: var(--ui-background-light);
 }
@@ -55,31 +56,31 @@ img {
 
 h1 {
   font-size: 32px;
-  font-variation-settings: "wght" 400;
+  font-weight: 600;
   line-height: 120%;
 }
 
 h2 {
   font-size: 32px;
-  font-variation-settings: "wght" 400;
+  font-weight: 600;
   line-height: 120%;
 }
 
 h3 {
   font-size: 32px;
-  font-variation-settings: "wght" 400;
+  font-weight: 600;
   line-height: 120%;
 }
 
 h4 {
   font-size: 24px;
-  font-variation-settings: "wght" 400;
+  font-weight: 600;
   line-height: 120%;
 }
 
 h5 {
   font-size: 20px;
-  font-variation-settings: "wght" 400;
+  font-weight: 600;
 }
 
 .text-lead {
@@ -110,11 +111,37 @@ h5 {
 /* Mobile Only */
 @media (max-width: 768px) {
   h1 {
-    font-size: 32px;
+    font-size: 2rem;
   }
 
   h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+  h6 {
+    font-size: 1rem;
+  }
+
+  .text-lead {
     font-size: 24px;
+  }
+
+  .text-body {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
   }
 }
 
