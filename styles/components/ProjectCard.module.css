@@ -51,6 +51,10 @@
     padding: 16px;
   }
 
+  .projectCard:hover {
+    outline: none;
+  }
+
   .projectHeroImage img {
     width: 100%;
   }
