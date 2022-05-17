@@ -1,5 +1,3 @@
-import styles from "../styles/components/Box.module.css"
-
 
 export function Box({ children }) {
   return (

@@ -1,0 +1,7 @@
+.HeroImage {
+    width: 100%;
+}
+
+.HeroImage img {
+    width: 100% !important;
+}
