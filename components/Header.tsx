@@ -1,25 +1,31 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
 import Icon from "../components/Icon"
 import styles from "../styles/components/Header.module.css";
-// import BurgerMenu from "./svgs/cat.svg"
 
 export function NavLink({ children, href = "/" }) {
   return (
-    <Link href={href}>{children}</Link>
+    <motion.div whileTap={{ scale: .98 }} className={styles.navLink}>
+      <Link href={href}>{children}</Link>
+    </motion.div>
   );
 }
 
 export default function Profile() {
   return (
     <div className={styles.header}>
-      <Link href="/"><a><img src="/images/luciano-light-bk.svg" /></a></Link>
+      <Link href="/">
+        <motion.a whileTap={{ scale: .98 }}>
+          <img src="/images/luciano-light-bk.svg" />
+        </motion.a>
+      </Link>
       <div className={styles.actions}>
         <NavLink href="/">Portfólio</NavLink>
         <NavLink href="/about">Sobre mim</NavLink>
         <NavLink href="/contact">Contato</NavLink>
       </div>
       <div className={styles.burgerMenu}>
-        {/* <BurgerMenu /> */}
+        <Icon icon="menu-burger" size={24} />
       </div>
     </div>
   );

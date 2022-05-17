@@ -15,7 +15,8 @@ export default function Home() {
 
       <Manifesto />
 
-      <div className="container">
+      <div className="container pt-5 pb-5">
+        <ProjectCard name="Agendamento de Recargas" href="voltbras"></ProjectCard>
         <ProjectCard href="voltbras"></ProjectCard>
       </div>
 

@@ -14,14 +14,11 @@ export default function Portfolio() {
 
             <Header />
 
-            <section id="header" className="pt-5 pb-5">
-                <div className='container'>
+            <section id="header" className="pt-5 pb-5 bk-white">
+                <div className='container mb-5'>
                     <h1>O aplicativo de recargas da Voltbras oferece aos usuários a possibilidade de encontrar uma estação  nas proximidades para carregar o seu veículo elétrico. Fiz parte de um projeto que construiu a nova experiência de agendamento em um conector.
                     </h1>
                 </div>
-            </section>
-
-            <section className="pb-5">
                 <div className='container'>
                     <div className="row">
                         <div className="col">
@@ -50,11 +47,11 @@ export default function Portfolio() {
                     </div>
 
                 </div>
-            </section >
+            </section>
 
             <HeroImage src="/images/voltbras.png" />
 
-            <section className="pt-5 pb-5">
+            <section className="pt-5 pb-5 bk-white">
                 <div className="container mb-5">
                     <div className="row">
                         <div className="col-lg-6">

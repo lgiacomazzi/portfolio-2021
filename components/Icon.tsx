@@ -1,7 +1,5 @@
-
-
-export default function Icon({ icon }) {
+export default function Icon({ icon, size = 24, color = "black" }) {
     return (
-        <div>{icon}</div>
+        <img src={`/svg/${icon}.svg`} width={size} height={size} />
     )
 }
