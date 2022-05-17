@@ -1,0 +1,9 @@
+.section {
+  display: flex;    
+}
+
+.section img:only-child {
+  width: 100%;
+  max-height: 90vh;
+}
+

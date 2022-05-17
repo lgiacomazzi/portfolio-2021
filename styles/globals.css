@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Space Grotesk";
-  src: url("/fonts/SpaceGrotesk-Regular.otf");
+  src: url("/fonts/SpaceGrotesk-Light.otf");
   font-style: normal;
   font-display: swap;
 }
@@ -115,15 +115,24 @@ h5 {
   padding: 40px;
 }
 
-.background-white {
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1 0 0%;
+}
+
+.bk-white {
   background: var(--ui-background);
 }
 
-.background-light {
+.bk-light {
   background: var(--ui-background-light);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .container, .container-fluid {
     padding: 16px;
   }

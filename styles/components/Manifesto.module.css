@@ -19,7 +19,7 @@
   gap: 8px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .manifesto {
     padding-bottom: 80px;
     padding-top: 80px;
