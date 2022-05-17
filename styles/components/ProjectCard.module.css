@@ -30,17 +30,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  width: 50%;
 }
 
 .projectDetails p {
   color: var(--text-secondary);
 }
 
+.projectHeroImage {
+  width: 50%;
+}
+
 .projectHeroImage img {
   object-fit: cover;
   width: 450px;
   height: 100%;
-
   border-radius: var(--border-radius);
 }
 
@@ -48,13 +53,19 @@
   .projectCard {
     flex-direction: column;
     gap: 16px;
-    padding: 16px;
+    padding: 32px 16px ;
+  }
+
+  .projectCard + .projectCard {
+    margin-top: 16px
   }
 
   .projectCard:hover {
     outline: none;
   }
-
+  .projectDetails, .projectHeroImage {
+    width: 100%;
+  }
   .projectHeroImage img {
     width: 100%;
   }

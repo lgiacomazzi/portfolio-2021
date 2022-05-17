@@ -1,5 +1,7 @@
 .manifesto {
-  background-color: var(--ui-background);
+  background: url("/svg/bk-1.svg") var(--ui-background);
+  background-size: cover;
+  background-position: center center;
   padding-top: 120px;
   padding-bottom: 120px;
 }
