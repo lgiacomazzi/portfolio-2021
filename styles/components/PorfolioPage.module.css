@@ -1,9 +1,0 @@
-.descriptionItems {
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-}
-
-.descriptionItems ul {
-  list-style-type: none;
-}

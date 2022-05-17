@@ -1,9 +1,10 @@
 import styles from "../styles/components/Section.module.css"
+import { Box } from "./Box"
 
 export default function Section({ children, background = "white" }) {
     return (
-        <section className={styles.section + " bk-" + background}>
+        <div className={styles.section}>
             {children}
-        </section>
+        </div>
     )
 }

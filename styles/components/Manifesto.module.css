@@ -1,10 +1,6 @@
 .manifesto {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  padding-bottom: 120px;
-  padding-top: 120px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .manifestoText {
@@ -21,7 +17,7 @@
 
 @media (max-width: 700px) {
   .manifesto {
-    padding-bottom: 80px;
-    padding-top: 80px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
