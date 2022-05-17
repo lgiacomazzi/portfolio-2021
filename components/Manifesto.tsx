@@ -1,22 +1,22 @@
 import styles from "../styles/components/Manifesto.module.css";
-import CodeSnippet from "../components/CodeSnippet";
-import { motion, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
+import Button from "../components/Button";
+
 
 export default function Manifesto() {
-  const { scrollYProgress } = useViewportScroll();
-
   return (
     <div className={styles.manifesto}>
-      <CodeSnippet>
-        <motion.h1
-          whileHover={{ skewX: 10, skewY: 2 }}
-          className={styles.manifestoText}
-        >
-          Apaixonado por design e programação. Crio identidades visuais e
-          experiências digitais. Atualmente sou UX Designer na Voltbras em
-          Florianópolis.
+      <div className="container">
+        <motion.h1 className={styles.manifestoText}>
+          hey there, i'm luciano — a product designer experienced in frontend development. Currently solving complex design challenges at Delivery Much.
         </motion.h1>
-      </CodeSnippet>
+
+        <div className="d-flex flex-row gap-8">
+          <Button>Portfólio</Button>
+          <Button>Sobre mim</Button>
+          <Button>Contato</Button>
+        </div>
+      </div>
     </div>
   );
 }

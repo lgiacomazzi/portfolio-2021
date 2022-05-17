@@ -1,6 +1,0 @@
-.background {
-  /* backdrop-filter: blur(4px); */
-  backdrop-filter: opacity(0.4);
-  background-image: url("/svg/bk-1.svg") 100px 100px no-repeat,
-    url("/svg/bk-2.svg") 100px 100px no-repeat;
-}

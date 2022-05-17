@@ -1,21 +1,17 @@
 import Link from "next/link";
-import Image from "next/image";
-import ProjectCategoryIcons from "./ProjectCategoryIcons";
 import { motion } from "framer-motion";
 import styles from "../styles/components/ProjectCard.module.css";
 
-export default function ProjectCard({}) {
+export default function ProjectCard({ name = "Project Name", href }) {
   return (
-    <Link href="/portfolio/file">
+    <Link href={"/portfolio/" + href}>
       <motion.div className={styles.projectCard}>
-        <motion.div layoutId="test" className={styles.projectHeroImage}>
-          <img src="/images/file.png" />
-        </motion.div>
         <div className={styles.projectDetails}>
-          <span className="code">{"<>"}</span>
-          <h3>project name</h3>
-          <ProjectCategoryIcons category={["branding"]} />
-          <span className="code">{"</>"}</span>
+          <h3>{name}</h3>
+          <p className="text-body">A Voltbras é uma empresa de mobilidade elétrica que oferece praticidade na hora de carregar um veículo elétrico através do seu apl. Participei do projeto com objetivo de desenhar uma nova experiência de agendamento de recargas.</p>
+        </div>
+        <div className={styles.projectHeroImage}>
+          <img src="/images/voltbras.png" />
         </div>
       </motion.div>
     </Link>

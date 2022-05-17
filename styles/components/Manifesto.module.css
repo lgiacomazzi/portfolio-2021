@@ -1,27 +1,23 @@
 .manifesto {
-  margin-bottom: 116px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .manifestoText {
-  margin-left: 24px;
+  text-transform: lowercase;
 }
 
-@media (max-width: 400px) {
-  .manifesto {
-    margin-bottom: 100px;
-  }
-  .manifestoText {
-    margin-left: 24px;
-    margin-right: 0px;
-  }
+.manifestoActions {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-shrink: 0;
+  gap: 8px;
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 700px) {
   .manifesto {
-    margin-bottom: 100px;
-  }
-  .manifestoText {
-    max-width: 75%;
-    font-size: 3vw;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
