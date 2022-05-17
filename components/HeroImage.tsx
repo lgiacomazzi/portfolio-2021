@@ -5,9 +5,8 @@ export default function HeroImage({ src }) {
     return (
         <section className={styles.HeroImage}>
             <Image
-                layout="intrinsic"
-                width={1120}
-                height={540}
+                layout="fill"
+                objectFit="cover"
                 src={src} />
         </section>
     )
