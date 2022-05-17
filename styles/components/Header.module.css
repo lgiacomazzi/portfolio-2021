@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   background: var(--ui-background);
   border-bottom: 1px solid var(--ui-border);
@@ -11,10 +12,11 @@
   top: 0px;
 }
 
-.header h5 {
+.header a {
+  display: inherit;
   transition: var (--default-transition);
 }
-.header h5 a:hover {
+.header a:hover {
   filter: opacity(.8);
 }
 
@@ -43,7 +45,7 @@
   background: var(--ui-background-light);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 700px) {
   .header { 
     padding: 12px 16px;
   }

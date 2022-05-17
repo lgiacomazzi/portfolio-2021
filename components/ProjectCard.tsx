@@ -2,9 +2,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import styles from "../styles/components/ProjectCard.module.css";
 
-export default function ProjectCard({name = "Project Name"}) {
+export default function ProjectCard({ name = "Project Name", href }) {
   return (
-    <Link href="/portfolio">
+    <Link href={"/portfolio/" + href}>
       <motion.div className={styles.projectCard}>
         <div className={styles.projectDetails}>
           <h3>{name}</h3>

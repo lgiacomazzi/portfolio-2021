@@ -1,0 +1,14 @@
+.HeroImage {
+    width: 100%;
+    height: 80vh;
+}
+
+.HeroImage img {
+    width: 100% !important;
+}
+
+@media (max-width: 768px) {
+    .HeroImage {
+        height: 50vh;
+    }
+}

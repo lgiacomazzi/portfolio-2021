@@ -10,15 +10,13 @@ export default function Home() {
         <title>Luciano Giacomazzi</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+
       <Header />
 
       <Manifesto />
 
       <div className="container">
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
-        <ProjectCard></ProjectCard>
+        <ProjectCard href="voltbras"></ProjectCard>
       </div>
 
       <footer>

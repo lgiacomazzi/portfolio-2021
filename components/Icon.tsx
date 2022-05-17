@@ -1,5 +1,7 @@
-export default function Icon({icon}) {
-    return(
+
+
+export default function Icon({ icon }) {
+    return (
         <div>{icon}</div>
     )
 }
