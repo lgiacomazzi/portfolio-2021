@@ -5,12 +5,13 @@ import Button from "./Button";
 import Icon from "./Icon";
 
 interface ProjectCardProps {
+  disabled?: boolean;
   children?: string;
   name?: string;
   href?: string;
 }
 
-export default function ProjectCard({ children, name, href }: ProjectCardProps) {
+export default function ProjectCard({ children, name, href, disabled = false }: ProjectCardProps) {
   return (
     <Link href={"/portfolio/" + href}>
       <motion.div
@@ -22,7 +23,7 @@ export default function ProjectCard({ children, name, href }: ProjectCardProps) 
           {name && <h4 className="mb-2">{name}</h4>}
           {children && <p className="text-body mb-2">{children}</p>}
 
-          {href ?
+          {!disabled ?
             <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button> :
             <Button variant="secondary" disabled>Em Breve</Button>
           }
