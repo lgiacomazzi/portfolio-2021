@@ -7,6 +7,7 @@ export default function HeroImage({ src }) {
             <Image
                 layout="fill"
                 objectFit="cover"
+                priority
                 src={src} />
         </section>
     )

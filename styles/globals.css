@@ -97,9 +97,13 @@ h5 {
   margin-bottom: 0px;
 }
 
-.small {
+.text-small {
   font-size: 12px;
   font-weight: normal;
+}
+
+.text-undeline {
+  text-decoration: underline;
 }
 
 #hero {
@@ -123,7 +127,7 @@ h5 {
   }
 
   h4 {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   h5 {
@@ -139,7 +143,7 @@ h5 {
   }
 
   .text-body {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 20px;
     margin-bottom: 16px;
   }

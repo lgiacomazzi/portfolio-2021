@@ -19,8 +19,17 @@ export default function Portfolio() {
                     <h2 className="mb-5">O aplicativo de recargas da Voltbras oferece aos usuários a possibilidade de encontrar uma estação  nas proximidades para carregar o seu veículo elétrico. Fiz parte de um projeto que construiu a nova experiência de agendamento em um conector.
                     </h2>
                     <div className="row">
+
                         <div className="col-6 col-lg-3 mb-2">
-                            <p>Meu Papel</p>
+                            <p className="text-undeline">Empresa</p>
+                            <ul><li>Voltbras</li></ul>
+                        </div>
+                        <div className="col-6 col-lg-3 mb-2">
+                            <p className="text-undeline">Duração</p>
+                            <ul><li>4 meses</li></ul>
+                        </div>
+                        <div className="col-6 col-lg-3 mb-2">
+                            <p className="text-undeline">Meu Papel</p>
                             <ul>
                                 <li>User research,</li>
                                 <li>Prototipagem,</li>
@@ -28,15 +37,7 @@ export default function Portfolio() {
                             </ul>
                         </div>
                         <div className="col-6 col-lg-3 mb-2">
-                            <p>Empresa</p>
-                            <ul><li>Voltbras</li></ul>
-                        </div>
-                        <div className="col-6 col-lg-3 mb-2">
-                            <p>Duração</p>
-                            <ul><li>4 meses</li></ul>
-                        </div>
-                        <div className="col-6 col-lg-3 mb-2">
-                            <p>Ferramentas</p>
+                            <p className="text-undeline">Ferramentas</p>
                             <ul>
                                 <li>Figma,</li>
                                 <li>Adobe XD</li>
@@ -98,7 +99,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <p className="text-body">Dentro do roadmap de produto, foi priorizado o desenvolvimento de uma funcionalidade para melhor atender esses usuários a viajar e assim realizar mais recargas pelo app.</p>
+                            <p className="text-body mb-4">Dentro do roadmap de produto, foi priorizado o desenvolvimento de uma funcionalidade para melhor atender esses usuários a viajar e assim realizar mais recargas pelo app.</p>
                         </div>
                         <div className="col-lg-6">
                             <p className="text-body">Atuei como UX designer no time agile composto por desenvolvedores iOS e Android, um desenvolvedor backend e um product owner. Fui responsável pela execução do projeto de pesquisa e design da experiência.</p>

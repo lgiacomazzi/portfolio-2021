@@ -111,7 +111,7 @@
   }
 
   .container, .container-fluid {
-    padding: 16px;
+    --bs-gutter-x: 16px;
   }
 
   .col + .col {
