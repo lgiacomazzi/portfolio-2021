@@ -23,7 +23,7 @@ export default function Profile() {
         </motion.a>
       </Link>
       <div className={styles.actions}>
-        <NavLink href="/">Portfólio</NavLink>
+        <NavLink href="/#portfolio">Portfólio</NavLink>
         <NavLink href="/about">Sobre mim</NavLink>
         <NavLink href="/contact">Contato</NavLink>
         <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>

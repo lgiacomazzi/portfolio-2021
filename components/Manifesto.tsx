@@ -6,7 +6,7 @@ import InlineLink from "../components/InlineLink";
 
 const ScrollButton = () => {
   return (
-    <Link href="/#start">
+    <Link href="/#portfolio">
       <motion.a whileHover={{ scale: 1.08 }} whileTap={{ scale: .98 }} className={styles.manifestoScroll}>
         <img src="/svg/scroll-down.svg" height={80} width={80} />
       </motion.a>

@@ -1,6 +1,7 @@
 :root {
     --text-primary: #17181C;
     --text-secondary: #454754;
+    --text-tertiary: #73778C;
     --text-interactive: #FFFFFF;
     
     --interactive-primary: #17181C;
@@ -31,5 +32,6 @@
 }
 
 .bk-dark {
+  color: var(--text-interactive);
   background-color: var(--ui-background-contrast);
 }

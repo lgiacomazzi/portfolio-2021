@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import styles from "../styles/components/ProjectCard.module.css";
 import Button from "./Button";
 import Icon from "./Icon";
+import Image from "next/image"
 
 interface ProjectCardProps {
   disabled?: boolean;
@@ -11,16 +12,23 @@ interface ProjectCardProps {
   href?: string;
 }
 
+const Marquee = ({ children }) => {
+  return (
+    <div className={styles.projectTags}><span>{children}</span></div>
+  )
+}
+
 export default function ProjectCard({ children, name, href, disabled = false }: ProjectCardProps) {
   return (
     <Link href={"/portfolio/" + href}>
       <motion.div
-        animate={{ scale: 1 }}
-        whileHover={{ outlineWidth: "4px" }}
         whileTap={{ scale: 0.98 }}
         className={styles.projectCard}>
         <div className={styles.projectDetails}>
-          {name && <h4 className="mb-2">{name}</h4>}
+          {name && <h4 className={styles.projectName}>{name}</h4>}
+
+          <Marquee>User Research, User Interface Design, Prototyping</Marquee>
+
           {children && <p className="text-body mb-2">{children}</p>}
 
           {!disabled ?
@@ -30,7 +38,7 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
 
         </div>
         <div className={styles.projectHeroImage}>
-          <img src={"/images/" + href + ".png"} />
+          <Image src={"/images/" + href + ".png"} layout="fill" objectFit="cover" />
         </div>
       </motion.div>
     </Link>
