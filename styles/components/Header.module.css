@@ -5,6 +5,7 @@
   justify-content: space-between;
   background: var(--ui-background);
   border-bottom: 1px solid var(--ui-border);
+  /* box-shadow: var(--box-shadow-small); */
 
   padding: 12px 24px;
   position: sticky;
@@ -13,12 +14,12 @@
 }
 
 /* Logo */
-.header a {
+.header .headerLogo {
   display: inherit;
   cursor: pointer;
   transition: var (--default-transition);
 }
-.header a:hover {
+.header .headerLogo:hover {
   filter: opacity(.8);
 }
 
@@ -44,6 +45,7 @@
 }
 
 .navLink:hover {
+  color: var(--text-primary);
   background: var(--ui-background-light);
 }
 

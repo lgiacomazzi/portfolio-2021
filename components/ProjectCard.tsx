@@ -4,7 +4,13 @@ import styles from "../styles/components/ProjectCard.module.css";
 import Button from "./Button";
 import Icon from "./Icon";
 
-export default function ProjectCard({ name = "Project Name", href }) {
+interface ProjectCardProps {
+  children?: string;
+  name?: string;
+  href?: string;
+}
+
+export default function ProjectCard({ children, name, href }: ProjectCardProps) {
   return (
     <Link href={"/portfolio/" + href}>
       <motion.div
@@ -13,12 +19,17 @@ export default function ProjectCard({ name = "Project Name", href }) {
         whileTap={{ scale: 0.98 }}
         className={styles.projectCard}>
         <div className={styles.projectDetails}>
-          <h4 className="mb-2">{name}</h4>
-          <p className="text-body mb-2">A Voltbras é uma empresa de mobilidade elétrica que oferece praticidade na hora de carregar um veículo elétrico através do seu app. Participei do projeto com objetivo de desenhar uma nova experiência de agendamento de recargas.</p>
-          <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button>
+          {name && <h4 className="mb-2">{name}</h4>}
+          {children && <p className="text-body mb-2">{children}</p>}
+
+          {href ?
+            <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button> :
+            <Button variant="secondary" disabled>Em Breve</Button>
+          }
+
         </div>
         <div className={styles.projectHeroImage}>
-          <img src="/images/voltbras.png" />
+          <img src={"/images/" + href + ".png"} />
         </div>
       </motion.div>
     </Link>

@@ -18,7 +18,7 @@ export default function Profile() {
       animate={{ y: 0 }}
       className={styles.header}>
       <Link href="/">
-        <motion.a whileTap={{ scale: .98 }}>
+        <motion.a whileTap={{ scale: .98 }} className={styles.headerLogo}>
           <img src="/images/luciano-light-bk.svg" />
         </motion.a>
       </Link>
@@ -26,6 +26,7 @@ export default function Profile() {
         <NavLink href="/">Portfólio</NavLink>
         <NavLink href="/about">Sobre mim</NavLink>
         <NavLink href="/contact">Contato</NavLink>
+        <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
       </div>
       <div className={styles.burgerMenu}>
         <Icon icon="menu-burger" size={24} />

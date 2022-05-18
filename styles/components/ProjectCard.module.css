@@ -45,7 +45,7 @@
 .projectHeroImage img {
   object-fit: cover;
   width: 450px;
-  height: max-content;
+  height: 100%;
   border-radius: var(--border-radius);
 }
 
@@ -53,7 +53,7 @@
   .projectCard {
     flex-direction: column;
     gap: 24px;
-    padding: 32px 16px ;
+    padding: 32px 16px 16px 16px;
   }
 
   .projectCard + .projectCard {

@@ -106,8 +106,19 @@ h5 {
   text-decoration: underline;
 }
 
+.text-center {
+  text-align: center;
+}
+
 #hero {
   height: 80vh;
+}
+
+.portfolio-section img {
+  overflow: hidden;
+  border: 1px solid var(--ui-background-contrast);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow-small);
 }
 
 

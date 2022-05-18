@@ -17,7 +17,7 @@ export default function Manifesto() {
           hey there, i'm luciano — a product designer experienced in frontend development.
         </motion.h1>
         <motion.p variants={textVariants} className="text-lead mb-2">
-          Currently solving complex design challenges at <InlineLink>Delivery Much</InlineLink>
+          currently solving complex design challenges at <InlineLink>delivery much</InlineLink>
         </motion.p>
         <motion.div className={styles.manifestoActions}>
           <Button variant="secondary">Sobre mim</Button>
