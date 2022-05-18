@@ -35,7 +35,6 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
             <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button> :
             <Button variant="secondary" disabled>Em Breve</Button>
           }
-
         </div>
         <div className={styles.projectHeroImage}>
           <Image src={"/images/" + href + ".png"} layout="fill" objectFit="cover" />
