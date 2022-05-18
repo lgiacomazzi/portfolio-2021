@@ -45,7 +45,7 @@
 .projectHeroImage img {
   object-fit: cover;
   width: 450px;
-  height: 100%;
+  height: max-content;
   border-radius: var(--border-radius);
 }
 
@@ -63,6 +63,7 @@
   .projectCard:hover {
     outline: none;
   }
+
   .projectDetails, .projectHeroImage {
     width: 100%;
   }

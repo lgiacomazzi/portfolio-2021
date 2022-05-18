@@ -25,6 +25,10 @@
   background-color: var(--ui-background);
 }
 
+.bk-light {
+  background-color: var(--ui-background-light);
+}
+
 .bk-dark {
   background-color: var(--ui-background-contrast);
 }

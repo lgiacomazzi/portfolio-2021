@@ -13,7 +13,10 @@ export function NavLink({ children, href = "/" }) {
 
 export default function Profile() {
   return (
-    <div className={styles.header}>
+    <motion.div
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      className={styles.header}>
       <Link href="/">
         <motion.a whileTap={{ scale: .98 }}>
           <img src="/images/luciano-light-bk.svg" />
@@ -27,6 +30,6 @@ export default function Profile() {
       <div className={styles.burgerMenu}>
         <Icon icon="menu-burger" size={24} />
       </div>
-    </div>
+    </motion.div>
   );
 }

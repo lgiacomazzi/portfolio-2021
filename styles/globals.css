@@ -24,7 +24,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   color: var(--text-primary);
-  background: var(--ui-background-light);
+  background: var(--ui-background);
 }
 
 a {
@@ -55,8 +55,8 @@ img {
 }
 
 h1 {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 40px;
+  font-weight: 700;
   line-height: 120%;
 }
 

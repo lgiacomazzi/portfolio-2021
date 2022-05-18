@@ -7,8 +7,11 @@
 }
 
 .manifestoText {
-  font-variation-settings: "wght" 500;
   text-transform: lowercase;
+  margin-bottom: 16px;
+}
+
+.manifestoSubtext {
   margin-bottom: 16px;
 }
 
@@ -20,7 +23,11 @@
   gap: 8px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .manifesto {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
   .manifesto h1 {
     font-size: 28px;
   }

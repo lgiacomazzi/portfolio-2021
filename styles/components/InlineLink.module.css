@@ -1,0 +1,14 @@
+.inlineLink {
+    display: inline-flex;
+    align-items: center;
+    transform: var(--default-transition);
+}
+
+.inlineLink:hover {
+    background-color: var(--ui-background-contrast);
+    color: var(--text-interactive);
+}
+
+.inlineLink:hover img {
+    filter: invert();
+}

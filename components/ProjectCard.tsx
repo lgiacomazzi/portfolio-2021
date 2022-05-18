@@ -13,8 +13,8 @@ export default function ProjectCard({ name = "Project Name", href }) {
         whileTap={{ scale: 0.98 }}
         className={styles.projectCard}>
         <div className={styles.projectDetails}>
-          <h4 className="mb-3">{name}</h4>
-          <p className="text-body mb-4">A Voltbras é uma empresa de mobilidade elétrica que oferece praticidade na hora de carregar um veículo elétrico através do seu app. Participei do projeto com objetivo de desenhar uma nova experiência de agendamento de recargas.</p>
+          <h4 className="mb-2">{name}</h4>
+          <p className="text-body mb-2">A Voltbras é uma empresa de mobilidade elétrica que oferece praticidade na hora de carregar um veículo elétrico através do seu app. Participei do projeto com objetivo de desenhar uma nova experiência de agendamento de recargas.</p>
           <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button>
         </div>
         <div className={styles.projectHeroImage}>

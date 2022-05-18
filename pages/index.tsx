@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Header from "../components/Header"
 import Manifesto from "../components/Manifesto";
-import ProjectCard from "../components/ProjectCard";
+import Projects from "../components/Projects";
+import About from "../components/About";
 
 export default function Home() {
   return (
@@ -15,19 +16,18 @@ export default function Home() {
 
       <Manifesto />
 
-      <div className="container pt-5 pb-5">
-        <ProjectCard name="Agendamento de Recargas" href="voltbras"></ProjectCard>
-        <ProjectCard href="voltbras"></ProjectCard>
-      </div>
+      <About />
+
+      <Projects />
 
       <footer className="bk-dark">
-        <div className="backgroundImage">
+        {/* <div className="backgroundImage">
           <img
             className="layerBlur"
             src="/svg/group.svg"
             alt="Picture of the author"
           />
-        </div>
+        </div> */}
       </footer>
     </div>
   );
