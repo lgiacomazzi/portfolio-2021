@@ -16,6 +16,14 @@
     transition: var(--default-transition);
 }
 
+.button:focus {
+    box-shadow: var(--box-shadow-focus)
+}
+    
+.button:hover {
+    filter: opacity(.8);
+}
+
 .button[disabled]:hover {
     filter: none;
 }
@@ -24,6 +32,13 @@
     composes: button;
     background-color: var(--interactive-primary);
     color: var(--text-interactive);
+}
+
+.secondary-white {
+    composes: button;
+    background-color: transparent;
+    color: var(--text-interactive);
+    border: 1px solid var(--ui-background);
 }
 
 .primary > img, .secondary-white > img {
@@ -37,18 +52,8 @@
     border: 1px solid var(--interactive-primary);
 }
 
-.secondary-white {
-    composes: button;
-    background-color: transparent;
+.secondary:hover {
+    background-color: var(--interactive-primary);
     color: var(--text-interactive);
-    border: 1px solid var(--ui-background);
 }
 
-
-.button:focus {
-    box-shadow: var(--box-shadow-focus)
-}
-    
-.button:hover {
-    filter: opacity(.5);
-}

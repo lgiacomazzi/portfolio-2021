@@ -1,7 +1,8 @@
 export default function About() {
     return (
-        <section className="pt-5 pb-5">
+        <section id="start" className="pt-5 pb-5 d-none">
             <div className="container">
+                <h3></h3>
                 <div className="row">
                     <div className="col-3 mb-3">
                         <img src={"/images/blank.png"} />

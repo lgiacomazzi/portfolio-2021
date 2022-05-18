@@ -1,0 +1,19 @@
+<svg width="720" height="791" viewBox="0 0 720 791" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_956_4550)">
+<animateTransform attributeName="transform" type="rotate" begin="0s" dur="15s" from="0 500 500" to="360 500 500" repeatCount="indefinite"></animateTransform>
+
+<path d="M377.746 636C331 489.5 60 263.499 60 263.499C60 263.499 52.4023 120 157.451 120C262.5 120 406.101 368.727 406.101 368.727C406.101 368.727 452.441 186.916 550.72 186.916C649 186.916 679.349 331.158 679.349 331.158C679.349 331.158 457.5 507.5 377.746 636Z" fill="url(#paint0_linear_956_4550)" fill-opacity="0.2"/>
+</g>
+<defs>
+<filter id="filter0_f_956_4550" x="19.8787" y="80" width="699.47" height="596" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_956_4550"/>
+</filter>
+<linearGradient id="paint0_linear_956_4550" x1="521.723" y1="580.236" x2="109.071" y2="158.663" gradientUnits="userSpaceOnUse">
+<stop stop-color="#8EFE52"/>
+<stop offset="0.479167" stop-color="#91E1F3"/>
+<stop offset="0.994792" stop-color="#9B51E0"/>
+</linearGradient>
+</defs>
+</svg>

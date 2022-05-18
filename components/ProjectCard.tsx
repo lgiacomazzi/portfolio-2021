@@ -16,7 +16,7 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
     <Link href={"/portfolio/" + href}>
       <motion.div
         animate={{ scale: 1 }}
-        whileHover={{ scale: 1.01 }}
+        whileHover={{ outlineWidth: "4px" }}
         whileTap={{ scale: 0.98 }}
         className={styles.projectCard}>
         <div className={styles.projectDetails}>

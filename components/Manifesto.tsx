@@ -1,8 +1,18 @@
 import styles from "../styles/components/Manifesto.module.css";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+import Link from "next/link"
 import InlineLink from "../components/InlineLink";
 
+const ScrollButton = () => {
+  return (
+    <Link href="/#start">
+      <motion.a whileHover={{ scale: 1.08 }} whileTap={{ scale: .98 }} className={styles.manifestoScroll}>
+        <img src="/svg/scroll-down.svg" height={80} width={80} />
+      </motion.a>
+    </Link>
+  )
+}
 
 export default function Manifesto() {
   const textVariants = {
@@ -24,6 +34,8 @@ export default function Manifesto() {
           <Button variant="secondary">Contato</Button>
         </motion.div>
       </div>
+      <ScrollButton />
+
     </section>
   );
 }

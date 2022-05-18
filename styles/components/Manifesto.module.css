@@ -1,9 +1,13 @@
 .manifesto {
-  background: url("/svg/bk-1.svg") var(--ui-background);
+  background: url("/svg/bk-5.svg") var(--ui-background);
   background-size: cover;
   background-position: center center;
+  display: flex;
+  align-items: center;
   padding-top: 120px;
   padding-bottom: 120px;
+
+  height: 80vh;
 }
 
 .manifestoText {
@@ -23,12 +27,27 @@
   gap: 8px;
 }
 
+.manifestoScroll {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
 @media (max-width: 768px) {
   .manifesto {
     padding-top: 80px;
     padding-bottom: 80px;
+    background-position: top;
   }
   .manifesto h1 {
     font-size: 28px;
+  }
+  .manifestoScroll {
+    bottom: 16px;
+    right: 16px;
+  }
+  .manifestoScroll img {
+    height: 60px;
+    width: 60px;
   }
 }
