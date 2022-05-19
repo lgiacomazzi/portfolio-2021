@@ -6,11 +6,6 @@ import About from "../components/About";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const variants = {
-    initial: { opacity: 0, x: -200 },
-    animate: { opacity: 1, x: 0 },
-    exit: { opacity: 0, x: -200 },
-  }
 
   return (
     <>
@@ -21,14 +16,12 @@ export default function Home() {
 
       <Header />
 
-      <motion.main variants={variants} initial="initial" animate="animate" exit="exit">
-        <Manifesto />
+      <Manifesto />
 
-        <About />
+      <About />
 
-        <Projects />
+      <Projects />
 
-      </motion.main>
 
       <footer className="bk-dark">
         {/* <div className="backgroundImage">

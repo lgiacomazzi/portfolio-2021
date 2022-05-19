@@ -19,6 +19,7 @@
   cursor: pointer;
   transition: var (--default-transition);
 }
+
 .header .headerLogo:hover {
   filter: opacity(.8);
 }
