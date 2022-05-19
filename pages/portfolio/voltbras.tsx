@@ -17,7 +17,7 @@ export default function Portfolio() {
             <Header />
 
             {/* Introdução */}
-            <section id="header" className="pt-4 pb-4 bk-white">
+            <section id="header" className="pt-4 pb-4 bk-volt">
                 <div className='container'>
                     <motion.h2
                         initial={{ y: -10, opacity: 0 }}
@@ -95,7 +95,7 @@ export default function Portfolio() {
             </section>
 
             {/* Discover */}
-            <section className="portfolio-section pt-5 pb-5 bk-dark">
+            <section className="portfolio-section pt-5 pb-5 bk-white">
                 <div className="container mb-5">
                     <span className="text-secondary text-small mb-2">01 - descoberta</span>
                     <h2 className="mb-2">Discover</h2>
@@ -148,25 +148,6 @@ export default function Portfolio() {
                             <p className="text-body">A etapa de discovery nos ajudou a obter uma compreensão sobre o domínio do problema e as necessidades de nossos usuários. </p>
                             <p className="text-body">A síntese de nossa pesquisa serviu como uma lente através da qual poderíamos considerar não apenas o que o aplicativo deveria fazer, mas também como ele deveria responder levando-se em consideracao os aspectos funcionais do hardware das estações.</p>
                             <p className="text-body">Levantamos quais as eram as certezas, suposições e dúvidas com relação ao projeto e definimos quais principais aspectos que precisariam ser melhor explorados nas próximas etapas.</p>
-                        </div>
-                    </div>
-                    <h4 className="mb-2">Entrevistas com usuários</h4>
-                    <div className="row mb-4">
-                        <div className="col-lg-6">
-                            <p className="text-body mb-2">Conduzimos entrevistas com alguns usuários para entender melhor os diferentes contextos de recarga, quais os principais desejos, necessidades e frustrações dos usuários durante o processo.</p>
-                            <p className="text-body mb-2">O roteiro buscou validar a necessidade de se planejar para carregar o veículo entendendo melhor a diferença de comportamento dos usuários entre uma recarga no dia-a-dia e eventual necessidade de recarga durante uma viagem.</p>
-                            <p className="text-body mb-2">As entrevistas forneceram insights sobre o que os usuários pensam sobre o assunto e quais as principais dificuldades durante o uso do aplicativo de recarga no contexto de viagens.</p>
-                        </div>
-                        <div className="col-lg-6">
-                        </div>
-                    </div>
-                    <h4 className="mb-2">Desk Research</h4>
-                    <div className="row">
-                        <div className="col-lg-6">
-                            <p className="text-body">Também revisamos restrições técnicas da estação de recarga e do conector com as equipes de controle e monitoramento. Buscamos entender o funcionamento da tecnologia de reservas nas estações e quais aspectos precisavam ser levados em consideração ao desenhar a experiência virtual do usuário no aplicativo.  </p>
-                        </div>
-                        <div className="col-lg-6">
-                            <p className="text-body">Estudamos o mercado dentro e fora do Brasil, principalmente como os usuários lidam com este tipo de problema em diferentes níveis de maturidade e como outras empresas já resolveram este tipo de desafio.</p>
                         </div>
                     </div>
                 </div>

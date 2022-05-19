@@ -35,3 +35,9 @@
   color: var(--text-interactive);
   background-color: var(--ui-background-contrast);
 }
+
+.bk-volt {
+  background: url(/svg/bk-volt.svg);
+  background-size: cover;
+  background-position: center center;
+}

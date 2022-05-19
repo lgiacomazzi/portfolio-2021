@@ -18,7 +18,10 @@ function MyApp({ Component, pageProps, router }) {
     }
   }
   return (
-    <AnimateSharedLayout>
+    <Component {...pageProps} />
+  );
+  {/* return (
+     <AnimateSharedLayout>
       <AnimatePresence exitBeforeEnter>
         <motion.div
           key={router.route}
@@ -26,11 +29,11 @@ function MyApp({ Component, pageProps, router }) {
           animate="pageAnimate"
           exit="pageExit"
           variants={variants}>
-          <Component {...pageProps} />
-        </motion.div>
+        <Component {...pageProps} />
+       </motion.div> 
       </AnimatePresence>
-    </AnimateSharedLayout>
-  );
+    </AnimateSharedLayout> 
+  );*/}
 }
 
 export default MyApp;

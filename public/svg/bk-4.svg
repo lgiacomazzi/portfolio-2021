@@ -5,7 +5,6 @@
 </g>
 <g filter="url(#filter1_f_956_4550)">
 <animateTransform attributeName="transform" type="rotate" begin="0s" dur="10s" from="0 500 750" to="-360 500 750"  repeatCount="indefinite"></animateTransform>
-
 <path d="M644.5 526.5C640.5 461.5 493.258 284.63 264.157 513.731C140.929 636.959 161.31 851.936 251 883.5C328.057 910.618 361 748.5 512.807 762.458C664.613 776.415 648.5 591.5 644.5 526.5Z" fill="url(#paint1_linear_956_4550)"/>
 </g>
 <defs>

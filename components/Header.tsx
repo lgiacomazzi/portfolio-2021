@@ -14,8 +14,8 @@ export function NavLink({ children, href = "/" }) {
 export default function Profile() {
   return (
     <motion.div
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
+      // initial={{ y: -100 }}
+      // animate={{ y: 0 }}
       className={styles.header}>
       <Link href="/">
         <motion.a whileTap={{ scale: .98 }} className={styles.headerLogo}>
