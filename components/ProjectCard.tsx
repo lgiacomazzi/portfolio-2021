@@ -20,7 +20,7 @@ const Marquee = ({ children }) => {
 
 export default function ProjectCard({ children, name, href, disabled = false }: ProjectCardProps) {
   return (
-    <Link href={"/portfolio/" + href}>
+    <Link href={"/portfolio/" + href} >
       <motion.div
         whileTap={{ scale: 0.98 }}
         className={styles.projectCard}>
@@ -37,7 +37,13 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
           }
         </div>
         <div className={styles.projectHeroImage}>
-          <Image src={"/images/" + (href ? href : "blank") + ".png"} layout="fill" objectFit="cover" />
+          <Image
+            src={"/images/" + (href ? href : "blank") + ".png"}
+            quality={100}
+            layout="fill"
+            objectFit="cover"
+            unoptimized
+            priority />
         </div>
       </motion.div>
     </Link>

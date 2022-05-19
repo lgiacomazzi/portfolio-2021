@@ -26,8 +26,6 @@
   max-width: 500px;
 }
 
-
-
 .projectName {
   transition: var(--default-transition);
 }
@@ -64,7 +62,7 @@
 
 .projectHeroImage {
   width: 500px;
-  height: 500px;
+  height: 300px;
   overflow: hidden;
   border-radius: var(--border-radius);
 }
@@ -87,6 +85,7 @@
 
   .projectHeroImage {
     height: 50vh;
+    border-radius: 0px;
   }
 }
 

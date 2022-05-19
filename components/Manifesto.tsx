@@ -1,5 +1,6 @@
 import styles from "../styles/components/Manifesto.module.css";
 import { motion } from "framer-motion";
+import { useRouter } from 'next/router'
 import Button from "../components/Button";
 import Link from "next/link"
 import InlineLink from "../components/InlineLink";
@@ -15,6 +16,8 @@ const ScrollButton = () => {
 }
 
 export default function Manifesto() {
+  const router = useRouter();
+
   const textVariants = {
     hidden: { opacity: 0 },
     show: { opacity: 1 }
@@ -27,15 +30,15 @@ export default function Manifesto() {
           hey there, i'm luciano — a product designer experienced in frontend development.
         </motion.h1>
         <motion.p variants={textVariants} className="text-lead mb-2">
-          currently solving complex design challenges at <InlineLink>delivery much</InlineLink>
+          currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink>
         </motion.p>
         <motion.div className={styles.manifestoActions}>
-          <Button variant="secondary">Sobre mim</Button>
-          <Button variant="secondary">Contato</Button>
+          <Button variant="secondary" onClick={() => router.push('/about')}>Sobre mim</Button >
+          <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button>
         </motion.div>
       </div>
       <ScrollButton />
 
-    </section>
+    </section >
   );
 }
