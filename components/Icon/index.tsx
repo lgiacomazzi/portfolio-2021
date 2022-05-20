@@ -25,10 +25,10 @@ interface IconProps {
     color?: string;
 }
 
-const IconComponent = ({ icon, size, color }: IconProps) => {
+const IconComponent = ({ icon, size, color, ...props }: IconProps) => {
     let Icon = iconTypes[icon];
     let Color = colorTypes[color];
-    return <Icon width={size} height={size} fill={Color} />;
+    return <Icon width={size} height={size} fill={Color} {...props} />;
 };
 
 export default IconComponent;
