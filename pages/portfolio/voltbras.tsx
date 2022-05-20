@@ -100,11 +100,11 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            {/* Discover */}
+            {/* 01 - Discovery */}
             <section className="portfolio-section pt-5 pb-5 bk-white">
                 <div className="container mb-5">
                     <span className="text-secondary text-small mb-2">01 - descoberta</span>
-                    <h2 className="mb-2">Discover</h2>
+                    <h2 className="mb-2">Discovery</h2>
                     <div className="row mb-5">
                         <div className="col-lg-6 mb-2">
                             <p className="text-body">Durante a etapa de discovery, realizei conversas com diversos stakeholders internos para entender mais sobre o domínio do problema e suas as visões para o produto e negócio.</p>
@@ -144,16 +144,50 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            {/* Definição */}
+            {/* 02 - Definição */}
             <section className="pt-5 pb-5 bk-white">
                 <div className="container mb-5">
                     <div className="row mb-4">
                         <div className="col-lg-6">
                             <span className="text-secondary text-small mb-2">02 - definição</span>
-                            <h2 className="mb-2">Define</h2>
+                            <h2 className="mb-2">Definição</h2>
                             <p className="text-body">A etapa de discovery nos ajudou a obter uma compreensão sobre o domínio do problema e as necessidades de nossos usuários. </p>
                             <p className="text-body">A síntese de nossa pesquisa serviu como uma lente através da qual poderíamos considerar não apenas o que o aplicativo deveria fazer, mas também como ele deveria responder levando-se em consideracao os aspectos funcionais do hardware das estações.</p>
-                            <p className="text-body">Levantamos quais as eram as certezas, suposições e dúvidas com relação ao projeto e definimos quais principais aspectos que precisariam ser melhor explorados nas próximas etapas.</p>
+                            <h3>Key Findings and Insights</h3>
+                            <h3>Key Oportunities</h3>
+                            <h3>Product Scope (User Stories) </h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Diamond 2 */}
+            {/* 03 - Develop */}
+            <section className="pt-5 pb-5 bk-white">
+                <div className="container mb-5">
+                    <div className="row mb-4">
+                        <div className="col-lg-6">
+                            <span className="text-secondary text-small mb-2">03 - desenhando a solução</span>
+                            <h2 className="mb-2">Design</h2>
+                            <h3>Concept Exploration</h3>
+                            <h3>User Flow and Information Architecture</h3>
+                            <h3>Wireframes / Prototypes</h3>
+                            <h3>User Testing</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* 04 - Deliver */}
+            <section className="pt-5 pb-5 bk-white">
+                <div className="container mb-5">
+                    <div className="row mb-4">
+                        <div className="col-lg-6">
+                            <span className="text-secondary text-small mb-2">02 - definição</span>
+                            <h2 className="mb-2">Final Design</h2>
+                            <h3>High Fidelity Design</h3>
+                            <h3>Design System</h3>
+                            <h3>Design Decisions</h3>
                         </div>
                     </div>
                 </div>
