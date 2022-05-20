@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
-import Icon from "../components/Icon"
+import Icon from "./Icon"
 import styles from "../styles/components/Header.module.css";
+import Logo from "../public/images/luciano-light-bk.svg";
 
 export function NavLink({ children, href = "/" }) {
   return (
@@ -19,7 +20,7 @@ export default function Profile() {
       className={styles.header}>
       <Link href="/">
         <motion.a whileTap={{ scale: .98 }} className={styles.headerLogo}>
-          <img src="/images/luciano-light-bk.svg" />
+          <Logo />
         </motion.a>
       </Link>
       <div className={styles.actions}>
@@ -29,7 +30,7 @@ export default function Profile() {
         <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
       </div>
       <div className={styles.burgerMenu}>
-        <Icon icon="menu-burger" size={24} />
+        <Icon icon="menu-burger" size={24} color="text-primary" />
       </div>
     </motion.div>
   );

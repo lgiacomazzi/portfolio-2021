@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export default function Home() {
 
   return (
-    <>
+    <main>
       <Head>
         <title>Luciano Giacomazzi | Product Designer</title>
         <link rel="icon" href="/favicon.ico" />
@@ -32,6 +32,6 @@ export default function Home() {
           />
         </div> */}
       </footer>
-    </>
+    </main>
   );
 }

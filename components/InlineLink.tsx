@@ -8,7 +8,7 @@ export default function InlineLink({ children, href = "/" }) {
         <Link href={href} prefetch={false} passHref>
             <motion.a whileTap={{ scale: .98 }} className={styles.inlineLink}>
                 {children}
-                <Icon icon="external-link" />
+                <Icon icon="external-link" color="text-primary" />
             </motion.a>
         </Link>
     )

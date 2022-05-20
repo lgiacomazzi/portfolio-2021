@@ -17,6 +17,7 @@
 .header .headerLogo {
   display: inherit;
   cursor: pointer;
+  fill: var(--text-primary);
   transition: var (--default-transition);
 }
 
