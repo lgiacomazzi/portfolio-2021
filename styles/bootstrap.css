@@ -15,11 +15,11 @@
       max-width: 720px;
     }
   }
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .container-md, .container-sm, .container {
       --bs-gutter-x: 16px;
     }
-  }
+  } */
   @media (min-width: 992px) {
     .container-lg, .container-md, .container-sm, .container {
       max-width: 960px;
