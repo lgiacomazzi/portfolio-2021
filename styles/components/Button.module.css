@@ -57,3 +57,8 @@
     color: var(--text-interactive);
 }
 
+.small {
+    composes: button;
+    padding: 6px 8px;
+}
+

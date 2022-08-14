@@ -38,7 +38,7 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
         </div>
         <div className={styles.projectHeroImage}>
           <Image
-            src={"/images/" + (href ? href : "blank") + ".png"}
+            src={"/images/" + href + ".png"}
             quality={100}
             layout="fill"
             objectFit="cover"

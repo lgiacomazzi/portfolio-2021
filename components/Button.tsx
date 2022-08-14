@@ -4,15 +4,16 @@ import { motion } from "framer-motion";
 interface ButtonProps {
   children: any;
   variant?: "primary" | "secondary" | "secondary-white";
+  size?: "default" | "small";
   onClick?: () => void;
   disabled?: boolean
 }
 
-export default function Button({ children, variant = "primary", disabled = false, onClick }: ButtonProps) {
+export default function Button({ children, variant = "primary", disabled = false, size = "default", onClick }: ButtonProps) {
   return (
     <motion.button
       whileTap={{ scale: .96 }}
-      className={styles[`${variant}`]}
+      className={styles[`${variant}`] + ' ' + styles[`${size}`]}
       disabled={disabled}
       onClick={onClick}
     >

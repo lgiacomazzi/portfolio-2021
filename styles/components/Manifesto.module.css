@@ -1,7 +1,4 @@
 .manifesto {
-  background: url("/svg/bk-5.svg") var(--ui-background);
-  background-size: cover;
-  background-position: center center;
   display: flex;
   align-items: center;
   padding-top: 120px;
@@ -9,7 +6,7 @@
 
   border-bottom: 1px solid var(--ui-border);
 
-  height: 80vh;
+  height: 90vh;
 }
 
 .manifestoText {
