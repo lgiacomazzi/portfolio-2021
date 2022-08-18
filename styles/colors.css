@@ -1,19 +1,22 @@
 :root {
-    --text-primary: #17181C;
+    --text-primary: #101114;
     --text-secondary: #454754;
     --text-tertiary: #73778C;
     --text-interactive: #FCFCFD;
     
-    --interactive-primary: #17181C;
+    --interactive-primary: #101114;
   
     --ui-background: #FCFCFD;
     --ui-background-light: #F4F4F6;
-    --ui-background-contrast: #17181C;
+    --ui-background-contrast: #101114;
   
     --ui-border: #EEEFF1;
   
     --border-radius: 12px;
+
+    --quick-transition: 200ms;
     --default-transition: 400ms;
+
     --box-shadow-small: 0px 2px 10px rgba(0, 0, 0, 0.10);
     --box-shadow-default: 0px 2px 10px rgba(0, 0, 0, 0.15);
     --box-shadow-focus: 0px 0px 0px 4px rgba(35, 123, 255, 0.16);
@@ -23,19 +26,18 @@
   --text-primary: #FCFCFD;
   --text-secondary: #ABADBA;
   --text-tertiary: #8F92A3;
-  --text-interactive: #17181C;
+  --text-interactive: #101114;
   
   --interactive-primary: #FCFCFD;
 
-  --ui-background: #17181C;
+  --ui-background: #101114;
   --ui-background-light: #2E3038;
   --ui-background-contrast: #FCFCFD;
 
   --ui-border: #373943;
 
   --border-radius: 12px;
-  --default-transition: 400ms;
-  --box-shadow-small: 0px 2px 10px rgba(0, 0, 0, 0.10);
+  --box-shadow-small: 0px 2px 10px rgba(0, 0,0, 0.6);
   --box-shadow-default: 0px 2px 10px rgba(0, 0, 0, 0.15);
   --box-shadow-focus: 0px 0px 0px 4px rgba(35, 123, 255, 0.16);
 }
@@ -59,6 +61,12 @@
 
 .bk-volt {
   background: url(/svg/bk-volt.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.bk-main {
+  /* background: url("/svg/bk-5.svg") var(--ui-background); */
   background-size: cover;
   background-position: center center;
 }

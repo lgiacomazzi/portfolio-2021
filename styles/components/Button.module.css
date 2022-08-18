@@ -13,7 +13,7 @@
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    transition: var(--default-transition);
+    transition: var(--quick-transition);
 }
 
 .button:focus {
@@ -55,5 +55,10 @@
 .secondary:hover {
     background-color: var(--interactive-primary);
     color: var(--text-interactive);
+}
+
+.small {
+    composes: button;
+    padding: 6px 8px;
 }
 

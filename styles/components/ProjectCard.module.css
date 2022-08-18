@@ -6,13 +6,9 @@
 
   width: 100%;
 
-  background-color: var(--ui-background);
   overflow: hidden;
-  transition: var(--default-transition);
 
-  cursor: pointer;
-
-  padding: 40px 0px;
+  padding: 100px 0px;
 }
 
 .projectDetails {
@@ -20,14 +16,9 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: auto;
   flex: 1;
   padding: 40px;
   max-width: 500px;
-}
-
-.projectName {
-  transition: var(--default-transition);
 }
 
 .projectCard + .projectCard {
@@ -62,20 +53,21 @@
 
 .projectHeroImage {
   width: 500px;
-  height: 300px;
+  height: 340px;
   overflow: hidden;
   border-radius: var(--border-radius);
+  background-color: var(--ui-background-light);
 }
 
 /* Mobile Only */
 @media (max-width: 768px) {
   .projectCard {
     flex-direction: column-reverse;
-    padding: 16px 0px;
+    padding: 24px 0px;
   }
 
   .projectDetails {
-    padding: 16px;
+    padding: 16px 0px;
   }
 
   .projectDetails, .projectHeroImage {

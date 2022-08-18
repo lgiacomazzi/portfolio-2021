@@ -1,11 +1,11 @@
 .inlineLink {
     display: inline-flex;
     align-items: center;
-    transition: var(--default-transition);
+    transition: var(--quick-transition);
 }
 
 .inlineLink img {
-    transition: var(--default-transition);
+    transition: var(--quick-transition);
 }
 
 .inlineLink:hover {

@@ -1,16 +1,18 @@
+import styles from "../styles/components/About.module.css";
+import Image from "next/image";
+import Button from "./Button";
+import Icon from "./Icon";
+
 export default function About() {
     return (
-        <section id="start" className="pt-5 pb-5 d-none">
-            <div className="container">
-                <h3></h3>
-                <div className="row">
-                    <div className="col-3 mb-3">
-                        <img src={"/images/blank.png"} />
-                    </div>
-                    <div className="col-9">
-                        <p className="text-body mb-4">Dentro do roadmap de produto, foi priorizado o desenvolvimento de uma funcionalidade para melhor atender esses usuários a viajar e assim realizar mais recargas pelo app.</p>
-                    </div>
-                </div>
+        <section id="start" className={styles.about}>
+            <div className={styles.aboutImage}>
+                <Image src={"/images"} objectFit="cover" layout="fill" />
+            </div>
+            <div className={styles.aboutText}>
+                <p className="">Apaixonado por tecnologia, tenho formação em engenharia e migrei para o design. Sou original de Porto Alegre mas atualmente moro em Florianópolis.</p>
+                <Button size="small"><Icon icon="download" size={16} />Currículo</Button>
+                <Button variant="secondary" size="small">Portfólio</Button>
             </div>
         </section>
     )
