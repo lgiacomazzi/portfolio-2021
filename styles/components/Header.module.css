@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   background: var(--ui-background);
-  /* border-bottom: 1px solid var(--ui-border); */
+  border-bottom: 1px solid var(--ui-border);
   box-shadow: var(--box-shadow-small);
 
   padding: 12px 24px;

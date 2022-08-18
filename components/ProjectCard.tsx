@@ -27,9 +27,7 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
         <div className={styles.projectDetails}>
           {name && <h4 className={styles.projectName}>{name}</h4>}
 
-          <Marquee>User Research, User Interface Design, Prototyping</Marquee>
-
-          {children && <p className="text-body mb-2">{children}</p>}
+          {children && <p className="text-body mt-2 mb-2">{children}</p>}
 
           {!disabled ?
             <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button> :

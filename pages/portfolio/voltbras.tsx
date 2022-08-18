@@ -63,7 +63,7 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <HeroImage src="/images/voltbras/voltbras.png" />
+            <HeroImage src="/images/voltbras.png" />
 
             {/* Desafio */}
             <section className="pt-5 pb-5 bk-white">
@@ -78,8 +78,10 @@ export default function Portfolio() {
                             <p className="text-body">Fui responsável pela execução do projeto de pesquisa e design da experiência do usuário. Atuei juntamente de desenvolvedores Web, Mobile e Backend e um Product Manager. </p>
                         </div>
                         <div className="col-lg-6 m-auto">
+                            <img src="/images/voltbras/conectores.png" />
+                            <p className="text-center text-small text-secondary mb-3">Tipos diferentes de conectores para veículos elétricos.</p>
                             <img src="/images/voltbras/map.png" />
-                            <p className="text-center text-small text-secondary mb-2">Aproximadamente 435 quilômetros de distância, a viagem entre Rio e São Paulo requer varias paradas para carregar o veículo.</p>
+                            <p className="text-center text-small text-secondary">Aproximadamente 435 quilômetros de distância, a viagem entre Rio e São Paulo requer varias paradas para carregar o veículo.</p>
                         </div>
                     </div>
                     <div className="row">
@@ -91,10 +93,12 @@ export default function Portfolio() {
             {/* Objetivo */}
             <section className="pt-4 pb-4 bk-light">
                 <div className="container">
-                    <h2 className="mb-1">Objetivos</h2>
+                    <div className="col-lg-6">
+                    <h2 className="mb-1">objetivos</h2>
                     <p className="text-body">- Entender a visão dos usuários e as principais dificuldades em viagens com veículos elétricos;</p>
                     <p className="text-body">- Avaliar a proposta de valor da solução e outros problemas ao longo da experiência;</p>
                     <p className="text-body">- Criar uma nova experiência que aumente o engajamento com o app com recargas.</p>
+                    </div>
                 </div>
             </section>
 
@@ -108,12 +112,15 @@ export default function Portfolio() {
                             <p className="text-body">Durante esta etapa, conversamos com diversos stakeholders para entender mais sobre as visões para o produto e <b>benefícios para os usuários.</b></p>
                             <p className="text-body">Levantamos quais as eram as certezas, suposições e dúvidas dentro do escopo do projeto e definimos quais principais pontos que precisariam ser explorados com pesquisas. </p>
                         </div>
+                        <div className="col-lg-6 m-auto">
+                        <img src="/images/voltbras/csd.png" />
+                        </div>
                     </div>
                     <div className="row mb-5">
                         <div className="col-lg-6 m-auto">
                            <h4 className="mb-2 mt-5">Entrevistas com usuários</h4>
-                            <p className="text-body">Entramos em contato com alguns usuários para entender melhor os diferentes contextos de recarga, quais os principais desejos, necessidades e frustrações dos usuários e se uma feature de reservas seria algo que trouxesse valor para eles.</p>
-                            <p className="text-body">O roteiro buscou validar a necessidade de se planejar para viajar com um veículo entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as ferramentas e soluções que estes usuários utilizam para evitar atrasos e problemas durante uma viagem.</p>
+                            <p className="text-body">Entramos em contato com alguns usuários para entender melhor os <b>diferentes contextos de recarga</b>, quais os principais desejos, necessidades e frustrações dos usuários e se uma feature de reservas seria algo que trouxesse valor para eles.</p>
+                            <p className="text-body">O roteiro buscou validar a necessidade de se <b>planejar para viajar com um veículo</b> entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as <b>ferramentas e soluções que estes usuários utilizam</b> para evitar atrasos e problemas durante uma viagem.</p>
                         </div>
                         <div className="col-lg-6 m-auto">
                             <img src="/images/voltbras/.png" />
@@ -130,8 +137,8 @@ export default function Portfolio() {
                     <div className="row mb-5">
                         <div className="col-lg-6 m-auto">
                             <h4 className="mb-2">Personas</h4>
-                            <p className="text-body mb-2">Construímos personas ao longo do projeto para para criar empatia em nossa equipe e ajudar com a visualização das principais necessidades dos usuários. </p>
-                            <p className="text-body mb-3">Depois de segmentar tipos diferentes de persona pudemos orientar decisões de produto e priorizar quais os cenários que iríamos nos concentraríamos nos estágios iniciais.</p>
+                            <p className="text-body">Construímos personas ao longo do projeto para para criar empatia em nossa equipe e ajudar com a visualização das principais necessidades dos usuários. </p>
+                            <p className="text-body">Depois de segmentar tipos diferentes de persona pudemos orientar decisões de produto e priorizar quais os cenários que iríamos nos concentraríamos nos estágios iniciais.</p>
                         </div>
                         <div className="col-lg-6">
                             <img src="/images/voltbras/persona.png" className="zoom mb-2" />
@@ -140,8 +147,8 @@ export default function Portfolio() {
                     <div className="row">
                         <div className="col-lg-6 m-auto">
                             <h4 className="mb-2">Jornada do usuário</h4>
-                            <p className="text-body mb-2">Usamos técnicas de mapeamento para visualizar e comunicar a experiência de ponta a ponta dos usuários em vários pontos de contato como aplicativo, seu veículo e ponto de carregamento.</p>
-                            <p className="text-body mb-2">Mapeamos emoções como ansiedades, frustrações e celebrações dos usuários ao jogo da sua jornada o que nos permitiu visualizar os pontos problemáticos da experiência.</p>
+                            <p className="text-body">Usamos técnicas de mapeamento para visualizar e comunicar a experiência de ponta a ponta dos usuários em vários pontos de contato como aplicativo, seu veículo e ponto de carregamento.</p>
+                            <p className="text-body">Mapeamos emoções como ansiedades, frustrações e celebrações dos usuários ao jogo da sua jornada o que nos permitiu visualizar os pontos problemáticos da experiência.</p>
                         </div>
                         <div className="col-lg-6">
                             <img src="/images/voltbras/jornada.png" className="zoom mb-2" />
@@ -167,11 +174,11 @@ export default function Portfolio() {
                     <div className="row">
                         <div className="col-lg-6 m-auto">
                             <img src="/images/voltbras/user-flow.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-2">Principais tapas de interação da funcionalidade de agendamento de recargas.</p>
+                            <p className="text-center text-small text-secondary mb-3">Principais tapas de interação da funcionalidade de agendamento de recargas.</p>
                         </div>
                         <div className="col-lg-6 m-auto">
                             <img src="/images/voltbras/wire-flow.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-2">Fluxos de interação da funcionalidade com telas simplificadas de agendamento de recargas.</p>
+                            <p className="text-center text-small text-secondary">Fluxos de interação da funcionalidade com telas simplificadas de agendamento de recargas.</p>
                         </div>
                     </div>
                 </div>
@@ -194,18 +201,16 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className="row">
-                        <div className="col-lg-6 mb-3">
+                        <div className="col-lg-6">
                             <h4 className="mb-2">Agenda da Estação</h4>
                             <p className="text-body">Para conseguir criar uma reserva na estação, trabalhamos no design de uma <b>agenda para cada conector da estação</b>. Algumas podem possuir até três modelos diferentes.</p>
                             <p className="text-body">Através desta agenda, é possível visualizar os horários ocupados e criar um novo agendamento. Também criamos um atalho onde o usuário poderia ter <b>acesso a todos seus horários agendados.</b></p>
                         </div>
                     </div>
-                    <div className="row mt-2 mb-5">
+                    <div className="row mb-5 mt-lg-3">
                         <div className="col-lg-12">
-                            <img src="/images/voltbras/agenda.png" className="zoom" />
-                            <div className="col-lg-6 offset-lg-6">
-                                <p className="text-right text-small text-secondary mb-2">Imagem mostrando telas da estação de recarga reservável, a agenda de um conector, os detalhes de um agendamento.</p>
-                            </div>
+                            <img src="/images/voltbras/agenda.png" className="zoom mb-2" />
+                            <p className="text-center text-small text-secondary mb-2">Imagem mostrando telas da estação de recarga reservável, a agenda de um conector, os detalhes de um agendamento.</p>
                         </div>
                     </div>
                     <div className="row mb-5">
@@ -216,7 +221,7 @@ export default function Portfolio() {
                         </div>
                         <div className="col-lg-6">
                             <img src="/images/voltbras/pins-app.png" className="zoom mb-2" />
-                            <p className="text-right text-small text-secondary mb-2 text-center">Imagem mostrando todos os possíveis pins e seus diferentes significados.</p>
+                            <p className="text-center text-small text-secondary mb-2 text-center">Imagem mostrando todos os possíveis pins e seus diferentes significados.</p>
                         </div>
                     </div>
                     <div className="row">
@@ -227,10 +232,8 @@ export default function Portfolio() {
                     </div>
                     <div className="row mt-2 mb-5">
                         <div className="col-lg-12">
-                            <img src="/images/voltbras/pushs.png" className="zoom" />
-                            <div className="col-lg-6 offset-lg-6">
-                                <p className="text-right text-small text-secondary mb-2">Combinação pushs e popups utilizadas para conduzir o usuário à recarga.</p>
-                            </div>
+                            <img src="/images/voltbras/pushs.png" className="zoom mb-2" />
+                            <p className="text-center text-small text-secondary mb-2">Combinação pushs e popups utilizadas para conduzir o usuário à recarga.</p>
                         </div>
                     </div>
                     <div className="row mb-5">
