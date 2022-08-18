@@ -66,7 +66,7 @@ export default function Portfolio() {
             <HeroImage src="/images/voltbras/voltbras.png" />
 
             {/* Desafio */}
-            <section className="portfolio-section pt-5 pb-5 bk-white">
+            <section className="pt-5 pb-5 bk-white">
                 <div className="container">
                     <div className="row mb-2">
                         <div className="col-lg-6">
@@ -116,7 +116,7 @@ export default function Portfolio() {
                             <p className="text-body">O roteiro buscou validar a necessidade de se planejar para viajar com um veículo entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as ferramentas e soluções que estes usuários utilizam para evitar atrasos e problemas durante uma viagem.</p>
                         </div>
                         <div className="col-lg-6 m-auto">
-                            <img src="/images/voltbras/map.png" />
+                            <img src="/images/voltbras/.png" />
                         </div>
                     </div>
                     <div className="row mb-5">

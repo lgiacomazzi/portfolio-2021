@@ -103,10 +103,6 @@ h5 {
   margin-bottom: 24px;
 }
 
-.text-body:last-of-type {
-  margin-bottom: 0px;
-}
-
 .text-small {
   font-size: 12px;
   font-weight: normal;
