@@ -27,12 +27,13 @@ interface IconProps {
     icon: string;
     size?: number;
     color?: string;
+    viewBox?: string;
 }
 
 const IconComponent = ({ icon, size, color, ...props }: IconProps) => {
     let Icon = iconTypes[icon];
     let Color = colorTypes[color];
-    return <Icon width={size} height={size} fill={Color} {...props} />;
+    return <Icon width={size} height={size} viewBox="0 0 24 24" fill={Color} {...props} />;
 };
 
 export default IconComponent;

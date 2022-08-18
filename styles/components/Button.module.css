@@ -13,7 +13,7 @@
     border-radius: 100px;
     border: none;
     cursor: pointer;
-    transition: var(--default-transition);
+    transition: var(--quick-transition);
 }
 
 .button:focus {

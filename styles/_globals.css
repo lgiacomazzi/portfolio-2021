@@ -60,6 +60,10 @@ img {
   -webkit-user-drag: none;
 }
 
+h1,h2,h3,h4,h5,h6 {
+  font-feature-settings: 'ss01' on;
+}
+
 h1 {
   font-size: 40px;
   font-weight: 700;
@@ -116,6 +120,10 @@ h5 {
   text-align: center;
 }
 
+.text-right { 
+  text-align: right;
+}
+
 #hero {
   height: 80vh;
 }
@@ -127,6 +135,14 @@ h5 {
   box-shadow: var(--box-shadow-small);
 }
 
+.divider {
+  width: fit-content;
+  text-align: center;
+  padding: 24px;
+  margin: 24px auto;
+  border-top: 1px solid var(--ui-border);
+  border-bottom: 1px solid var(--ui-border);
+}
 
 
 /* Mobile Only */

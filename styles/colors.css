@@ -1,14 +1,14 @@
 :root {
-    --text-primary: #17181C;
+    --text-primary: #101114;
     --text-secondary: #454754;
     --text-tertiary: #73778C;
     --text-interactive: #FCFCFD;
     
-    --interactive-primary: #17181C;
+    --interactive-primary: #101114;
   
     --ui-background: #FCFCFD;
     --ui-background-light: #F4F4F6;
-    --ui-background-contrast: #17181C;
+    --ui-background-contrast: #101114;
   
     --ui-border: #EEEFF1;
   
@@ -26,11 +26,11 @@
   --text-primary: #FCFCFD;
   --text-secondary: #ABADBA;
   --text-tertiary: #8F92A3;
-  --text-interactive: #17181C;
+  --text-interactive: #101114;
   
   --interactive-primary: #FCFCFD;
 
-  --ui-background: #17181C;
+  --ui-background: #101114;
   --ui-background-light: #2E3038;
   --ui-background-contrast: #FCFCFD;
 

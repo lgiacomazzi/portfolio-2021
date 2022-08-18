@@ -11,7 +11,7 @@ export default function About() {
             </div>
             <div className={styles.aboutText}>
                 <p className="">Apaixonado por tecnologia, tenho formação em engenharia e migrei para o design. Sou original de Porto Alegre mas atualmente moro em Florianópolis.</p>
-                <Button size="small"><Icon icon="download" size={24} />Currículo</Button>
+                <Button size="small"><Icon icon="download" size={16} />Currículo</Button>
                 <Button variant="secondary" size="small">Portfólio</Button>
             </div>
         </section>
