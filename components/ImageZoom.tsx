@@ -4,8 +4,8 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 const variants = {
-    open: { opacity: 1, scale: 1 },
-    closed: { opacity: 0.8, scale: .5 },
+    open: { opacity: 1 },
+    closed: { opacity: 0 },
 }
 
 export default function ImageZoom({src,alt}) {
