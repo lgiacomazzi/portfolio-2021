@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import Link from "next/link";
+import ImageZoom from "../../components/ImageZoom";
 
 export default function Portfolio() {
     const variants = {
@@ -78,10 +79,8 @@ export default function Portfolio() {
                             <p className="text-body">Fui responsável pela execução do projeto de pesquisa e design da experiência do usuário. Atuei juntamente de desenvolvedores Web, Mobile e Backend e um Product Manager. </p>
                         </div>
                         <div className="col-lg-6 m-auto">
-                            <img src="/images/voltbras/conectores.png" />
-                            <p className="text-center text-small text-secondary mb-3">Tipos diferentes de conectores para veículos elétricos.</p>
-                            <img src="/images/voltbras/map.png" />
-                            <p className="text-center text-small text-secondary">Aproximadamente 435 quilômetros de distância, a viagem entre Rio e São Paulo requer varias paradas para carregar o veículo.</p>
+                            <ImageZoom src="/images/voltbras/conectores.png" alt="Tipos diferentes de conectores para veículos elétricos." />
+                            <ImageZoom src="/images/voltbras/map.png" alt="Aproximadamente 435 quilômetros de distância, a viagem entre Rio e São Paulo requer varias paradas para carregar o veículo." />
                         </div>
                     </div>
                     <div className="row">
@@ -113,7 +112,7 @@ export default function Portfolio() {
                             <p className="text-body">Levantamos quais as eram as certezas, suposições e dúvidas dentro do escopo do projeto e definimos quais principais pontos que precisariam ser explorados com pesquisas. </p>
                         </div>
                         <div className="col-lg-6 m-auto">
-                        <img src="/images/voltbras/csd.png" />
+                        <ImageZoom src="/images/voltbras/csd.png" alt="Matriz CSD contendo detalhes do problema a ser explorado"/>
                         </div>
                     </div>
                     <div className="row mb-5">
@@ -123,25 +122,25 @@ export default function Portfolio() {
                             <p className="text-body">O roteiro buscou validar a necessidade de se <b>planejar para viajar com um veículo</b> entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as <b>ferramentas e soluções que estes usuários utilizam</b> para evitar atrasos e problemas durante uma viagem.</p>
                         </div>
                         <div className="col-lg-6 m-auto">
-                            <img src="/images/voltbras/.png" />
+                            <ImageZoom src="/images/voltbras/.png" alt="" />
                         </div>
                     </div>
                     <div className="row mb-5">
                         <div className="col-lg-6">
                            <h4 className="mb-2">Desk Research</h4>
-                           <p className="text-body">Também revisamos restrições técnicas da estação de recarga e de seus conectores com as equipes de controle e monitoramento.</p>
-                           <p className="text-body">Buscamos entender o funcionamento da tecnologia de reservas já existente nas estações (tecnologia OCPP) e quais limitações impactariam na experiência virtual do usuário no aplicativo.</p>
-                           <p className="text-body">Analisamos o mercado, principalmente fora do Brasil, para entender como os usuários em países com maior infraestutura de carregamento lidam com este tipo de desafio e como outras empresas já resolveram este problema por lá.</p>
+                           <p className="text-body">Também <b>revisamos restrições técnicas das estações de recarga e de seus conectores</b> com as equipes de controle e monitoramento.</p>
+                           <p className="text-body">Buscamos entender o funcionamento da <b>tecnologia de reservas já existente nas estações</b> (tecnologia OCPP) e quais limitações impactariam na experiência virtual do usuário no aplicativo.</p>
+                           <p className="text-body">Analisamos o mercado, principalmente fora do Brasil, para entender como os usuários, com maior infraestutura de carregamento, lidam com este tipo de desafio <b>e como outras empresas já resolveram este problema por lá</b>.</p>
                        </div>
                     </div>
                     <div className="row mb-5">
                         <div className="col-lg-6 m-auto">
                             <h4 className="mb-2">Personas</h4>
-                            <p className="text-body">Construímos personas ao longo do projeto para para criar empatia em nossa equipe e ajudar com a visualização das principais necessidades dos usuários. </p>
+                            <p className="text-body">Construímos personas ao longo do projeto para para <b>criar empatia em nossa equipe</b> e ajudar com a visualização das principais necessidades dos usuários. </p>
                             <p className="text-body">Depois de segmentar tipos diferentes de persona pudemos orientar decisões de produto e priorizar quais os cenários que iríamos nos concentraríamos nos estágios iniciais.</p>
                         </div>
                         <div className="col-lg-6">
-                            <img src="/images/voltbras/persona.png" className="zoom mb-2" />
+                            <ImageZoom src="/images/voltbras/persona.png" alt="Persona criada para referenciar decisões de design." />
                         </div>
                     </div>
                     <div className="row">
@@ -151,7 +150,7 @@ export default function Portfolio() {
                             <p className="text-body">Mapeamos emoções como ansiedades, frustrações e celebrações dos usuários ao jogo da sua jornada o que nos permitiu visualizar os pontos problemáticos da experiência.</p>
                         </div>
                         <div className="col-lg-6">
-                            <img src="/images/voltbras/jornada.png" className="zoom mb-2" />
+                            <ImageZoom src="/images/voltbras/jornada.png" alt="Jornada do usuário na hora de viajar com um veículo elétrico." />
                         </div>
                     </div>
                 </div>
@@ -166,19 +165,17 @@ export default function Portfolio() {
                         <div className="col-lg-6">
                         <span className="text-secondary text-small mb-2">II - DEFINE</span>
                         <h2 className="mb-2">definido o produto, quais problemas atacar</h2>
-                            <p className="text-body">Com estas técnicas, identificamos pontos de atrito na experiência dos viajam que  melhorados para aumentar o engajamento com as recargas. </p>
-                            <p className="text-body">Criei diversos cenários imaginando as interações e jornadas ideais dos usuários levando-se em consideração as informações e limitações tecnológicas encontradas nas etapas anteriores.</p>
-                            <p className="text-body">Construí fluxos ideais com diferentes níveis de fidelidade tanto para idealizar a solução como um todo mas também para comunicar para os demais membros do time quais seriam as interações necessárias. </p>
+                            <p className="text-body">Com estas técnicas, identificamos pontos de atrito na experiência dos usuários que viajam para <b>aumentar o engajamento com as recargas. </b></p>
+                            <p className="text-body">Criei diversos cenários imaginando as interações e jornadas ideais dos usuários levando-se em consideração os insights e limitações tecnológicas encontradas nas etapas anteriores.</p>
+                            <p className="text-body">Construí <b>fluxos ideais com diferentes níveis de fidelidade</b> tanto para idealizar a solução como um todo mas também para comunicar para os demais membros do time quais seriam as interações necessárias. </p>
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 m-auto">
-                            <img src="/images/voltbras/user-flow.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-3">Principais tapas de interação da funcionalidade de agendamento de recargas.</p>
+                            <ImageZoom src="/images/voltbras/user-flow.png" alt="Principais tapas de interação da funcionalidade de agendamento de recargas." />
                         </div>
                         <div className="col-lg-6 m-auto">
-                            <img src="/images/voltbras/wire-flow.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary">Fluxos de interação da funcionalidade com telas simplificadas de agendamento de recargas.</p>
+                            <ImageZoom src="/images/voltbras/wire-flow.png" alt="Fluxos de interação da funcionalidade com telas simplificadas de agendamento de recargas." />
                         </div>
                     </div>
                 </div>
@@ -193,8 +190,8 @@ export default function Portfolio() {
                         <div className="col-lg-6">
                             {/* Concept Exploration */}
                             <h2 className="mb-2">desenhando a solução</h2>
-                            <p className="text-body">Após a criação dos fluxos e validação com o time técnico para antecipar quais quer alterações, imaginei experiências ideais olhando diversas referencias de outros aplicativos e produtos porém com os mesmos modelos mentais idealizados.</p>
-                            <p className="text-body">Através das pesquisas no mercado europeu, era possível estabelecer alguns padrões de como a tecnologia estava evoluindo por lá. Além, as pesquisas mostraram que muitos usuários inclusive já faziam o uso deste tipo de aplicativo em suas viagens e passeios fora do Brasil.</p>
+                            <p className="text-body">Após a criação dos fluxos e validação com os stakeholders e o time técnico para antecipar quais quer alterações, imaginei experiências aprendendo com diversas referencias de outros aplicativos e produtos porém com os mesmos modelos mentais dos usuários.</p>
+                            <p className="text-body">Através das pesquisas no mercado europeu, era possível estabelecer alguns padrões de como a tecnologia estava evoluindo por lá. Além, as pesquisas mostraram que muitos usuários <b>inclusive já faziam o uso deste tipo de aplicativo em suas viagens e passeios fora do Brasil</b>.</p>
                             {/* User Flow and Information Architecture */}
                             {/* Wireframes / Prototypes */}
                             {/* User Testing */}
@@ -209,8 +206,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row mb-5 mt-lg-3">
                         <div className="col-lg-12">
-                            <img src="/images/voltbras/agenda.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-2">Imagem mostrando telas da estação de recarga reservável, a agenda de um conector, os detalhes de um agendamento.</p>
+                            <ImageZoom src="/images/voltbras/agenda.png" alt="Imagem mostrando telas da estação de recarga reservável, a agenda de um conector, os detalhes de um agendamento." />
                         </div>
                     </div>
                     <div className="row mb-5">
@@ -220,8 +216,7 @@ export default function Portfolio() {
                             <p className="text-body">Através de algumas iterações, encontramos um design de marcador eficiente, garantindo que os usuários pudessem entender o significado e ao mesmo tempo escalável, permitindo a inclusão de representações visuais para outras funções no futuro.</p>
                         </div>
                         <div className="col-lg-6">
-                            <img src="/images/voltbras/pins-app.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-2 text-center">Imagem mostrando todos os possíveis pins e seus diferentes significados.</p>
+                            <ImageZoom src="/images/voltbras/pins-app.png" alt="Imagem mostrando todos os possíveis pins e seus diferentes significados." />
                         </div>
                     </div>
                     <div className="row">
@@ -232,8 +227,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row mt-2 mb-5">
                         <div className="col-lg-12">
-                            <img src="/images/voltbras/pushs.png" className="zoom mb-2" />
-                            <p className="text-center text-small text-secondary mb-2">Combinação pushs e popups utilizadas para conduzir o usuário à recarga.</p>
+                            <ImageZoom src="/images/voltbras/pushs.png" alt="Combinação pushs e popups utilizadas para conduzir o usuário à recarga." />
                         </div>
                     </div>
                     <div className="row mb-5">
@@ -250,8 +244,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row mt-2 mb-5">
                         <div className="col-lg-8 offset-lg-2">
-                            <img src="/images/voltbras/usabilidade.png" className="zoom mb-1" />
-                            <p className="text-center text-small text-secondary mb-2">Captura de tela de teste de usabilidade do aplicativo de reservas.</p>
+                            <ImageZoom src="/images/voltbras/usabilidade.png" alt="Captura de tela de teste de usabilidade do aplicativo de reservas." />
                         </div>
                     </div>
                 </div>

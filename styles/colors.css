@@ -7,6 +7,7 @@
     --interactive-primary: #101114;
   
     --ui-background: #FCFCFD;
+    --ui-background-overlay: #FCFCFDd9;
     --ui-background-light: #F4F4F6;
     --ui-background-contrast: #101114;
   
@@ -31,6 +32,7 @@
   --interactive-primary: #FCFCFD;
 
   --ui-background: #101114;
+  --ui-background-overlay: #101114d9;
   --ui-background-light: #2E3038;
   --ui-background-contrast: #FCFCFD;
 
