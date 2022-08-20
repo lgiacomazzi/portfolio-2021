@@ -12,7 +12,7 @@
 
 @media (max-width: 768px) {
   .container-md, .container-sm, .container {
-    --bs-gutter-x: 24px !important;
+    --bs-gutter-x: 16px !important;
   }
 }
 @media (min-width: 992px) {
