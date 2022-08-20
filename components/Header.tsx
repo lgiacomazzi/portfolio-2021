@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Icon from "./Icon"
 import styles from "../styles/components/Header.module.css";
 import Logo from "../public/images/luciano-light-bk.svg";
-import Toggle from "./Toggle";
+import Menu from "./Menu";
 
 export function NavLink({ children, href = "/" }) {
   return (
@@ -27,12 +27,10 @@ export default function Header() {
           <NavLink href="/#portfolio">Portfólio</NavLink>
           <NavLink href="/about">Sobre mim</NavLink>
           <NavLink href="/contact">Contato</NavLink>
+          <NavLink href="https://github.com/lgiacomazzi/"><a><Icon icon="github" /></a></NavLink>
           <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
         </div>
-        <Toggle />
-        <div className={styles.burgerMenu}>
-          <Icon icon="menu-burger" size={24} color="text-primary" />
-        </div>
+        <Menu />
       </div>
     </motion.div>
   );

@@ -75,7 +75,7 @@ export default function Portfolio() {
                         <div className="col-lg-6">
                             <h2 className="mb-2">Como viajar com um veículo elétrico?</h2>
                             <Paragraph>Através do aplicativo whitelabel da Voltbras é possível encontrar estações de recarga próximos da localização do usuário, filtrar por conectores disponíveis para o veículo e iniciar uma recarga diretamente pelo aplicativo ou por cartões RFID*. </Paragraph>
-                            <Paragraph>Um grande problema no mundo de recargas elétricas é de chegar a um local e o carregador estar ocupado, ou não poder carregar o veículo em função de problas técnicos com a estação. </Paragraph>
+                            <Paragraph>Um grande problema no mundo de recargas elétricas é de chegar a um local e o carregador estar ocupado, ou não poder carregar o veículo em função de problemas técnicos com a estação. </Paragraph>
                             <Paragraph>Essa frustração impede que muitos usuários utilizem seus veículos elétricos por muito tempo ou utilizem para viagens de longa duração.</Paragraph>
                             {/* <Paragraph>Esta funcionalidade já era existente na Europa e era algo estratégico pois poderia ser utilizada ao longo do corredor elétrico entre Rio e São Paulo.</Paragraph> */}
                             <Paragraph>Fui responsável pela execução do projeto de pesquisa e design da experiência do usuário. Atuei juntamente de desenvolvedores Web, Mobile e Backend e um Product Manager. </Paragraph>
@@ -99,7 +99,7 @@ export default function Portfolio() {
                         <h2 className="mb-1">Objetivos</h2>
                         <Paragraph>- Entender a visão dos usuários e as principais dificuldades em viagens com veículos elétricos;</Paragraph>
                         <Paragraph>- Avaliar a proposta de valor da solução e outros problemas ao longo da experiência;</Paragraph>
-                        <Paragraph>- Criar uma nova experiência que aumente o engajamento com o app com recargas.</Paragraph>
+                        <Paragraph>- Criar uma nova experiência que aumente o engajamento com o app de recargas.</Paragraph>
                     </div>
                 </div>
             </section>
@@ -149,8 +149,8 @@ export default function Portfolio() {
                     <div className="row">
                         <div className="col-lg-6 m-auto">
                             <h4 className="mb-2">Jornada do usuário</h4>
-                            <Paragraph>Usamos técnicas de mapeamento para visualizar e comunicar a experiência de ponta a ponta dos usuários em vários pontos de contato como aplicativo, seu veículo e ponto de carregamento.</Paragraph>
-                            <Paragraph>Mapeamos emoções como ansiedades, frustrações e celebrações dos usuários ao jogo da sua jornada o que nos permitiu visualizar os pontos problemáticos da experiência.</Paragraph>
+                            <Paragraph>Usamos técnicas para visualizar e comunicar a experiência completa dos usuários com vários pontos de contato como aplicativo, seu veículo a estação de recarga.</Paragraph>
+                            <Paragraph>Mapeamos ansiedades, frustrações e celebrações dos usuários ao longo dessa jornada e focamos nos pontos problemáticos da experiência.</Paragraph>
                         </div>
                         <div className="col-lg-6">
                             <ImageZoom src="/images/voltbras/jornada.png" alt="Jornada do usuário na hora de viajar com um veículo elétrico." />

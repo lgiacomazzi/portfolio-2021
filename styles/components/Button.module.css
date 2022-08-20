@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
   
-    padding: 8px 16px;
+    padding: 8px 12px;
   
     font: inherit;
     font-weight: 700;
@@ -39,6 +39,12 @@
     background-color: transparent;
     color: var(--text-interactive);
     border: 1px solid var(--ui-background);
+}
+
+.ghost {
+    composes: button;
+    background-color: var(--ui-background);
+    color: var(--text-primary);
 }
 
 .primary > img, .secondary-white > img {

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 interface ButtonProps {
   children: any;
-  variant?: "primary" | "secondary" | "secondary-white";
+  variant?: "primary" | "secondary" | "secondary-white" | "ghost";
   size?: "default" | "small";
   onClick?: () => void;
   disabled?: boolean
