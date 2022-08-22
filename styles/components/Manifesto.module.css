@@ -43,6 +43,12 @@
   gap: 8px;
 }
 
+@supports (-webkit-touch-callout: none) and (not (translate: none)) {
+  .manifestoActions:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
 .manifestoScroll {
   position: absolute;
   bottom: 40px;
