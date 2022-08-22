@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 4px;
   
     padding: 8px 12px;
   
@@ -19,6 +18,10 @@
     border: none;
     cursor: pointer;
     transition: var(--quick-transition);
+}
+
+.button :not(:last-child) {
+    margin-right: 4px;
 }
 
 .button:focus {

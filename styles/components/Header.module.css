@@ -67,9 +67,11 @@
   }
   .actionsMobile {
     display: flex;
-    gap: 8px;
     flex-wrap: wrap;
     justify-content: flex-end;
+  }
+  .actionsMobile :not(:last-child) {
+    margin-bottom: 8px;
   }
   .burgerMenu {
     display: flex;

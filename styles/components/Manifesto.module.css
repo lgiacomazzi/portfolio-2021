@@ -40,13 +40,11 @@
   flex-wrap: wrap;
   flex-direction: row;
   flex-shrink: 0;
-  gap: 8px;
+  /* gap: 8px; */
 }
 
-@supports (-webkit-touch-callout: none) and (not (translate: none)) {
-  .manifestoActions:not(:last-child) {
+.manifestoActions :not(:last-child) {
     margin-right: 8px;
-  }
 }
 
 .manifestoScroll {
