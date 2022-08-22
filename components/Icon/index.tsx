@@ -1,6 +1,7 @@
 import ArrowRight from './arrow-right.svg';
 import ArrowLeft from './arrow-left.svg';
 import ArrowDown from './arrow-down.svg';
+import ChevronLeft from "./chevron-left.svg";
 import Close from './close.svg'
 import LinkedIn from './linked-in.svg';
 import GitHub from './github.svg'
@@ -18,6 +19,7 @@ const iconTypes = {
     "arrow-right": ArrowRight,
     "arrow-left": ArrowLeft,
     "arrow-down": ArrowDown,
+    "chevron-left": ChevronLeft,
     "github": GitHub,
     "close": Close,
     "linked-in": LinkedIn,
@@ -37,7 +39,6 @@ interface IconProps {
 const IconComponent = ({ icon, size = 24, color, ...props }: IconProps) => {
     let Icon = iconTypes[icon];
     let Color = colorTypes[color];
-    console.log(ScrollDown.props)
     return <Icon width={size} height={size} viewBox={`0 0 24 24`} fill={Color} {...props} />;
 };
 

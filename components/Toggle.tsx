@@ -8,10 +8,10 @@ const ToggleType = {
 }
 
 export default function Toggle() {
-    const {theme, setTheme} = useContext(ThemeContext);
+    const { theme, setTheme } = useContext(ThemeContext);
 
     const handleChange = (e) => {
-        if(theme === "light") {
+        if (theme === "light") {
             setTheme("dark")
         } else setTheme("light");
     };
@@ -24,12 +24,15 @@ export default function Toggle() {
 
     return (
         // Dark Mode = Checked True
-        <label className={styles.switch}>
-            <input type="checkbox"
-                checked={ToggleType[theme]}
-                onChange={handleChange}
-                 />
-            <span className={styles.slider}></span>
-        </label>
+        <div className={styles.switchCase}>
+            <label className={styles.switch}>
+                <input type="checkbox"
+                    checked={ToggleType[theme]}
+                    onChange={handleChange}
+                />
+                <span className={styles.slider}></span>
+            </label>
+            <span className={styles.switchTitle}>{theme === "light" ? "Light Mode" : "Dark Mode"}</span>
+        </div>
     )
 }

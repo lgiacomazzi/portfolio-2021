@@ -38,7 +38,7 @@ export default function Menu() {
 
 
     return (
-        <motion.nav animate={isOpen ? "open" : "closed"}>
+        <motion.nav className={styles.menu} animate={isOpen ? "open" : "closed"} initial={false}>
             <MenuToggle />
             <motion.div className={styles.menuBackground} variants={variants}>
                 <Button variant="secondary" size="small" onClick={() => setIsOpen(!isOpen)}>
@@ -48,9 +48,11 @@ export default function Menu() {
                     <MenuLink href="/">Portfólio</MenuLink>
                     <MenuLink href="/about">Sobre mim</MenuLink>
                     <MenuLink href="/contact">Contato</MenuLink>
-                    <MenuLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></MenuLink>
+                    <div style={{ display: "flex", flexDirection: "row" }}>
+                        <MenuLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></MenuLink>
+                        <MenuLink href="https://www.github.com/lgiacomazzi/"><a><Icon icon="github" /></a></MenuLink>
+                    </div>
                 </motion.div>
-                <>Theme:  </>
                 <Toggle />
             </motion.div>
         </motion.nav>

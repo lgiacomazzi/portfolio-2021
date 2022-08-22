@@ -36,3 +36,9 @@
   text-transform: lowercase;
   text-decoration: underline;
 }
+
+@media (min-width: 768px) {
+    .menu { 
+      display: none;
+    }
+  }

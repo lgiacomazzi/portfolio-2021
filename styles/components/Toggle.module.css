@@ -53,3 +53,17 @@
   input:checked + .slider:before {
     transform: translateX(24px);
   }
+
+  .switchCase {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .switchTitle {
+    display: block;
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+  }

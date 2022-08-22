@@ -5,6 +5,7 @@ import HeroImage from "../../components/HeroImage"
 import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import ImageZoom from "../../components/ImageZoom";
+import Router from "next/router";
 
 export default function Portfolio() {
     const variants = {
@@ -28,11 +29,12 @@ export default function Portfolio() {
             {/* Introdução */}
             <section id="header" className="pt-4 pb-4 bk-volt">
                 <div className='container'>
+                    <Button variant="secondary" size="small" onClick={() => Router.push("/")}><Icon icon="chevron-left" size={16} />Voltar</Button>
                     <motion.h2
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: .5 }}
-                        className="mb-3">A Voltbras oferece um aplicativo para encontrar estações elétricas no mapa e  carregar a bateria de um veículo elétrico. Fiz parte de um projeto que construiu a nova experiência de agendamento de uma recarga.
+                        className="mt-2 mb-3">A Voltbras oferece um aplicativo para encontrar estações elétricas no mapa e  carregar a bateria de um veículo elétrico. Fiz parte de um projeto que construiu a nova experiência de agendamento de uma recarga.
                     </motion.h2>
                     <motion.div
                         className="row"
