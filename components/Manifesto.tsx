@@ -29,7 +29,8 @@ export default function Manifesto() {
     <section className={styles.manifesto + " bk-main"}>
       <div className={styles.container}>
         <motion.h1 variants={textVariants} whileHover={{ fontWeight: 100 }} className={styles.manifestoText}>
-          hey there, i'm luciano — a product designer experienced in frontend development. currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink>
+          {/* hey there, i'm luciano — a product designer experienced in frontend development. currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink> */}
+          Olá! Sou Luciano — Designer de Produtos com experiência em desenvolvimento Frontend. Atualmente resolvendo problemas através do design na <InlineLink href="https://deliverymuch.com.br/">Delivery Much</InlineLink>
         </motion.h1>
 
         <motion.div className={styles.manifestoActions}>

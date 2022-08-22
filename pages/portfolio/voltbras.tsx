@@ -121,36 +121,31 @@ export default function Portfolio() {
                         </div>
                     </div>
                     <div className="row mb-5">
-                        <div className="col-lg-6 m-auto">
-                            <h4 className="mb-2 mt-5">Entrevistas com usuários</h4>
+                        <div className="col-lg-6">
+                            <h3 className="mb-2">Entrevistas com usuários</h3>
                             <Paragraph>Entramos em contato com alguns usuários para entender melhor os <b>diferentes contextos de recarga</b>, quais os principais desejos, necessidades e frustrações dos usuários e se uma feature de reservas seria algo que trouxesse valor para eles.</Paragraph>
                             <Paragraph>O roteiro buscou validar a necessidade de se <b>planejar para viajar com um veículo</b> entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as <b>ferramentas e soluções que estes usuários utilizam</b> para evitar atrasos e problemas durante uma viagem.</Paragraph>
                         </div>
                         <div className="col-lg-6 m-auto">
-                            <ImageZoom src="/images/voltbras/.png" alt="" />
-                        </div>
-                    </div>
-                    <div className="row mb-5">
-                        <div className="col-lg-6">
-                            <h4 className="mb-2">Desk Research</h4>
+                            <h3 className="mb-2">Desk Research</h3>
                             <Paragraph>Também <b>revisamos restrições técnicas das estações de recarga e de seus conectores</b> com as equipes de controle e monitoramento.</Paragraph>
                             <Paragraph>Buscamos entender o funcionamento da <b>tecnologia de reservas já existente nas estações</b> (tecnologia OCPP) e quais limitações impactariam na experiência virtual do usuário no aplicativo.</Paragraph>
                             <Paragraph>Analisamos o mercado, principalmente fora do Brasil, para entender como os usuários, com maior infraestutura de carregamento, lidam com este tipo de desafio <b>e como outras empresas já resolveram este problema por lá</b>.</Paragraph>
                         </div>
                     </div>
                     <div className="row mb-5">
-                        <div className="col-lg-6 m-auto">
-                            <h4 className="mb-2">Personas</h4>
+                        <div className="col-lg-4 m-auto">
+                            <h3 className="mb-2">Personas</h3>
                             <Paragraph>Construímos personas ao longo do projeto para para <b>criar empatia em nossa equipe</b> e ajudar com a visualização das principais necessidades dos usuários. </Paragraph>
                             <Paragraph>Depois de segmentar tipos diferentes de persona pudemos orientar decisões de produto e priorizar quais os cenários que iríamos nos concentraríamos nos estágios iniciais.</Paragraph>
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-8">
                             <ImageZoom src="/images/voltbras/persona.png" alt="Persona criada para referenciar decisões de design." />
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 m-auto">
-                            <h4 className="mb-2">Jornada do usuário</h4>
+                            <h3 className="mb-2">Jornada do usuário</h3>
                             <Paragraph>Usamos técnicas para visualizar e comunicar a experiência completa dos usuários com vários pontos de contato como aplicativo, seu veículo a estação de recarga.</Paragraph>
                             <Paragraph>Mapeamos ansiedades, frustrações e celebrações dos usuários ao longo dessa jornada e focamos nos pontos problemáticos da experiência.</Paragraph>
                         </div>
@@ -162,8 +157,8 @@ export default function Portfolio() {
             </section>
 
             {/* 02 - Definição */}
-            {/* <h4 className="mb-2">Key Findings and Insights</h4> */}
-            {/* <h4 className="mb-2">Product Scope (User Stories) </h4> */}
+            {/* <h3 className="mb-2">Key Findings and Insights</h3> */}
+            {/* <h3 className="mb-2">Product Scope (User Stories) </h3> */}
             <section className="pt-5 pb-5">
                 <div className="container">
                     <div className="row mb-3">
@@ -204,7 +199,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row">
                         <div className="col-lg-6">
-                            <h4 className="mb-2">Agenda da Estação</h4>
+                            <h3 className="mb-2">Agenda da Estação</h3>
                             <Paragraph>Para conseguir criar uma reserva na estação, trabalhamos no design de uma <b>agenda para cada conector da estação</b>. Algumas podem possuir até três modelos diferentes.</Paragraph>
                             <Paragraph>Através desta agenda, é possível visualizar os horários ocupados e criar um novo agendamento. Também criamos um atalho onde o usuário poderia ter <b>acesso a todos seus horários agendados.</b></Paragraph>
                         </div>
@@ -216,17 +211,19 @@ export default function Portfolio() {
                     </div>
                     <div className="row mb-5">
                         <div className="col-lg-6 m-auto">
-                            <h4 className="mb-2">Novos pins</h4>
+                            <h3 className="mb-2">Novos pins</h3>
                             <Paragraph>A pesquisa de usuários mostrou a importância de <b>diferenciar um ponto que aceitasse agendamentos </b> de um ponto de recarga normal </Paragraph>
                             <Paragraph>Através de algumas iterações, encontramos um design de marcador eficiente, garantindo que os usuários pudessem entender o significado e ao mesmo tempo escalável, permitindo a inclusão de representações visuais para outras funções no futuro.</Paragraph>
+                            <ImageZoom src="/images/voltbras/pins-evolution.png" alt="Iterações no desenho do pin e seu acessório." />
                         </div>
                         <div className="col-lg-6">
                             <ImageZoom src="/images/voltbras/pins-app.png" alt="Imagem mostrando todos os possíveis pins e seus diferentes significados." />
+
                         </div>
                     </div>
                     <div className="row">
                         <div className="col-lg-6 mb-3">
-                            <h4 className="mb-2">Pushs e Popups</h4>
+                            <h3 className="mb-2">Pushs e Popups</h3>
                             <Paragraph>Mapeamos alguns dos possíveis problemas que poderiam ocorrer entre o momento da criação da reserva e o inicio da recarga na estação.  Criamos algumas notificações push e pop-ups informando o usuário e incentivando-o a dar o próximo passo na sua viagem.</Paragraph>
                         </div>
                     </div>
@@ -242,7 +239,7 @@ export default function Portfolio() {
                     </div>
                     <div className="row">
                         <div className="col-lg-6 mb-3">
-                            <h4 className="mb-2">Testes de Usabilidade</h4>
+                            <h3 className="mb-2">Testes de Usabilidade</h3>
                             <Paragraph>Para validar a usabilidade da solução, convidamos alguns usuários para condução de testes de usabilidade. Os testes foram feitos durante o período da pandemia e conduzidas de maneira remota.</Paragraph>
                             <Paragraph>Os participantes interagiram com um protótipo desenvolvido no Figma e seguiram algumas tarefas pré-determinadas. Nosso objetivo era garantir uma experiência fluída e sem atritos ao longo do processo.</Paragraph>
                         </div>
@@ -250,6 +247,16 @@ export default function Portfolio() {
                     <div className="row mt-2 mb-5">
                         <div className="col-lg-8 offset-lg-2">
                             <ImageZoom src="/images/voltbras/usabilidade.png" alt="Captura de tela de teste de usabilidade do aplicativo de reservas." />
+                        </div>
+                    </div>
+                    <div className="row mb-5">
+                        <div className="col-lg-6 mb-3">
+                            <h2 className="mb-2">Resultados</h2>
+                            <Paragraph>Este projeto teve como objetivo a criação de uma nova experiência de agendamento de uma recarga para o aplicativo da Voltbras. Foram criados novos fluxos e telas, e foram realizados testes de usabilidade para garantir a qualidade do produto final.</Paragraph>
+                            <Paragraph>Como resultado, foi possível criar uma nova experiência de agendamento de recarga mais intuitiva e eficiente para o usuário. Isso garante que o aplicativo continue sendo uma ferramenta útil e eficaz para quem precisa carregar seu veículo elétrico.</Paragraph>
+                        </div>
+                        <div className="col-lg-6 m-auto">
+                            <ImageZoom src="/images/voltbras/final.png" alt="" />
                         </div>
                     </div>
                 </div>
