@@ -27,17 +27,20 @@ export default function Manifesto() {
 
   return (
     <section className={styles.manifesto + " bk-main"}>
-      <motion.h1 variants={textVariants} whileHover={{ fontWeight: 100 }} className={styles.manifestoText}>
-        hey there, i'm luciano — a product designer experienced in frontend development. currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink>
-      </motion.h1>
+      <div className={styles.container}>
+        <motion.h1 variants={textVariants} whileHover={{ fontWeight: 100 }} className={styles.manifestoText}>
+          hey there, i'm luciano — a product designer experienced in frontend development. currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink>
+        </motion.h1>
 
-      <motion.div className={styles.manifestoActions}>
-        <Button variant="primary" onClick={() => router.push('/#portfolio')}>Portfólio<Icon icon="arrow-down" size={16} /></Button>
-        <Button variant="secondary" onClick={() => router.push('/about')}>Sobre mim</Button>
-        <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button>
-      </motion.div>
+        <motion.div className={styles.manifestoActions}>
+          <Button variant="primary" onClick={() => router.push('/#portfolio')}>Portfólio<Icon icon="arrow-down" size={16} /></Button>
+          <Button variant="secondary" onClick={() => router.push('/about')}>Sobre mim</Button>
+          <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button>
+        </motion.div>
 
-      <ScrollButton />
-    </section >
+        <ScrollButton />
+      </div>
+    </section>
+
   );
 }

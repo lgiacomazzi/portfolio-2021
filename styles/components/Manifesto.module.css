@@ -4,11 +4,26 @@
   align-items: flex-start;
   justify-content: space-between;
 
-  padding: 40px 24px;
+  /* padding: 40px 24px; */
 
   border-bottom: 1px solid var(--ui-border);
+  background: url("/svg/bk-5.svg") var(--ui-background);
+  background-size: cover;
+  background-position: center center;
 
   height: 88vh;
+}
+
+.manifesto > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+
+  padding: 40px 24px;
+
+  backdrop-filter: blur(20px);
 }
 
 .manifestoText {

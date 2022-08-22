@@ -66,9 +66,3 @@
   background-size: cover;
   background-position: center center;
 }
-
-.bk-main {
-  background: url("/svg/bk-5.svg") var(--ui-background);
-  background-size: cover;
-  background-position: center center;
-}
