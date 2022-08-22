@@ -55,7 +55,7 @@
 
 @media (max-width: 768px) {
   .manifesto {
-    padding: 16px;
+    /* padding: 16px; */
     justify-content: flex-start;
     background-position: top;
     height: 77vh;
@@ -64,6 +64,14 @@
     font-size: 6vw;
     margin-bottom: 24px;
   }
+  .manifestoActions {
+    max-width: 50vw;
+  }
+
+  .manifestoActions > * {
+    margin-top: 8px
+  }
+
   .manifestoScroll {
     bottom: 16px;
     right: 16px;
