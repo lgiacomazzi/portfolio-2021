@@ -11,12 +11,12 @@
 <filter id="filter0_f_956_4550" x="12" y="0" width="526.677" height="417.458" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_956_4550"/>
+<feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_956_4550"/>
 </filter>
 <filter id="filter1_f_956_4550" x="149.711" y="289.93" width="549.281" height="566.635" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
-<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_956_4550"/>
+<feGaussianBlur stdDeviation="16" result="effect1_foregroundBlur_956_4550"/>
 </filter>
 <linearGradient id="paint0_linear_956_4550" x1="719.5" y1="-206" x2="254.465" y2="547.42" gradientUnits="userSpaceOnUse">
 <stop offset="0.0677083" stop-color="#8EFE52"/>

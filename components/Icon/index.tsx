@@ -37,7 +37,8 @@ interface IconProps {
 const IconComponent = ({ icon, size = 24, color, ...props }: IconProps) => {
     let Icon = iconTypes[icon];
     let Color = colorTypes[color];
-    return <Icon width={size} height={size} viewBox={`0 0 ${size} ${size}`} fill={Color} {...props} />;
+    console.log(ScrollDown.props)
+    return <Icon width={size} height={size} viewBox={`0 0 24 24`} fill={Color} {...props} />;
 };
 
 export default IconComponent;

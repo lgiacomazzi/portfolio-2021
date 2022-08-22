@@ -30,7 +30,7 @@ export default function ProjectCard({ children, name, href, disabled = false }: 
           {children && <p className="text-body mt-2 mb-2">{children}</p>}
 
           {!disabled ?
-            <Button variant="primary">Ver Case<Icon icon="arrow-right" size={20} /></Button> :
+            <Button variant="primary">Ver Case<Icon icon="arrow-right" size={16} /></Button> :
             <Button variant="secondary" disabled>Em Breve</Button>
           }
         </div>

@@ -255,7 +255,7 @@ export default function Portfolio() {
 
 
             {/* Forward Navigation */}
-            <section className="pt-5 pb-5 bk-dark">
+            <section className="pt-5 pb-5">
                 <div className="container">
                     <div className="row">
                         <div className="col-6 d-flex justify-content-center">

@@ -1,8 +1,10 @@
 .manifesto {
   display: flex;
-  align-items: center;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 40px 24px;
 
   border-bottom: 1px solid var(--ui-border);
 
@@ -10,8 +12,8 @@
 }
 
 .manifestoText {
-  text-transform: lowercase;
-  margin-bottom: 16px;
+  font-size: 7vh;
+  
 }
 
 .manifestoSubtext {
@@ -34,12 +36,13 @@
 
 @media (max-width: 768px) {
   .manifesto {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 16px;
+    justify-content: flex-start;
     background-position: top;
   }
   .manifesto h1 {
-    font-size: 36px;
+    font-size: 6vw;
+    margin-bottom: 24px;
   }
   .manifestoScroll {
     bottom: 16px;
