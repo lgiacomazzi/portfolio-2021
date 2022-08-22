@@ -4,6 +4,7 @@ import Icon from "./Icon"
 import styles from "../styles/components/Header.module.css";
 import Logo from "../public/images/luciano-light-bk.svg";
 import Menu from "./Menu";
+import Button from "./Button";
 
 export function NavLink({ children, href = "/" }) {
   return (
@@ -22,14 +23,15 @@ export default function Header() {
           <Logo />
         </motion.a>
       </Link>
-      <div className={styles.rightActions}>
-        <div className={styles.links}>
-          <NavLink href="/#portfolio">Portfólio</NavLink>
-          <NavLink href="/about">Sobre mim</NavLink>
-          <NavLink href="/contact">Contato</NavLink>
-          <NavLink href="https://github.com/lgiacomazzi/"><a><Icon icon="github" /></a></NavLink>
-          <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
-        </div>
+      <div className={styles.actionsWeb}>
+        <NavLink href="/#portfolio">Portfólio</NavLink>
+        <NavLink href="/about">Sobre mim</NavLink>
+        <NavLink href="/contact">Contato</NavLink>
+        <NavLink href="https://github.com/lgiacomazzi/"><a><Icon icon="github" /></a></NavLink>
+        <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
+      </div>
+      <div className={styles.actionsMobile}>
+        <Button variant="primary" size="small">Contato<Icon size={16} icon="arrow-right" /></Button>
         <Menu />
       </div>
     </motion.div>

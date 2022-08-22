@@ -8,7 +8,7 @@
 
   border-bottom: 1px solid var(--ui-border);
 
-  height: 90vh;
+  height: 88vh;
 }
 
 .manifestoText {
@@ -39,6 +39,7 @@
     padding: 16px;
     justify-content: flex-start;
     background-position: top;
+    height: 77vh;
   }
   .manifesto h1 {
     font-size: 6vw;
