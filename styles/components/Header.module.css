@@ -69,9 +69,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    align-items: center;
   }
   .actionsMobile :not(:last-child) {
-    margin-bottom: 8px;
+    margin-right: 8px;
   }
   .burgerMenu {
     display: flex;

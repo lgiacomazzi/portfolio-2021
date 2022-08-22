@@ -31,7 +31,7 @@ export default function Header() {
         <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
       </div>
       <div className={styles.actionsMobile}>
-        <Button variant="primary" size="small">Contato<Icon size={16} icon="arrow-right" /></Button>
+        <Button variant="primary" size="small">Contato</Button>
         <Menu />
       </div>
     </motion.div>
