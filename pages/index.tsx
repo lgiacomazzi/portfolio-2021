@@ -1,26 +1,26 @@
 import Head from "next/head";
-import Header from "../components/Header"
 import Manifesto from "../components/Manifesto";
 import Projects from "../components/Projects";
 import About from "../components/About";
 import { motion } from "framer-motion";
+import BrandingProjects from "../components/BrandingProjects";
 
 export default function Home() {
 
   return (
     <main>
       <Head>
-        <title>Luciano Giacomazzi | Product Designer</title>
+        <title>Luciano Giacomazzi | Designer de Produtos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
 
       <Manifesto />
 
       {/* <About /> */}
 
       <Projects />
+      <BrandingProjects />
+
 
 
       <footer className="bk-dark">

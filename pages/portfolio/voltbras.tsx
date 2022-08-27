@@ -24,18 +24,17 @@ export default function Portfolio() {
                 <title>Agendamento de Recargas | Luciano Giacomazzi </title>
             </Head>
 
-            <Header />
 
             {/* Introdução */}
-            <section id="header" className="pt-4 pb-4 bk-volt">
+            <section id="header" className="pt-2 pb-2">
                 <div className='container'>
-                    <Button variant="secondary" size="small" onClick={() => Router.push("/")}><Icon icon="chevron-left" size={16} />Voltar</Button>
-                    <motion.h2
+                    <Button variant="secondary" size="small" onClick={() => Router.back()}><Icon icon="chevron-left" size={16} />Voltar</Button>
+                    <motion.h3
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: .5 }}
                         className="mt-2 mb-3">A Voltbras oferece um aplicativo para encontrar estações elétricas no mapa e  carregar a bateria de um veículo elétrico. Fiz parte de um projeto que construiu a nova experiência de agendamento de uma recarga.
-                    </motion.h2>
+                    </motion.h3>
                     <motion.div
                         className="row"
                         initial={{ y: -10, opacity: 0 }}

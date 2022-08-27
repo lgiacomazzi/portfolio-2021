@@ -8,7 +8,7 @@ const variants = {
     closed: { opacity: 0, scale: .5 },
 }
 
-export default function ImageZoom({src,alt}) {
+export default function ImageZoom({src,alt,style = {}}) {
     const [isOpen, setOpen] = useState(false);
 
     isOpen && window.document.addEventListener("scroll", () => setOpen(false), { once: true });
@@ -21,6 +21,7 @@ export default function ImageZoom({src,alt}) {
                 className={styles.image}
                 onClick={() => setOpen(!isOpen)} 
                 layoutId={src.split('/')[3]}
+                style={style}
                 />   
             <p className="text-center text-small text-secondary mb-3">{alt}</p>                         
         </motion.div>

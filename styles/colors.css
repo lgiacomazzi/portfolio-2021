@@ -13,7 +13,7 @@
   
     --ui-border: #EEEFF1;
   
-    --border-radius: 12px;
+    --border-radius: 4px;
 
     --quick-transition: 200ms;
     --default-transition: 400ms;
@@ -38,7 +38,6 @@
 
   --ui-border: #373943;
 
-  --border-radius: 12px;
   --box-shadow-small: 0px 2px 10px rgba(0, 0,0, 0.6);
   --box-shadow-default: 0px 2px 10px rgba(0, 0, 0, 0.15);
   --box-shadow-focus: 0px 0px 0px 4px rgba(35, 123, 255, 0.16);
