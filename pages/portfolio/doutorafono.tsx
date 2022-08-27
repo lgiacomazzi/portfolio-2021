@@ -42,7 +42,7 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <HeroImage src="/images/doutorafono.png" />
+            <HeroImage src="/images/main/doutorafono.png" />
 
             <section className="pt-5 pb-2 bk-white">
                 <div className="container">

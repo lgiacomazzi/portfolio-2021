@@ -4,12 +4,11 @@ import styles from "../styles/components/ProjectCard.module.css";
 import Button from "./Button";
 import Icon from "./Icon";
 import Image from "next/image"
+import Router from "next/router";
 
 interface ProjectCardProps {
   disabled?: boolean;
-  children?: string;
-  name?: string;
-  href?: string;
+  content?: any;
 }
 
 const Marquee = ({ children }) => {
@@ -18,32 +17,36 @@ const Marquee = ({ children }) => {
   )
 }
 
-export default function ProjectCard({ children, name, href, disabled = false }: ProjectCardProps) {
+export default function ProjectCard({ disabled = false, content = {} }: ProjectCardProps) {
+  const handleRedirect = (url) => {
+    !disabled && Router.push(`/portfolio/${url}`)
+  }
+
   return (
-    <Link href={"/portfolio/" + href} >
-      <motion.div
-        whileTap={{ scale: 0.98 }}
-        className={styles.projectCard}>
-        <div className={styles.projectDetails}>
-          {name && <h4 className={styles.projectName}>{name}</h4>}
 
-          {children && <p className="text-body mt-2 mb-2">{children}</p>}
+    <motion.div
+      whileTap={{ scale: 0.98 }}
+      className={styles.projectCard}
+      onClick={() => handleRedirect(content.href)} >
+      <div className={styles.projectDetails}>
+        {content.name && <h4 className={styles.projectName}>{content.name}</h4>}
 
-          {!disabled ?
-            <Button variant="primary">Ver Case<Icon icon="arrow-right" size={16} /></Button> :
-            <Button variant="secondary" disabled>Em Breve</Button>
-          }
-        </div>
-        <div className={styles.projectHeroImage}>
-          <Image
-            src={"/images/" + href + ".png"}
-            quality={100}
-            layout="fill"
-            objectFit="cover"
-            unoptimized
-            priority />
-        </div>
-      </motion.div>
-    </Link>
+        {content.description && <p className="text-body mt-2 mb-2">{content.description}</p>}
+
+        {!disabled ?
+          <Button variant="primary">Ver Case<Icon icon="arrow-right" size={16} /></Button> :
+          <Button variant="secondary" disabled>Em Breve</Button>
+        }
+      </div>
+      <div className={styles.projectHeroImage}>
+        <Image
+          src={"/images/main/" + content.imageUrl}
+          quality={100}
+          layout="fill"
+          objectFit="cover"
+          unoptimized
+          priority />
+      </div>
+    </motion.div>
   );
 }

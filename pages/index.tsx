@@ -1,37 +1,32 @@
 import Head from "next/head";
 import Manifesto from "../components/Manifesto";
 import Projects from "../components/Projects";
-import About from "../components/About";
-import { motion } from "framer-motion";
 import BrandingProjects from "../components/BrandingProjects";
+import { Footer } from "../components/Footer";
+import { motion } from "framer-motion";
 
 export default function Home() {
+  const variants = {
+    hidden: { opacity: 0 },
+    enter: { opacity: 1 },
+    exit: { opacity: 0 },
+  }
 
   return (
-    <main>
+    <motion.main
+      variants={variants} // Pass the variant object into Framer Motion 
+      initial="hidden" // Set the initial state to variants.hidden
+      animate="enter" // Animated state to variants.enter
+      exit="exit" // Exit state (used later) to variants.exit
+    >
       <Head>
         <title>Luciano Giacomazzi | Designer de Produtos</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Manifesto />
-
-      {/* <About /> */}
-
       <Projects />
-      <BrandingProjects />
-
-
-
-      <footer className="bk-dark">
-        {/* <div className="backgroundImage">
-          <img
-            className="layerBlur"
-            src="/svg/group.svg"
-            alt="Picture of the author"
-          />
-        </div> */}
-      </footer>
-    </main>
+      {/* <BrandingProjects /> */}
+    </motion.main>
   );
 }

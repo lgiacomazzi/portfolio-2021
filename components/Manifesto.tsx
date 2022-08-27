@@ -22,7 +22,7 @@ export default function Manifesto() {
 
   const textVariants = {
     hidden: { opacity: 0 },
-    show: { opacity: 1 }
+    enter: { opacity: 1 }
   }
 
   return (

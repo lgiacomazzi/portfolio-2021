@@ -20,8 +20,8 @@
     transition: var(--quick-transition);
 }
 
-.button :not(:last-child) {
-    margin-right: 4px;
+.button > svg {
+    margin-left: 4px;
 }
 
 .button:focus {

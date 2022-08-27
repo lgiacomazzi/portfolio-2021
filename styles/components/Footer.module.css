@@ -1,0 +1,23 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-top: 1px solid var(--ui-border)
+}
+
+.rightActions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.leftActions :not(:last-child),
+.rightActions :not(:last-child) {
+    margin-right: 16px;
+}
+
+.footerAuthor {
+    font-size: 12px;
+}

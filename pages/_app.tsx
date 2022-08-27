@@ -5,13 +5,18 @@ import "../styles/_globals.css";
 
 import ThemeContextProvider from "../contexts/ThemeContext";
 import Header from "../components/Header";
+import { Footer } from "../components/Footer";
+import { AnimatePresence } from "framer-motion";
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeContextProvider>
-      <Header />
-      <Component {...pageProps} />
+      <AnimatePresence exitBeforeEnter>
+        <Header />
+        <Component {...pageProps} />
+        <Footer />
+      </AnimatePresence>
     </ThemeContextProvider>
   );
 }

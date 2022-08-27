@@ -67,7 +67,7 @@ export default function Portfolio() {
                 </div>
             </section>
 
-            <HeroImage src="/images/voltbras.png" />
+            <HeroImage src="/images/main/voltbras.png" />
 
             {/* Desafio */}
             <section className="pt-5 pb-5 bk-white">
