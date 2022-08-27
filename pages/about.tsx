@@ -8,17 +8,28 @@ import Projects from "../components/Projects";
 import { ExperienceContainer, ExperienceBubble } from "../components/ExperienceBubble";
 
 export default function About() {
+    const variants = {
+        hidden: { opacity: 0 },
+        enter: { opacity: 1 },
+        exit: { opacity: 0 },
+    }
+
     const Paragraph = ({ children }) => (
         <p className="text-body">{children}</p>
     )
 
     return (
-        <>
+        <motion.main
+            variants={variants} // Pass the variant object into Framer Motion 
+            initial="hidden" // Set the initial state to variants.hidden
+            animate="enter" // Animated state to variants.enter
+            exit="exit" // Exit state (used later) to variants.exit
+        >
             <Head>
                 <title>Sobre mim | Luciano Giacomazzi </title>
             </Head>
 
-            <section className="pt-5 pb-5 border-bottom">
+            <section className="pt-4 pb-4 border-bottom">
                 <div className="container">
                     <Button variant="secondary" size="small" onClick={() => Router.back()}><Icon icon="chevron-left" size={16} />Voltar</Button>
                     <h2 className="mt-2 mb-2">Sobre Mim</h2>
@@ -27,7 +38,6 @@ export default function About() {
                             <ImageZoom style={{ borderRadius: "100%", width: "200px" }} src="/images/profile.jpg" alt="" />
                             <h2>luciano giacomazzi</h2>
                             <p className="text-secondary">Florianópolis, SC</p>
-                            <p className="text-secondary mb-2">1994 - Hoje</p>
                             <Paragraph>Nascido no Rio Grande do Sul, me formei em Engenharia Mecânica pela UFRGS em Porto Alegre e migrei de área depois de descobrir o mundo do design de produtos. </Paragraph>
                             <Paragraph>Atualmente sou Designer de Produtos Sênior na Tribo de Backoffice e Payments da Delivery Much, em Florianópolis Santa Catarina.</Paragraph>
                             <Paragraph>Trabalho com projetos de design de experiência do usuário, programação frontend e desenvolvimento de marcas. </Paragraph>
@@ -79,6 +89,6 @@ export default function About() {
 
             <Projects />
 
-        </>
+        </motion.main>
     );
 }

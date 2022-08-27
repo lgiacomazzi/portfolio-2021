@@ -18,6 +18,7 @@ const Marquee = ({ children }) => {
 }
 
 export default function ProjectCard({ disabled = false, content = {} }: ProjectCardProps) {
+
   const handleRedirect = (url) => {
     !disabled && Router.push(`/portfolio/${url}`)
   }

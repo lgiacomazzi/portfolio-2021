@@ -18,7 +18,12 @@ export default function Portfolio() {
     )
 
     return (
-        <>
+        <motion.main
+            variants={variants} // Pass the variant object into Framer Motion 
+            initial="hidden" // Set the initial state to variants.hidden
+            animate="enter" // Animated state to variants.enter
+            exit="exit" // Exit state (used later) to variants.exit
+        >
             <Head>
                 <title>Doutora Fono | Luciano Giacomazzi </title>
             </Head>
@@ -98,6 +103,6 @@ export default function Portfolio() {
                 </div>
             </section>
 
-        </>
+        </motion.main>
     );
 }

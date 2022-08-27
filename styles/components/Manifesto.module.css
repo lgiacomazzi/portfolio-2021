@@ -27,7 +27,8 @@
 }
 
 .manifestoText {
-  font-size: 7vh;
+  /* font-size: 7vh; */
+  font-size: 64px;
   
 }
 

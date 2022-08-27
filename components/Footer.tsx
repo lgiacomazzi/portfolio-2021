@@ -1,5 +1,6 @@
 import styles from "../styles/components/Footer.module.css"
 import Icon from "./Icon"
+import { SmallText } from "./Text"
 
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
       <div className={styles.leftActions}>
         <Icon icon="home" />
       </div>
-      <span className={styles.footerAuthor}>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></span>
+      <SmallText>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></SmallText>
       <div className={styles.rightActions}>
         <Icon icon="arrow-up" onClick={() => window.scrollTo(0, 0)} />
       </div>

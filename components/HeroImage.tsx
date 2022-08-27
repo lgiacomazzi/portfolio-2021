@@ -5,7 +5,7 @@ import styles from "../styles/components/HeroImage.module.css"
 export default function HeroImage({ src }) {
     return (
         <AnimatePresence>
-            <motion.div className={styles.HeroImage} layoutId="voltbras">
+            <motion.div className={styles.HeroImage}>
                 <Image
                     layout="fill"
                     unoptimized

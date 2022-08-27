@@ -9,9 +9,9 @@ import Router from "next/router";
 
 export default function Portfolio() {
     const variants = {
-        hidden: { opacity: 0, x: 200 },
-        enter: { opacity: 1, x: 0 },
-        exit: { x: 200 },
+        hidden: { opacity: 0, },
+        enter: { opacity: 1, y: 0 },
+        exit: { y: 200 },
     }
 
     const Paragraph = ({ children }) => (
@@ -19,14 +19,19 @@ export default function Portfolio() {
     )
 
     return (
-        <>
+        <motion.main
+            variants={variants} // Pass the variant object into Framer Motion 
+            initial="hidden" // Set the initial state to variants.hidden
+            animate="enter" // Animated state to variants.enter
+            exit="exit" // Exit state (used later) to variants.exit
+        >
             <Head>
                 <title>Agendamento de Recargas | Luciano Giacomazzi </title>
             </Head>
 
 
             {/* Introdução */}
-            <section id="header" className="pt-2 pb-2">
+            <section id="header" className="pt-4 pb-4">
                 <div className='container'>
                     <Button variant="secondary" size="small" onClick={() => Router.back()}><Icon icon="chevron-left" size={16} />Voltar</Button>
                     <motion.h3
@@ -275,6 +280,6 @@ export default function Portfolio() {
                     </div>
                 </div>
             </section>
-        </>
+        </motion.main>
     );
 }

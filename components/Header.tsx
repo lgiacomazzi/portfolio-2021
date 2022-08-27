@@ -24,6 +24,7 @@ export default function Header() {
         </motion.a>
       </Link>
       <div className={styles.actionsWeb}>
+        <NavLink href="/">Home</NavLink>
         <NavLink href="/#portfolio">Portfólio</NavLink>
         <NavLink href="/about">Sobre mim</NavLink>
         <NavLink href="/contact">Contato</NavLink>

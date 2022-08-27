@@ -26,7 +26,7 @@ export default function Home() {
 
       <Manifesto />
       <Projects />
-      {/* <BrandingProjects /> */}
+      <BrandingProjects />
     </motion.main>
   );
 }

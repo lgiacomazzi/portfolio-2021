@@ -5,6 +5,8 @@ import Icon from "./Icon";
 import Toggle from "./Toggle";
 import Link from "next/link";
 import Button from "./Button";
+import Router from "next/router";
+import { SmallText } from "./Text";
 
 export default function Menu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -24,15 +26,22 @@ export default function Menu() {
         },
     };
 
+    const handleNavigate = (url) => {
+        setIsOpen(!isOpen);
+        Router.push(url);
+    }
+
     const MenuToggle = () => (
         <Button size="small" variant="ghost" onClick={() => setIsOpen(!isOpen)}>
-            < Icon icon="menu-burger" size={24} color="text-primary" />
+            <Icon icon="menu-burger" size={24} color="text-primary" />
         </Button >
     )
 
     const MenuLink = ({ children, href = "/" }) => (
-        <motion.div whileTap={{ scale: .98 }} className={styles.menuLink}>
-            <Link href={href}>{children}</Link>
+        <motion.div whileTap={{ scale: .98 }} className={styles.menuLink} onClick={() => handleNavigate(href)}>
+            {/* <Link href={href} onClick={() => setIsOpen(!isOpen)}> */}
+            {children}
+            {/* </Link> */}
         </motion.div>
     );
 
@@ -45,7 +54,9 @@ export default function Menu() {
                     <Icon icon="close" size={24} color="text-primary" />
                 </Button>
                 <motion.div className={styles.menuItems} variants={variants}>
-                    <MenuLink href="/">Portfólio</MenuLink>
+                    <MenuLink href="/">Home</MenuLink>
+                    <MenuLink href="/">UX Design</MenuLink>
+                    <MenuLink href="/">Branding Design</MenuLink>
                     <MenuLink href="/about">Sobre mim</MenuLink>
                     <MenuLink href="/contact">Contato</MenuLink>
                     <div style={{ display: "flex", flexDirection: "row" }}>
@@ -54,6 +65,7 @@ export default function Menu() {
                     </div>
                 </motion.div>
                 <Toggle />
+                <SmallText>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></SmallText>
             </motion.div>
         </motion.nav>
     );

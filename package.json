@@ -12,6 +12,7 @@
     "mongodb": "^3.6.9",
     "mongoose": "^6.3.2",
     "next": "latest",
+    "nprogress": "^0.2.0",
     "react": "next",
     "react-dom": "next",
     "swr": "^0.5.6"

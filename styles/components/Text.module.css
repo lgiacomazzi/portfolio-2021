@@ -1,0 +1,12 @@
+.paragraph {
+    color: var(--text-primary);
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.smallText {
+    color: var(--text-primary);
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: normal;
+}
