@@ -13,6 +13,7 @@ import ExternalLink from './external-link.svg';
 import ScrollDown from "./scroll-down.svg"
 import Download from "./download.svg"
 import Pin from "./pin.svg"
+import Lvg from "./lvg.svg"
 
 const colorTypes = {
     "text-primary": "var(--text-primary)",
@@ -35,6 +36,7 @@ const iconTypes = {
     "scroll-down": ScrollDown,
     "download": Download,
     "pin": Pin,
+    "lvg": Lvg,
 };
 
 interface IconProps {

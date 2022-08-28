@@ -10,3 +10,16 @@
     line-height: 14px;
     font-weight: normal;
 }
+
+.heading6 { 
+    font-family: "SF Pro Display";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.secondary {
+    color: var(--text-secondary);
+}

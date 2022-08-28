@@ -1,7 +1,8 @@
 :root {
     --text-primary: #101114;
-    --text-secondary: #454754;
-    --text-tertiary: #73778C;
+    --text-secondary: #202228;
+    --text-tertiary: #454754;
+    --text-quaternary: #73778C;
     --text-interactive: #FCFCFD;
     
     --interactive-primary: #101114;
@@ -25,8 +26,9 @@
 
 .dark {
   --text-primary: #FCFCFD;
-  --text-secondary: #ABADBA;
-  --text-tertiary: #8F92A3;
+  --text-secondary: #e3e4e8;
+  --text-tertiary: #ABADBA;
+  --text-quaternary: #8F92A3;
   --text-interactive: #101114;
   
   --interactive-primary: #FCFCFD;

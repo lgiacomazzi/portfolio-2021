@@ -20,8 +20,7 @@ export default function Menu() {
             transition: {
                 type: "spring",
                 bounce: 0,
-                delayChildren: 0.2,
-                staggerChildren: 0.2,
+
             },
         },
     };
@@ -53,7 +52,7 @@ export default function Menu() {
                 <Button variant="secondary" size="small" onClick={() => setIsOpen(!isOpen)}>
                     <Icon icon="close" size={24} color="text-primary" />
                 </Button>
-                <motion.div className={styles.menuItems} variants={variants}>
+                <motion.div className={styles.menuItems}>
                     <MenuLink href="/">Home</MenuLink>
                     <MenuLink href="/">UX Design</MenuLink>
                     <MenuLink href="/">Branding Design</MenuLink>

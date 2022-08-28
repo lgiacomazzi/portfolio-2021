@@ -7,7 +7,7 @@ export function Footer() {
   return (
     <div className={styles.footerContainer}>
       <div className={styles.leftActions}>
-        <Icon icon="home" />
+        <Icon icon="lvg" />
       </div>
       <SmallText>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></SmallText>
       <div className={styles.rightActions}>

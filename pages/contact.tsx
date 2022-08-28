@@ -4,6 +4,8 @@ import Router from "next/router";
 import Button from "../components/Button";
 import Header from "../components/Header";
 import Icon from "../components/Icon";
+import InlineLink from "../components/InlineLink";
+import { Paragraph } from "../components/Text";
 
 export default function Contact() {
     const variants = {
@@ -28,7 +30,19 @@ export default function Contact() {
                     <Button variant="secondary" size="small" onClick={() => Router.back()}><Icon icon="chevron-left" size={16} />Voltar</Button>
                     <h2 className="mt-2 mb-2">Contato</h2>
                     <div className="row">
-
+                        <div className="col-lg-6">
+                            <Paragraph>Você pode me contatar pelos seguintes canais:</Paragraph>
+                            <Paragraph><InlineLink>lucianogiacomazzi@gmail.com</InlineLink></Paragraph>
+                            <Paragraph><InlineLink>+ 55 51 99829 0763</InlineLink></Paragraph>
+                            <Paragraph><InlineLink>Linkedin</InlineLink></Paragraph>
+                            <Paragraph><InlineLink>Github</InlineLink></Paragraph>
+                            <Paragraph><InlineLink>Instagram</InlineLink></Paragraph>
+                        </div>
+                        <div className="col-lg-6 d-flex flex-column">
+                            <Paragraph>ou você pode deixar uma mensagem por aqui  :)</Paragraph>
+                            <Paragraph>email:<input></input></Paragraph>
+                            <Paragraph>mensagem:<input></input></Paragraph>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -1,0 +1,11 @@
+.bottomNavigationContainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--ui-border);
+}
+
+.bottomNavigationContainer h6 {
+    margin: 40px 24px;
+    text-align: center;
+    color: var(--text-quaternary);
+}

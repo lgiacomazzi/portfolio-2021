@@ -6,6 +6,7 @@ import Button from "../../components/Button";
 import Icon from "../../components/Icon";
 import ImageZoom from "../../components/ImageZoom";
 import Router from "next/router";
+import BottomNavigation from "../../components/BottomNavigation"
 
 export default function Portfolio() {
     const variants = {
@@ -187,7 +188,7 @@ export default function Portfolio() {
 
             {/* Diamond 2 */}
             {/* 03 - Develop */}
-            <section className="pt-5 pb-5 bk-white">
+            <section className="pt-5 bk-white">
                 <div className="container">
                     <span className="text-secondary text-small mb-2">III - DESIGN</span>
                     <div className="row mb-5">
@@ -266,20 +267,15 @@ export default function Portfolio() {
                 </div>
             </section>
 
+            <BottomNavigation disabled content={{
+                type: "UX Design",
+                name: "Criando uma ferramenta de Entrega Grátis no sistema da Delivery Much",
+                href: "fasesefaces",
+                imageUrl: "freedelivery.png",
+                description: "Uma solução para lojas parceiras da Delivery Much poderem cadastrar promoções de entrega grátis no Marketplace.",
 
-            {/* Forward Navigation */}
-            <section className="pt-5 pb-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-6 d-flex justify-content-center">
-                            <Button variant="secondary-white"><Icon icon="arrow-left" />Anterior</Button>
-                        </div>
-                        <div className="col-6 d-flex justify-content-center">
-                            <Button variant="secondary-white">Próximo <Icon icon="arrow-right" /></Button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            }} />
+
         </motion.main>
     );
 }

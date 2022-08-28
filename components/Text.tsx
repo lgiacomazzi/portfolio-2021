@@ -11,3 +11,9 @@ export function SmallText({ children, secondary = false }) {
     <p className={styles.smallText}>{children}</p>
   )
 }
+
+export function Heading6({ children }) {
+  return (
+    <h6 className={styles.heading6}>{children}</h6>
+  )
+}

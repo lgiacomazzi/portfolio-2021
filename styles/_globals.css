@@ -31,7 +31,8 @@ body {
   font-family: "Space Grotesk", -apple-system, Helvetica Neue, sans-serif;
 
   font-size: 16px;
-  font-weight: 500;
+  /* font-weight: 500; */
+  font-weight: 400;
   letter-spacing: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -113,6 +114,7 @@ h5 {
 .text-body {
   line-height: 24px;
   margin-bottom: 24px;
+  color: var(--text-secondary);
 }
 
 .text-small {
@@ -183,10 +185,10 @@ h5 {
     font-size: 24px;
   }
 
-  .text-body {
+  /* .text-body {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 16px;
-  }
+  } */
 }
 
