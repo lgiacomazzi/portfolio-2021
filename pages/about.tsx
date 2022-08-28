@@ -47,10 +47,10 @@ export default function About() {
                                 <Paragraph>Hoje, trabalho com projetos de design de experiência do usuário, programação criativa frontend e desenvolvimento de identidade de marcas.</Paragraph>
                                 <Scratch02 />
                                 <div className="mt-2 d-flex flex-column text-center justify-space-between align-items-center">
-                                    <Paragraph><InlineLink>lucianogiacomazzi@gmail.com</InlineLink></Paragraph>
-                                    <Paragraph><InlineLink>+ 55 51 99829 0763</InlineLink></Paragraph>
-                                    <Paragraph><InlineLink>Linked In</InlineLink></Paragraph>
-                                    <Button variant="secondary" size="small" >Currículo<Icon icon="download" size={16} /></Button>
+                                    <Paragraph><InlineLink href="mailto:lucianogiacomazzi@gmail.com">lucianogiacomazzi@gmail.com</InlineLink></Paragraph>
+                                    <Paragraph><InlineLink href="tel:+ 55 51 99829 0763">+ 55 51 99829 0763</InlineLink></Paragraph>
+                                    <Paragraph><InlineLink href="https://www.linkedin.com/in/lgiacomazzi/">Linked In</InlineLink></Paragraph>
+                                    {/* <Button variant="secondary" size="small" >Currículo<Icon icon="download" size={16} /></Button> */}
                                 </div>
                             </div>
                         </div>

@@ -3,9 +3,9 @@
     grid-gap: 8px;
     display: grid;
     grid-template-areas:
-        "area-1 area-2 area-3 area-6"
-        "area-4 area-5 area-5 area-6"
-        "area-4 area-5 area-5 area-7";
+        "area-1 area-6 area-7 area-4"
+        "area-5 area-6 area-7 area-8"
+        "area-5 area-2 area-3 area-8";
     margin: 16px;
 }
 
@@ -15,16 +15,17 @@
         grid-gap: 8px;
         display: grid;
         grid-template-areas:
-            "area-1 area-2"
-            "area-3 area-4"
-            "area-5 area-4"
+            "area-1 area-6"
             "area-5 area-6"
-            "area-5 area-7";
+            "area-5 area-2"
+            "area-7 area-4"
+            "area-7 area-8"
+            "area-3 area-8";
         margin: 16px;
     }
 }
 
-.gridContainer :first-child {
+.gridContainer :nth-child(0) {
     grid-area: area-1;
 }
 
@@ -52,9 +53,14 @@
     grid-area: area-7;
 }
 
+.gridContainer :nth-child(7) {
+    grid-area: area-8;
+}
+
 .gridItem {
     height: 100%;
     width: 100%;
     object-fit: cover;  
     border-radius: var(--border-radius);
+    overflow: hidden;
 }

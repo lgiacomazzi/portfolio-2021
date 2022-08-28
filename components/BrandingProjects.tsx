@@ -9,7 +9,7 @@ function BrandingItem({ img = false, video = false, src }) {
                 {img &&
                     <img className={styles.gridItem} src={`./images/branding/${src}`} />}
                 {video &&
-                    <video width="100%" height="100%" style={{ objectFit: "cover" }} autoPlay muted loop>
+                    <video className={styles.gridItem} autoPlay muted loop>
                         <source src={`./images/branding/${src}`} type="video/mp4"></source>
                     </video>
                 }</>
@@ -21,19 +21,22 @@ export default function BrandingProjects() {
     return (
         <section id="portfolio" className="pt-4 pb-4 bk-white">
             <div className={styles.gridContainer}>
-                <BrandingItem img src="doutorafono.png" />
+                <BrandingItem img src="saudeaqui.png" />
 
                 <BrandingItem img src="farmshare.png" />
 
                 <BrandingItem img src="fasesefaces.png" />
 
-                <BrandingItem img src="bananas.png" />
-
                 <BrandingItem video src="background.mp4" />
 
-                <BrandingItem img src="saudeaqui.png" />
+                <BrandingItem video src="bananas.mp4" />
 
-                <BrandingItem img src="ray2.png" />
+                <BrandingItem img src="joana.gif" />
+
+                <BrandingItem img src="losninos.png" />
+
+                <BrandingItem video src="doutorafono.mp4" />
+
             </div>
         </section>
     )

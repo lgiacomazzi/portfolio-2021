@@ -22,3 +22,9 @@
 .footerAuthor {
     font-size: 12px;
 }
+
+@media (max-width: 768px) {
+    .leftActions > p {
+        display: none;
+    }
+}
