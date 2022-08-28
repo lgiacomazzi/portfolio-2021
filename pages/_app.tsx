@@ -19,11 +19,11 @@ Router.events.on('routeChangeError', () => NProgress.done());
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeContextProvider>
+      <Header />
       <AnimatePresence exitBeforeEnter>
-        <Header />
-        <Component alt="hey" {...pageProps} />
-        <Footer />
+        <Component {...pageProps} />
       </AnimatePresence>
+      <Footer />
     </ThemeContextProvider>
   );
 }
