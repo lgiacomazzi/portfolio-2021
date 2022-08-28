@@ -37,7 +37,7 @@
 }
 
 .gridContainer :nth-child(3) {
-    grid-area: area-6;
+    grid-area: area-4;
 }
 
 .gridContainer :nth-child(4) {
@@ -45,7 +45,7 @@
 }
 
 .gridContainer :nth-child(5) {
-    grid-area: area-4;
+    grid-area: area-6;
 }
 
 .gridContainer :nth-child(6) {

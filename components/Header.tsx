@@ -5,6 +5,7 @@ import styles from "../styles/components/Header.module.css";
 import Logo from "../public/images/luciano-light-bk.svg";
 import Menu from "./Menu";
 import Button from "./Button";
+import Router from "next/router";
 
 export function NavLink({ children, href = "/" }) {
   return (
@@ -32,7 +33,7 @@ export default function Header() {
         <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
       </div>
       <div className={styles.actionsMobile}>
-        <Button variant="primary" size="small">Contato</Button>
+        <Button variant="primary" size="small" onClick={() => Router.push('/contact')}>Contato</Button>
         <Menu />
       </div>
     </motion.div>

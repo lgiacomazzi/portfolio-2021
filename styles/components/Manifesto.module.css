@@ -7,7 +7,7 @@
   /* padding: 40px 24px; */
 
   border-bottom: 1px solid var(--ui-border);
-  /* background: url("/svg/bk-5.svg") var(--ui-background); */
+  background: url("/svg/bk-5.svg") var(--ui-background);
   background-size: cover;
   background-position: center center;
 
