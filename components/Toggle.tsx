@@ -7,7 +7,7 @@ const ToggleType = {
     "dark": false
 }
 
-export default function Toggle() {
+export default function Toggle({ helperText = false }) {
     const { theme, setTheme } = useContext(ThemeContext);
 
     const handleChange = (e) => {
@@ -32,7 +32,7 @@ export default function Toggle() {
                 />
                 <span className={styles.slider}></span>
             </label>
-            <span className={styles.switchTitle}>{theme === "light" ? "Light Mode" : "Dark Mode"}</span>
+            {helperText && <p className={styles.switchTitle}>{theme === "light" ? "Light Mode" : "Dark Mode"}</p>}
         </div>
     )
 }

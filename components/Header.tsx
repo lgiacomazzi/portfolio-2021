@@ -6,6 +6,7 @@ import Logo from "../public/images/luciano-light-bk.svg";
 import Menu from "./Menu";
 import Button from "./Button";
 import Router from "next/router";
+import Toggle from "./Toggle";
 
 export function NavLink({ children, href = "/" }) {
   return (
@@ -28,12 +29,13 @@ export default function Header() {
         <NavLink href="/">Home</NavLink>
         <NavLink href="/#portfolio">Portfólio</NavLink>
         <NavLink href="/about">Sobre mim</NavLink>
-        <NavLink href="/contact">Contato</NavLink>
+        {/* <NavLink href="/contact">Contato</NavLink> */}
         <NavLink href="https://github.com/lgiacomazzi/"><a><Icon icon="github" /></a></NavLink>
         <NavLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></NavLink>
+        <Toggle />
       </div>
       <div className={styles.actionsMobile}>
-        <Button variant="primary" size="small" onClick={() => Router.push('/contact')}>Contato</Button>
+        <Button variant="primary" size="small" onClick={() => Router.push('mailto:lucianogiacomazzi@gmail.com')}>Contato</Button>
         <Menu />
       </div>
     </motion.div>

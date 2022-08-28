@@ -57,13 +57,13 @@ export default function Menu() {
                     <MenuLink href="/">UX Design</MenuLink>
                     <MenuLink href="/">Branding Design</MenuLink>
                     <MenuLink href="/about">Sobre mim</MenuLink>
-                    <MenuLink href="/contact">Contato</MenuLink>
+                    {/* <MenuLink href="/contact">Contato</MenuLink> */}
                     <div style={{ display: "flex", flexDirection: "row" }}>
                         <MenuLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></MenuLink>
                         <MenuLink href="https://www.github.com/lgiacomazzi/"><a><Icon icon="github" /></a></MenuLink>
                     </div>
                 </motion.div>
-                <Toggle />
+                <Toggle helperText />
                 <SmallText>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></SmallText>
             </motion.div>
         </motion.nav>

@@ -6,6 +6,9 @@ import ImageZoom from "../components/ImageZoom";
 import Router from "next/router";
 import Projects from "../components/Projects";
 import { ExperienceContainer, ExperienceBubble } from "../components/ExperienceBubble";
+import { SmallText } from "../components/Text";
+import InlineLink from "../components/InlineLink";
+import Scratch02 from "../public/svg/scratch02.svg"
 
 export default function About() {
     const variants = {
@@ -37,21 +40,26 @@ export default function About() {
                         <div className="col-lg-6 d-flex flex-column m-auto text-center align-items-center">
                             <ImageZoom style={{ borderRadius: "100%", width: "200px" }} src="/images/profile.jpg" alt="" />
                             <h2>luciano giacomazzi</h2>
-                            <p className="text-secondary">Florianópolis, SC</p>
-                            <Paragraph>Nascido no Rio Grande do Sul, me formei em Engenharia Mecânica pela UFRGS em Porto Alegre e migrei de área depois de descobrir o mundo do design de produtos. </Paragraph>
-                            <Paragraph>Atualmente sou Designer de Produtos Sênior na Tribo de Backoffice e Payments da Delivery Much, em Florianópolis Santa Catarina.</Paragraph>
-                            <Paragraph>Trabalho com projetos de design de experiência do usuário, programação frontend e desenvolvimento de marcas. </Paragraph>
-                            <Button variant="secondary" size="small" >Currículo<Icon icon="download" size={16} /></Button>
+                            <SmallText><Icon icon="pin" size={12} />Florianópolis, SC</SmallText>
+                            <div className="mt-2 d-flex flex-column text-center align-items-center">
+                                <Paragraph>Nascido no Rio Grande do Sul, tenho formação em Engenharia Mecânica pela UFRGS em Porto Alegre, sempre fui apaixonado por tecnologia e migrei para o design de produtos em 2020. </Paragraph>
+                                <Paragraph>Atualmente sou Designer de Produtos Sênior nas Tribos de Payments e Backoffice da Delivery Much em Florianópolis, Santa Catarina.</Paragraph>
+                                <Paragraph>Hoje, trabalho com projetos de design de experiência do usuário, programação criativa frontend e desenvolvimento de identidade de marcas.</Paragraph>
+                                <Scratch02 />
+                                <div className="mt-2 d-flex flex-column text-center justify-space-between align-items-center">
+                                    <Paragraph><InlineLink>lucianogiacomazzi@gmail.com</InlineLink></Paragraph>
+                                    <Paragraph><InlineLink>+ 55 51 99829 0763</InlineLink></Paragraph>
+                                    <Paragraph><InlineLink>Linked In</InlineLink></Paragraph>
+                                    <Button variant="secondary" size="small" >Currículo<Icon icon="download" size={16} /></Button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div className="row">
-
-                    </div>
                 </div>
-            </section>
+            </section >
 
             {/* Objetivo */}
-            <section className="pt-4 pb-4 bk-light">
+            < section className="pt-4 pb-4 bk-light" >
                 <div className="container">
                     <h2 className="mb-1">Experiência</h2>
                     <ExperienceContainer>
@@ -61,7 +69,7 @@ export default function About() {
                             period: "Ago. 2021 - Hoje",
                             location: "Florianópolis, Santa Catarina, Brasil",
                             image: "",
-                            description: "Hoje atuo como product designer nas equipes de Pagamentos e Backoffice. Na minha rotina, atuo com entrevistas, testes de usabilidade, análise de métricas, product discovery, criação de interfaces, entre outros. Além disso, estou envolvido no projeto de criação e documentação do design system da empresa."
+                            description: "Hoje atuo como product designer nas equipes de Pagamentos e Backoffice. Na minha rotina, realizo product discovery e entrevistas exploratórias, defino requisitos de produto e analiso de métricas para priorização de roadmap, faço o design das interfaces das aplicações internas da empresa e conduzo testes de usabilidade. Além disso, estou envolvido no projeto de criação e documentação do Design System da empresa."
                         }} />
                         <ExperienceBubble content={{
                             title: "UX/UI Designer",
@@ -69,6 +77,7 @@ export default function About() {
                             period: "Out. 2020 - Ago. 2021",
                             location: "Florianópolis, Santa Catarina, Brasil",
                             image: "",
+                            description: "Responsável por todas as atividades de design de experiência do usuário na Voltbras. Condução de pesquisas exploratórias, design de interfaces e testes de usabilidade. Junto do time, criamos features valiosas para a Startup como Agendamento de Recargas, Pagamento Online e Dashboard de Operações."
                         }} />
                         <ExperienceBubble content={{
                             title: "Programador de RPA  ",
@@ -76,19 +85,22 @@ export default function About() {
                             period: "Jun. 2019 - Ago. 2020",
                             location: "Florianópolis, Santa Catarina, Brasil",
                             image: "",
+                            description: "Consultor responsável por desenvolver e implementar processos automatizados por meio de robôs, Robotic Process Automation, RPA. Realizei diversos tipos de automatizações utilizando sistemas internos de clientes, buscando redução de custos e redução de esforço."
                         }} />
                         <ExperienceBubble content={{
+                            title: "Consultor de Implantação",
                             company: "Trust Code",
                             period: "Jun. 2018 - Jun. 2019",
                             location: "Florianópolis, Santa Catarina, Brasil",
                             image: "",
+                            description: "Responsável por projetos de implantação do sistema ERP em empresas e Startup Brasileiras, parametrização do sistema e consultorias voltadas para implementação das necessidades do Cliente. Análise e levantamento de requisitos e consequentemente adaptações à módulos e extensões em Python, HTML, CSS e Javascript."
                         }} />
                     </ExperienceContainer>
                 </div>
-            </section>
+            </section >
 
             <Projects />
 
-        </motion.main>
+        </motion.main >
     );
 }

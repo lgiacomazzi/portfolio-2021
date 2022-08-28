@@ -36,7 +36,7 @@ export default function Manifesto() {
         <motion.div className={styles.manifestoActions}>
           <Button variant="primary" onClick={() => router.push('/#portfolio')}>Portfólio<Icon icon="arrow-down" size={16} /></Button>
           <Button variant="secondary" onClick={() => router.push('/about')}>Sobre mim</Button>
-          <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button>
+          {/* <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button> */}
         </motion.div>
 
         <ScrollButton />
