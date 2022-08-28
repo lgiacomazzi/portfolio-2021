@@ -9,7 +9,7 @@ function BrandingItem({ img = false, video = false, src }) {
                 {img &&
                     <img className={styles.gridItem} src={`./images/branding/${src}`} />}
                 {video &&
-                    <video className={styles.gridItem} autoPlay muted loop>
+                    <video className={styles.gridItem} autoPlay playsInline muted loop>
                         <source src={`./images/branding/${src}`} type="video/mp4"></source>
                     </video>
                 }</>
