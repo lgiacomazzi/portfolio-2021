@@ -18,7 +18,7 @@ export default function BrandingProjects() {
                 <BrandingItem src="farmshare.png" />
                 <BrandingItem src="fasesefaces.png" />
                 <BrandingItem src="joana.png" />
-                <BrandingItem src="joana.png" />
+                <BrandingItem src="bananas.png" />
                 <BrandingItem src="saudeaqui.png" />
                 <BrandingItem src="ray2.png" />
             </div>
