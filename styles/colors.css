@@ -49,6 +49,11 @@
   color: var(--text-secondary);
 }
 
+.border-vertical {
+  border-top: 1px solid var(--ui-border);
+  border-bottom: 1px solid var(--ui-border);
+}
+
 .bk-white {
   background-color: var(--ui-background);
 }

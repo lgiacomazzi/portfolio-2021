@@ -1,12 +1,12 @@
 .gridContainer {
     display: grid;
     grid-gap: 8px;
-    display: grid;
     grid-template-areas:
         "area-1 area-6 area-7 area-4"
         "area-5 area-6 area-7 area-8"
         "area-5 area-2 area-3 area-8";
     margin: 16px;
+    margin-top: 40px;
 }
 
 @media (max-width: 768px) {

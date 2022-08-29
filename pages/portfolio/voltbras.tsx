@@ -100,7 +100,7 @@ export default function Portfolio() {
             </section>
 
             {/* Objetivo */}
-            <section className="pt-4 pb-4 bk-light">
+            <section className="pt-4 pb-4 border-vertical">
                 <div className="container">
                     <div className="col-lg-6">
                         <h2 className="mb-1">Objetivos</h2>

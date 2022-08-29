@@ -1,8 +1,10 @@
 import ProjectCard from "./ProjectCard"
+import { Heading6 } from "./Text"
 
 export default function Projects() {
     return (
         <section id="portfolio" className="bk-white">
+            <Heading6>― Porfolio UX design ―</Heading6>
             <div className="container">
                 <ProjectCard content={{
                     type: "UX Deisgn",
@@ -11,19 +13,12 @@ export default function Projects() {
                     imageUrl: "voltbras.png",
                     description: "Desenhando uma experiência de reserva de uma estação e um conector para carregar veículos elétricos.",
                 }} />
-                <ProjectCard disabled content={{
+                <ProjectCard content={{
                     type: "UX Design",
                     name: "Criando uma ferramenta de Entrega Grátis no sistema da Delivery Much",
-                    href: "fasesefaces",
+                    href: "delivery",
                     imageUrl: "freedelivery.png",
                     description: "Uma solução para lojas parceiras da Delivery Much poderem cadastrar promoções de entrega grátis no Marketplace.",
-                }} />
-                <ProjectCard disabled content={{
-                    type: "Branding",
-                    name: "Branding Redesign na Fases & Faces",
-                    href: "fasesefaces",
-                    imageUrl: "fasesefaces.png",
-                    description: "Criando uma marca sofisticada para uma clínica estética em Florianópolis, Santa Catarina.",
                 }} />
             </div>
         </section>
