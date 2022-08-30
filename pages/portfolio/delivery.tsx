@@ -81,13 +81,12 @@ export default function Portfolio() {
                     <div className="row mb-2">
                         <div className="col-lg-6">
                             <h2 className="mb-2">Por que Entrega Promocional?</h2>
-                            <Paragraph>A Delivery Much funciona como um <b>marketplace de delivery</b>, onde parceiros lojistas oferecem produto em cardápios e usuários realizam pedidos pelo aplicativo e pelo website.</Paragraph>
-                            <Paragraph>Apesar de ser possível cadastrar ofertas em produtos selecionados e também cupons de desconto aplicados no valor total do pedido, <b>não existia </b>uma funcionalidade para configurar <b>descontos na taxa de entrega</b> destes estabelecimentos.</Paragraph>
-                            <Paragraph>O processo era extremamente manual, suscetível à falhas e de difícil previsibilidade, muitos dos históricos de desempenho dessas promoções de entrega eram inacessíveis. </Paragraph>
+                            <Paragraph>A Delivery Much é uma <b>startup de delivery</b>, onde lojistas oferecem produtos nos cardápios e usuários realizam compras pelo aplicativo ou website.</Paragraph>
+                            <Paragraph>Apesar da possibilidade de cadastrar ofertas em produtos e cupons de desconto, <b>não existia uma funcionalidade para configurar descontos na taxa de entrega</b> destes estabelecimentos.</Paragraph>
+                            <Paragraph>O processo existente era <b>manual, suscetível à falhas e de difícil previsibilidade</b>, muitos dos históricos de desempenho dessas promoções eram inacessíveis. </Paragraph>
                         </div>
                         <div className="col-lg-6">
-                            <Paragraph>Além disso, não é possível identificar a origem dos cadastros, o que impacta diretamente no faturamento das lojas e na inclusão de descontos vindos dos pedidos com frete grátis.</Paragraph>
-                            <Paragraph>Participei de um projeto para criar uma funcionalidade que atendesse às demandas do negócio e dos usuários. Realizei pesquisas, design da experiência e testes de usabilidade. O projeto foi executado junto da Tribo de Backoffice.</Paragraph>
+                            <Paragraph>Junto da Tribo de Backoffice, participei do projeto para otimizar essa ferramenta atendendo às demandas do negócio e dos principais usuários. Realizei pesquisas exploratórias, design da experiência e conduzi testes de usabilidade internos e externos.</Paragraph>
                             {/* <Zoom src={"/images/voltbras/conectores.png"} layout="responsive" width={200} height={150} /> */}
                         </div>
                     </div>
@@ -102,9 +101,9 @@ export default function Portfolio() {
                 <div className="container">
                     <div className="col-lg-6">
                         <h2 className="mb-1">Objetivos</h2>
-                        <Paragraph>1. Mapear o processo dos usuários e as principais dificuldades com o cadastro de entrega promocional.</Paragraph>
-                        <Paragraph>2. Criar uma nova experiência que aumente o engajamento em lojas com descontos na entrega.</Paragraph>
-                        <Paragraph>3. Automatizar processo financeiro com descontos na entrega para lojas parceiras.</Paragraph>
+                        <Paragraph>1. Mapear o processo de solicitação, cadastro e verificação de resultados com entrega promocional e seus diferentes atores.</Paragraph>
+                        <Paragraph>2. Criar uma nova experiência que aumente o engajamento das lojas parceiras com descontos na entrega.</Paragraph>
+                        <Paragraph>3. Automatizar processo financeiro de inclusão de descontos na entrega em faturas das lojas parceiras.</Paragraph>
                     </div>
                 </div>
             </section>
@@ -126,9 +125,9 @@ export default function Portfolio() {
                     <div className="row mb-4">
                         <h3 className="mb-2">Dinâmica Presencial</h3>
                         <div className="col-lg-6">
-                            <Paragraph>A fim de se obter insights sobre as principais dificuldades dos usuários com este tipo de atividade, criamos uma dinâmica colaborativa convidando todos os franqueados durante um dia do evento intitulado CDM 2022, a Convenção Delivery Much. O evento foi realizado presencialmente em março de 2022 e juntou diversos funcionários e franqueados para conversar sobre o futuro do produto e da empresa.</Paragraph>
-                            <Paragraph>O roteiro buscou validar a necessidade de se <b>planejar para viajar com um veículo</b> entendendo melhor as dificuldades e necessidades durante a jornada. também buscamos identificar quais as <b>ferramentas e soluções que estes usuários utilizam</b> para evitar atrasos e problemas durante uma viagem.</Paragraph>
-                            <Paragraph>Através desta dinâmica, foi possível elencar as principais dificuldades no processo de gestão de promoções das lojas bem como algumas ideias de possíveis soluções.</Paragraph>
+                            <Paragraph><b>Um dos processos de geração de insights foi a CDM 2022</b>, a Convenção Delivery Much. O evento foi realizado presencialmente em março de 2022 e juntou diversos funcionários e franqueados para conversar sobre o futuro dos produtos e da empresa. </Paragraph>
+                            <Paragraph>Através de uma dinâmica colaborativa durante um dia do evento os participantes trouxeram quais as <b>principais dores e necessidades ao longo da jornada de cadastro de promoções.</b></Paragraph>
+                            <Paragraph>Assim, foi possível elencar as principais dificuldades no processo de gestão de promoções das lojas bem como algumas ideias de possíveis soluções.</Paragraph>
                         </div>
                         <div className="col-lg-6">
                             <ImageZoom src="/images/delivery/cdm-01.png" alt="" />
@@ -138,39 +137,42 @@ export default function Portfolio() {
                     <div className="row mb-4">
                         <h3 className="mb-2">Entrevistas com stakeholders</h3>
                         <div className="col-lg-6">
-                            <Paragraph>Realizei entrevistas em profundidade com os times responsáveis por este tipo de promoção por todo o sistema interno da Delivery Much: </Paragraph>
+                            <Paragraph>Realizei entrevistas em profundidade com os times responsáveis por operacionalizar promoções de entrega por todo o ecossistema da Delivery Much: </Paragraph>
                             <Paragraph>1. Entrevistamos a área de <b>Operações</b> para entender mais sobre como são acordados e cadastrados os valores de descontos e taxa de entrega,</Paragraph>
-                            <Paragraph>2. O time de <b>Marketing</b>, sobre como analisar o desempenho destas ações após a sua conclusão,</Paragraph>
-                            <Paragraph>3. E o time <b>Financeiro</b>. Ao final do processo, é necessário descontar, ou acrescentar, valores de descontos nas faturas das lojas. </Paragraph>
+                            <Paragraph>2. O time de <b>Marketing</b>, sobre como analisar o desempenho destas ações após a sua conclusão e o retorno sobre o investimento,</Paragraph>
+                            <Paragraph>3. E o time <b>Financeiro</b>. Ao final do processo, é necessário descontar ou acrescentar valores nas faturas das lojas. </Paragraph>
                         </div>
                         <div className="col-lg-6">
-                            <Paragraph>Também entrevistamos o time de franquias, que hoje é responsável pelo cadastro de promoções em algumas das cidades em que a Delivery Much atua. Selecionamos franquias que se adequavam as métricas pré selecionadas com nível de investimento e valor transacionado:</Paragraph>
+                            <Paragraph>Também entrevistamos o time de franquias, que havia participado da dinâmica presencial. Selecionamos franquias que se adequavam as métricas pré selecionadas como nível de investimento com promoções e valor transacionado no marketplace:</Paragraph>
                             <Paragraph>1. <b>Franquias que não trabalham com entrega:</b> entender o por que da falta de engajamento com a feature atual bem como poderíamos melhorar</Paragraph>
                             <Paragraph>2. <b>Franquias que trabalham com entregas:</b> queríamos entender o que funciona para eles e como extrair o máximo da ferramenta.</Paragraph>
-                            <Paragraph>Conseguimos mapear de ponta a ponta o processo e entender quais os principais  pontos de frustração para cada persona e distribuir ações para cada time conduzir internamente.</Paragraph>
+                            <Paragraph>Através destas conversas, foi possível mapear de ponta a ponta o processo e entender quais os principais  pontos de frustração para cada persona e distribuir ações para cada time conduzir internamente.</Paragraph>
+                        </div>
+                    </div>
+                    <div className="row mb-2">
+                        <div className="col-lg-6">
+                            <h2 className="mb-2">Jornadas de usuário</h2>
+                            <Paragraph>Criamos diferentes jornadas de usuário, um para cada ator do marketplace: Franqueado (Usuário Interno), Loja e Cliente Final..</Paragraph>
+                            <Paragraph>Mapeamos cada ação e ponto de contato das lojas com a <b>demanda e a necessidade </b>por promoções, a jornada dos usuários internos e seus <b>cadastros manuais</b> e finalmente a busca e <b>compra do cliente final</b> no app.</Paragraph>
+                        </div>
+                    </div>
+                    <div className="row mb-5">
+                        <div className="col-lg-12 m-auto">
+                            <ImageZoom src="/images/delivery/journeys.png" alt="Jornada dos usuários necessária para realizar um pedido com um desconto na entrega." />
                         </div>
                     </div>
                     <div className="row mb-4">
                         <div className="col-lg-6">
                             <h2 className="mb-2">Benchmarking</h2>
-                            <Paragraph>Também revisei produtos de competidores. Como o projeto envolvia o design de frontend para conseguir cadastrar estas promoções, busquei encontrar funcionalidades similares nos produtos dos concorrentes.</Paragraph>
-                            <Paragraph>Foi possível utilizar estas referências na etapa de design de interação. Porém percebemos que o que nós oferecemos é um diferencial em vários dos produtos analisados.</Paragraph>
-                            <Paragraph>Construí <b>fluxos ideais com diferentes níveis de fidelidade</b> tanto para idealizar a solução como um todo mas também para comunicar para os demais membros do time quais seriam as interações necessárias. </Paragraph>
+                            <Paragraph>Também revisei produtos de competidores. </Paragraph>
+                            <Paragraph>Como o projeto envolvia o design de frontend para conseguir cadastrar estas promoções, busquei encontrar funcionalidades similares nos produtos dos concorrentes.</Paragraph>
+                            <Paragraph>Foi possível utilizar estas referências na etapa de design de interação. Porém percebemos que o <b>grau de personalização </b> que a empresa oferecia era um diferencial <b>inexistente em vários dos produtos analisados.</b></Paragraph>
                         </div>
                         <div className="col-lg-6 m-auto">
                             <ImageZoom src="/images/delivery/benchmarking.png" alt="Tabela mostrando aspectos de diferenciação entre o produto da empresa e seus concorrentes." />
                         </div>
                     </div>
-                    <div className="row mb-5">
-                        <div className="col-lg-6 m-auto ">
-                            <h2 className="mb-2">Jornadas de usuário</h2>
-                            <Paragraph>Criamos diferentes jornadas do usuário, um para cada ator deste quebra-cabeças que é o marketplace.</Paragraph>
-                            <Paragraph>Mapeamos cada etapa e necessidade de interação das lojas com a demanda e a necessidade por promoções, a jornada dos usuários internos e seus cadastros manuais e finalmente a busca e compra do cliente final no app.</Paragraph>
-                        </div>
-                        <div className="col-lg-6 m-auto">
-                            <ImageZoom src="/images/delivery/journeys.png" alt="Jornada dos usuários necessária para realizar um pedido com um desconto na entrega." />
-                        </div>
-                    </div>
+
                 </div>
             </section>
 
@@ -179,7 +181,7 @@ export default function Portfolio() {
             {/* <h3 className="mb-2">Product Scope (User Stories) </h3> */}
             <section className="pb-5">
                 <div className="container">
-                    <div className="row mb-4">
+                    <div className="row mb-2">
                         <div className="col-lg-6">
                             <span className="text-secondary text-small mb-2">II - DEFINE</span>
                             <h2 className="mb-2">Definido o produto</h2>
