@@ -1,3 +1,7 @@
+.manifestoBackground {
+  position: absolute;
+}
+
 .manifesto {
   display: flex;
   flex-direction: column;

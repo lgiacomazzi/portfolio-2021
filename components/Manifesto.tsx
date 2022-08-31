@@ -40,9 +40,8 @@ export default function Manifesto() {
           <Button variant="secondary" onClick={() => router.push('/about')}>{manifesto('button_about')}</Button>
           {/* <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button> */}
         </motion.div>
-
-        <ScrollButton />
       </div>
+      <ScrollButton />
     </section>
 
   );

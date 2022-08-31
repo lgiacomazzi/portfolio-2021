@@ -14,7 +14,7 @@ export function LocalleToggle() {
   const router = useRouter();
 
   const setLocale = (locale) => {
-    router.push({ query: router.query }, router.asPath, { locale });
+    router.push({ query: router.query }, router.asPath, { locale, scroll: false });
   }
 
   if (router.locale === 'pt') return <Button variant="ghost" onClick={() => setLocale("en")}><h5>🇧🇷</h5></Button>
@@ -52,7 +52,7 @@ export default function Header() {
         <Toggle />
       </div>
       <div className={styles.actionsMobile}>
-        <Button variant="primary" size="small" onClick={() => Router.push('mailto:lucianogiacomazzi@gmail.com')}>Contato</Button>
+        <Button variant="primary" size="small" onClick={() => Router.push('mailto:lucianogiacomazzi@gmail.com')}>{header('nav_link_about')}</Button>
         <Menu />
       </div>
     </motion.div>

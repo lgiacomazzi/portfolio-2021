@@ -139,7 +139,7 @@ export default function Portfolio() {
                         <div className="col-lg-6">
                             <h3 className="mb-2">{voltbras('h3_interviews')}</h3>
                             <Paragraph>{voltbras('interviews_paragraph_01')}</Paragraph>
-                            <Paragraph>{voltbras('interviews_paragraph_01')}</Paragraph>
+                            <Paragraph>{voltbras('interviews_paragraph_02')}</Paragraph>
                         </div>
                         <div className="col-lg-6 m-auto">
                             <h3 className="mb-2">{voltbras('h3_desk_research')}</h3>
@@ -209,7 +209,7 @@ export default function Portfolio() {
                         <div className="col-lg-6">
                             <h2 className="mb-2">{voltbras('h2_design')}</h2>
                             <Paragraph>{voltbras('design_paragraph_01')}</Paragraph>
-                            <Paragraph>{voltbras('design_paragraph_01')}</Paragraph>
+                            <Paragraph>{voltbras('design_paragraph_02')}</Paragraph>
                         </div>
                     </div>
                     <div className="row">
