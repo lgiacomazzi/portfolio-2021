@@ -7,8 +7,13 @@ import Link from "next/link";
 import Button from "./Button";
 import Router from "next/router";
 import { SmallText } from "./Text";
+import { LocalleToggle } from "./Header";
+import { useTranslations } from "next-intl";
 
 export default function Menu() {
+    const header = useTranslations("Header");
+    const footer = useTranslations("Footer");
+
     const [isOpen, setIsOpen] = useState(false);
 
     const variants = {
@@ -53,18 +58,18 @@ export default function Menu() {
                     <Icon icon="close" size={24} color="text-primary" />
                 </Button>
                 <motion.div className={styles.menuItems}>
-                    <MenuLink href="/">Home</MenuLink>
-                    <MenuLink href="/">UX Design</MenuLink>
-                    <MenuLink href="/">Branding Design</MenuLink>
-                    <MenuLink href="/about">Sobre mim</MenuLink>
+                    <MenuLink href="/">{header('nav_link_home')}</MenuLink>
+                    <MenuLink href="/">{header('nav_link_work')}</MenuLink>
+                    <MenuLink href="/about">{header('nav_link_about')}</MenuLink>
                     {/* <MenuLink href="/contact">Contato</MenuLink> */}
                     <div style={{ display: "flex", flexDirection: "row" }}>
                         <MenuLink href="https://www.linkedin.com/in/lgiacomazzi/"><a><Icon icon="linked-in" /></a></MenuLink>
                         <MenuLink href="https://www.github.com/lgiacomazzi/"><a><Icon icon="github" /></a></MenuLink>
                     </div>
                 </motion.div>
+                <LocalleToggle />
                 <Toggle helperText />
-                <SmallText>desenvolvido com ❤️ por <a href="/">@lgiacomazzi</a></SmallText>
+                <SmallText>{footer('developed_by')}&nbsp;<a href="/">@lgiacomazzi</a></SmallText>
             </motion.div>
         </motion.nav>
     );

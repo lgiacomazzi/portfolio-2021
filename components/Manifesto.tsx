@@ -6,6 +6,8 @@ import Link from "next/link"
 import InlineLink from "../components/InlineLink";
 import ScrollDown from "../public/svg/scroll-down.svg";
 import Icon from "./Icon";
+import { useTranslations } from 'next-intl';
+
 
 const ScrollButton = () => {
   return (
@@ -19,6 +21,7 @@ const ScrollButton = () => {
 
 export default function Manifesto() {
   const router = useRouter();
+  const manifesto = useTranslations('Manifesto');
 
   const textVariants = {
     hidden: { opacity: 0 },
@@ -29,13 +32,12 @@ export default function Manifesto() {
     <section className={styles.manifesto + " bk-main"}>
       <div className={styles.container}>
         <motion.h1 variants={textVariants} whileHover={{ fontWeight: 100 }} className={styles.manifestoText}>
-          {/* hey there, i'm luciano — a product designer experienced in frontend development. currently solving complex design challenges at <InlineLink href="https://deliverymuch.com.br/">delivery much</InlineLink> */}
-          Olá! Sou Luciano — Designer de Produtos com experiência em desenvolvimento Frontend. Atualmente resolvendo problemas através do design na <InlineLink href="https://deliverymuch.com.br/">Delivery Much</InlineLink>
+          {manifesto('hi_there')}<InlineLink href="https://deliverymuch.com.br/">Delivery Much</InlineLink>
         </motion.h1>
 
         <motion.div className={styles.manifestoActions}>
-          <Button variant="primary" onClick={() => router.push('/#portfolio')}>Portfólio<Icon icon="arrow-down" size={16} /></Button>
-          <Button variant="secondary" onClick={() => router.push('/about')}>Sobre mim</Button>
+          <Button variant="primary" onClick={() => router.push('/#portfolio')}>{manifesto('button_work')}<Icon icon="arrow-down" size={16} /></Button>
+          <Button variant="secondary" onClick={() => router.push('/about')}>{manifesto('button_about')}</Button>
           {/* <Button variant="secondary" onClick={() => router.push('/contact')}>Contato</Button> */}
         </motion.div>
 

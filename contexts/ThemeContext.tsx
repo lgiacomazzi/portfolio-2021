@@ -27,6 +27,7 @@ function ThemeContextProvider({ children }) {
         // roda na primeira vez apenas  
         const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
         const localTheme = localStorage.getItem("theme");
+        console.log(localTheme)
         localTheme ? setTheme(localTheme) : systemTheme && setTheme("dark");
     }, [])
 

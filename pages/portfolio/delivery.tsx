@@ -8,8 +8,17 @@ import ImageZoom from "../../components/ImageZoom";
 import Router from "next/router";
 import BottomNavigation from "../../components/BottomNavigation"
 import InlineLink from "../../components/InlineLink";
+import { useTranslations } from "next-intl";
 
 export default function Portfolio() {
+    const project = useTranslations('Home');
+
+    const delivery = (string: string) => {
+        return useTranslations("Delivery").rich(string, {
+            bold: (children) => <b>{children}</b>,
+        })
+    }
+
     const variants = {
         hidden: { opacity: 0, },
         enter: { opacity: 1, y: 0 },
@@ -35,8 +44,9 @@ export default function Portfolio() {
             {/* Introdução */}
             <section id="header" className="pt-4 pb-4">
                 <div className='container'>
-                    <Button variant="secondary" size="small" onClick={() => Router.back()}><Icon icon="chevron-left" size={16} />Voltar</Button>
-                    <motion.h3
+                    <Button variant="secondary" size="small" onClick={() => Router.back()}>
+                        <Icon icon="chevron-left" size={16} />{delivery('back_button')}
+                    </Button>                    <motion.h3
                         initial={{ y: -10, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ delay: .5 }}
@@ -290,12 +300,20 @@ export default function Portfolio() {
 
             <BottomNavigation content={{
                 type: "UX Deisgn",
-                name: "Agendando recargas para veículos elétricos no aplicativo da Voltbras",
                 href: "voltbras",
                 imageUrl: "voltbras.png",
-                description: "Desenhando uma experiência de reserva de uma estação e um conector para carregar veículos elétricos.",
+                name: project('voltbras_case_title'),
+                description: project('voltbras_case_description')
             }} />
 
         </motion.main >
     );
+}
+
+export function getStaticProps({ locale }) {
+    return {
+        props: {
+            messages: require(`../../locales/${locale}.json`),
+        },
+    };
 }

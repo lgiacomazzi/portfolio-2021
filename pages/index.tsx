@@ -30,3 +30,11 @@ export default function Home() {
     </motion.main>
   );
 }
+
+export function getStaticProps({ locale }) {
+  return {
+    props: {
+      messages: require(`../locales/${locale}.json`),
+    },
+  };
+}

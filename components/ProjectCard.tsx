@@ -5,6 +5,7 @@ import Button from "./Button";
 import Icon from "./Icon";
 import Image from "next/image"
 import Router from "next/router";
+import { useTranslations } from "next-intl";
 
 interface ProjectCardProps {
   disabled?: boolean;
@@ -18,6 +19,7 @@ const Marquee = ({ children }) => {
 }
 
 export default function ProjectCard({ disabled = false, content = {} }: ProjectCardProps) {
+  const project = useTranslations('Home');
 
   const handleRedirect = (url) => {
     !disabled && Router.push(`/portfolio/${url}`)
@@ -35,8 +37,8 @@ export default function ProjectCard({ disabled = false, content = {} }: ProjectC
         {content.description && <p className="text-body mt-2 mb-2">{content.description}</p>}
 
         {!disabled ?
-          <Button variant="primary">Ver Case<Icon icon="arrow-right" size={16} /></Button> :
-          <Button variant="secondary" disabled>Em Breve</Button>
+          <Button variant="primary">{project('button_view')}<Icon icon="arrow-right" size={16} /></Button> :
+          <Button variant="secondary" disabled>{project('button_comming_soon')}</Button>
         }
       </div>
       <div className={styles.projectHeroImage}>
