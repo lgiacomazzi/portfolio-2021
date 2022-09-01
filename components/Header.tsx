@@ -52,7 +52,7 @@ export default function Header() {
         <Toggle />
       </div>
       <div className={styles.actionsMobile}>
-        <Button variant="primary" size="small" onClick={() => Router.push('mailto:lucianogiacomazzi@gmail.com')}>{header('nav_link_about')}</Button>
+        <Button variant="primary" size="small" onClick={() => Router.push('mailto:lucianogiacomazzi@gmail.com')}>{header('nav_link_contact')}</Button>
         <Menu />
       </div>
     </motion.div>
