@@ -5,7 +5,7 @@ import { Heading6 } from "./Text"
 
 function BrandingItem({ img = false, video = false, src }) {
     return (
-        <Link href={"/portfolio/" + src.split(".")[0]} >
+        // <Link href={"/portfolio/" + src.split(".")[0]} >
             <div>
                 {img &&
                     <img className={styles.gridItem} src={`./images/branding/${src}`} />}
@@ -15,7 +15,7 @@ function BrandingItem({ img = false, video = false, src }) {
                     </video>
                 }
             </div>
-        </Link>
+        // </Link>
     )
 }
 
