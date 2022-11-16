@@ -67,6 +67,12 @@
   background-color: var(--ui-background-contrast);
 }
 
+.bk-main {
+  background: url(/svg/bk-5.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
 .bk-volt {
   background: url(/svg/bk-volt.svg);
   background-size: cover;
