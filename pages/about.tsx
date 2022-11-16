@@ -66,7 +66,7 @@ export default function About() {
             {/* Objetivo */}
             < section className="pt-4 pb-4 bk-light" >
                 <div className="container">
-                    <h2 className="mb-1">Experiência</h2>
+                    <h2 className="mb-2">{about("experience_title")}</h2>
                     <ExperienceContainer>
                         <ExperienceBubble content={{
                             title: about("role_01"),
