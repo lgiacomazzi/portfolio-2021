@@ -25,14 +25,16 @@
         "bio_paragraph_02": "I have always been passionate about design and technology and I am currently a Senior Product Designer in the Payments and Backoffice Tribes of Delivery Much in Florianópolis, Brazil",
         "bio_paragraph_03": "Today, I work with user experience design projects, creative frontend programming and brand identity development.",
         "experience_title": "Experience",
-        "role_01": "Senior Product Designer",
-        "description_role_01": "In my routine, I conduct product discovery and exploratory interviews, define product requirements and analyze metrics for roadmap prioritization, design the interfaces of the company's internal applications and conduct usability tests. In addition, I am involved in the project to create and document the company's Design System.",
-        "role_02": "UX/UI Designer",
+        "role_01": "Product Designer",
+        "description_role_01": "I carried out several discovery processes for the Store and End Customer squads. Conducted exploratory interviews, defined product requirements and analyzed metrics for roadmap prioritization. I designed the interfaces for the company's internal applications and validated them through usability tests with key users. Furthermore, I had extensive participation in the project to create the company's Design System, Marmita.",
+        "role_02": "Product Designer",
         "description_role_02": "Responsible for all user experience design activities at Voltbras. Conducting exploratory research, interface design and usability testing. Together with the team, we have created valuable features for the startup such as Recharge Scheduling, Online Payment and Operations Dashboard.",
         "role_03": "RPA Programmer",
         "description_role_03": "Consultant responsible for developing and implementing automated processes through RPA, Robotic Process Automation. I performed various types of automations using internal customer systems, seeking to reduce costs and effort.",
         "role_04": "Consultant",
-        "description_role_04": "Responsible for implementing an open source ERP system in Brazilian companies and startups. Asses customer's needs and frustrations within the product, create product/module requirements and consequently implement the chages in Python, HTML, CSS and Javascript."
+        "description_role_04": "Responsible for implementing an open source ERP system in Brazilian companies and startups. Asses customer's needs and frustrations within the product, create product/module requirements and consequently implement the chages in Python, HTML, CSS and Javascript.",
+        "role_05": "Product Designer",
+        "description_role_05": "As a Product Designer in the CRM vertical, I identify opportunities, carry out investigations and develop solutions that increase member engagement with product and service offerings digitally. I lead the design process from end to end and actively participate in the Tribe's strategic decisions in relation to Sicredi centers and cooperatives."
     },
     "Voltbras": {
         "back_button": "Back",

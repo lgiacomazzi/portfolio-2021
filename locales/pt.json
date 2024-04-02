@@ -6,7 +6,7 @@
         "nav_link_contact": "Contato"
     },
     "Manifesto": {
-        "hi_there": "Olá! Sou Luciano — Designer de Produtos com experiência em desenvolvimento Frontend. Atualmente resolvendo problemas através do design na ",
+        "hi_there": "Olá! Sou Luciano — Designer de Produtos com experiência em desenvolvimento Frontend. Atualmente resolvendo problemas através do design no ",
         "button_work": "Portfolio",
         "button_about": "Sobre mim"
     },
@@ -22,17 +22,19 @@
         "back_button": "Voltar",
         "page_title": "Sobre mim",
         "bio_paragraph_01": "Nascido no Rio Grande do Sul, tenho formação em Engenharia Mecânica pela Universidade Federal do Rio Grande do Sul em Porto Alegre.",
-        "bio_paragraph_02": "Atualmente sou Designer de Produtos Sênior nas Tribos de Payments e Backoffice da Delivery Much em Florianópolis, Santa Catarina.",
+        "bio_paragraph_02": "Atualmente sou Designer de Produtos na Tribo de Engajamento na Vertical de CRM do Sicredi em Porto Alegre, Rio Grande do Sul.",
         "bio_paragraph_03": "Sempre fui apaixonado por como o design e tecnologia operam juntos e podem melhorar o mundo. Hoje, trabalho com projetos de design de experiência do usuário, programação criativa frontend e desenvolvimento de identidade de marcas.",
         "experience_title": "Experiência",
-        "role_01": "Product Designer Sênior",
-        "description_role_01": "Hoje atuo como product designer nas equipes de Pagamentos e Backoffice. Na minha rotina, realizo product discovery e entrevistas exploratórias, defino requisitos de produto e analiso de métricas para priorização de roadmap, faço o design das interfaces das aplicações internas da empresa e conduzo testes de usabilidade. Além disso, estou envolvido no projeto de criação e documentação do Design System da empresa.",
-        "role_02": "UX/UI Designer",
+        "role_01": "Product Designer",
+        "description_role_01": "Realizei diversos processos de discovery para as squads de Lojas e Cliente Final. Conduzi entrevistas exploratórias, defini requisitos de produto e analisei métricas para priorização de roadmap. Construí o design das interfaces das aplicações internas da empresa e as validei através de testes de usabilidade com os principais usuários. Além disso, tive ampla participação no projeto de criação do Design System da empresa, o Marmita.",
+        "role_02": "Product Designer",
         "description_role_02": "Responsável por todas as atividades de design de experiência do usuário na Voltbras. Condução de pesquisas exploratórias, design de interfaces e testes de usabilidade. Junto do time, criamos features valiosas para a Startup como Agendamento de Recargas, Pagamento Online e Dashboard de Operações.",
         "role_03": "Programador RPA",
         "description_role_03": "Consultor responsável por desenvolver e implementar processos automatizados por meio de robôs, Robotic Process Automation, RPA. Realizei diversos tipos de automatizações utilizando sistemas internos de clientes, buscando redução de custos e redução de esforço.",
         "role_04": "Consultor de Implantação",
-        "description_role_04": "Responsável por projetos de implantação do sistema ERP em empresas e Startup Brasileiras, parametrização do sistema e consultorias voltadas para implementação das necessidades do Cliente. Análise e levantamento de requisitos e consequentemente adaptações à módulos e extensões em Python, HTML, CSS e Javascript."
+        "description_role_04": "Responsável por projetos de implantação do sistema ERP em empresas e Startup Brasileiras, parametrização do sistema e consultorias voltadas para implementação das necessidades do Cliente. Análise e levantamento de requisitos e consequentemente adaptações à módulos e extensões em Python, HTML, CSS e Javascript.",
+        "role_05": "Product Designer",
+        "description_role_05": "Como Designer de Produtos na vertical de CRM levanto oportunidades, realizo investigações e desenvolvo soluções que aumentem o engajamento dos associados com ofertas de produtos e serviços de maneira digital. Conduzo o processo de design de ponta a ponta e participo ativamente em decisões estratégicas da Tribo frente às centrais e cooperativas do Sicredi."
     },
     "Voltbras": {
         "back_button": "Voltar",
